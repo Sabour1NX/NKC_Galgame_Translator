@@ -1,0 +1,2651 @@
+{
+  "schema": "nkc-quality-response-report-v1",
+  "version": "0.01.25",
+  "baseline": "0.01.15",
+  "date": "2026-11-18",
+  "customer_headline": "品质的体验，更少的等待",
+  "accuracy": {
+    "before": {
+      "characters": 356,
+      "edits": 57,
+      "character_accuracy_percent": 83.989,
+      "definition": "100*(1-Levenshtein distance/reference characters); whitespace removed, Unicode NFKC normalized, curly quotes mapped; case-sensitive.",
+      "scope": "Only the supplied fixed screenshots and manually transcribed zones. OCR character accuracy, not translation semantic accuracy or a general-game success rate."
+    },
+    "after": {
+      "characters": 356,
+      "edits": 16,
+      "character_accuracy_percent": 95.506,
+      "definition": "100*(1-Levenshtein distance/reference characters); whitespace removed, Unicode NFKC normalized, curly quotes mapped; case-sensitive.",
+      "scope": "Only the supplied fixed screenshots and manually transcribed zones. OCR character accuracy, not translation semantic accuracy or a general-game success rate."
+    }
+  },
+  "scenes": [
+    {
+      "name": "货物价格表",
+      "name_en": "Cargo price table",
+      "file": "cargo.png",
+      "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgiPjx0ZXh0IHg9IjgiIHk9IjI4Ij5BcmNoaXZlZCBzY3JlZW5zaG90IG9taXR0ZWQgZnJvbSBwdWJsaWMgc291cmNlLjwvdGV4dD48L3N2Zz4=",
+      "width": 684,
+      "height": 378,
+      "sha256": "6655c3a4dc4158aa10f69c752a313f586a6581e40361ee4997fb90a8f07196ad",
+      "before": {
+        "sha256": "6655c3a4dc4158aa10f69c752a313f586a6581e40361ee4997fb90a8f07196ad",
+        "accuracy": [
+          {
+            "box": [
+              25,
+              20,
+              405,
+              345
+            ],
+            "expected": "Cargo\nforged CRs\n1GB RAMs\ndilithium\nhybrid grain\nsouvenirs\nantibiotics\nDONE",
+            "actual": "Cargo Cost\nforged CRs i188\n1GB RRHS BE\ndilithiun a5\nhybrid grain as\nantibiotics Hi\nDONE",
+            "edit_distance": 26,
+            "characters": 65
+          },
+          {
+            "box": [
+              440,
+              20,
+              565,
+              310
+            ],
+            "expected": "Cost\n188\n66\n85\n25\n18\n88",
+            "actual": "",
+            "edit_distance": 17,
+            "characters": 17
+          }
+        ],
+        "lines": [
+          {
+            "text": "Cargo Cost",
+            "x": 48,
+            "y": 33,
+            "w": 507,
+            "h": 35,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 95.0
+          },
+          {
+            "text": "forged CRs i188",
+            "x": 52,
+            "y": 102,
+            "w": 506,
+            "h": 35,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 76.0
+          },
+          {
+            "text": "1GB RRHS BE",
+            "x": 52,
+            "y": 136,
+            "w": 506,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 71.24198913574219
+          },
+          {
+            "text": "dilithiun a5",
+            "x": 48,
+            "y": 171,
+            "w": 510,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 67.0
+          },
+          {
+            "text": "hybrid grain as",
+            "x": 48,
+            "y": 205,
+            "w": 510,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 65.0
+          },
+          {
+            "text": "antibiotics Hi",
+            "x": 48,
+            "y": 274,
+            "w": 510,
+            "h": 32,
+            "bg": [
+              255,
+              255,
+              255
+            ],
+            "fg": [
+              20,
+              20,
+              20
+            ],
+            "confidence": 79.0015869140625
+          },
+          {
+            "text": "DONE",
+            "x": 48,
+            "y": 309,
+            "w": 101,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 95.0
+          }
+        ],
+        "accuracy_percent": 47.5609756097561,
+        "errors": 43,
+        "characters": 82
+      },
+      "after": {
+        "sha256": "6655c3a4dc4158aa10f69c752a313f586a6581e40361ee4997fb90a8f07196ad",
+        "accuracy": [
+          {
+            "box": [
+              25,
+              20,
+              405,
+              345
+            ],
+            "expected": "Cargo\nforged CRs\n1GB RAMs\ndilithium\nhybrid grain\nsouvenirs\nantibiotics\nDONE",
+            "actual": "Cargo\nforged CRs\n1GB RRHS\ndilithiun\nhubrid grain\nsouvenirs\nantibiotics\nDONE",
+            "edit_distance": 5,
+            "characters": 65
+          },
+          {
+            "box": [
+              440,
+              20,
+              565,
+              310
+            ],
+            "expected": "Cost\n188\n66\n85\n25\n18\n88",
+            "actual": "Cost\n188\nBE\no5\n18\nHi",
+            "edit_distance": 7,
+            "characters": 17
+          }
+        ],
+        "lines": [
+          {
+            "text": "Cargo",
+            "x": 48,
+            "y": 33,
+            "w": 127,
+            "h": 35,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 95.0,
+            "_source_ink": [
+              50,
+              35,
+              122,
+              30
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "Cost",
+            "x": 458,
+            "y": 33,
+            "w": 97,
+            "h": 31,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 96.0,
+            "_source_ink": [
+              460,
+              35,
+              92,
+              26
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "forged CRs",
+            "x": 52,
+            "y": 102,
+            "w": 251,
+            "h": 35,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 94.0,
+            "_source_ink": [
+              54,
+              104,
+              246,
+              30
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "188",
+            "x": 486,
+            "y": 102,
+            "w": 72,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 62.0,
+            "_source_ink": [
+              488,
+              104,
+              67,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "1GB RRHS",
+            "x": 52,
+            "y": 136,
+            "w": 200,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 71.24198913574219,
+            "_source_ink": [
+              54,
+              138,
+              195,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "BE",
+            "x": 509,
+            "y": 136,
+            "w": 49,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 71.24198913574219,
+            "_source_ink": [
+              511,
+              138,
+              44,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "dilithiun",
+            "x": 48,
+            "y": 171,
+            "w": 229,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 88.0,
+            "_source_ink": [
+              50,
+              173,
+              224,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "hubrid grain",
+            "x": 48,
+            "y": 205,
+            "w": 306,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 87.0,
+            "_source_ink": [
+              50,
+              207,
+              301,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "o5",
+            "x": 512,
+            "y": 205,
+            "w": 46,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 63.30984878540039,
+            "_source_ink": [
+              514,
+              207,
+              41,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "souvenirs",
+            "x": 47,
+            "y": 239,
+            "w": 231,
+            "h": 34,
+            "bg": [
+              255,
+              255,
+              255
+            ],
+            "fg": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 71.59103393554688,
+            "_source_ink": [
+              49,
+              241,
+              226,
+              29
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "18",
+            "x": 511,
+            "y": 239,
+            "w": 47,
+            "h": 34,
+            "bg": [
+              255,
+              255,
+              255
+            ],
+            "fg": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 71.59103393554688,
+            "_source_ink": [
+              513,
+              241,
+              42,
+              29
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "antibiotics",
+            "x": 48,
+            "y": 274,
+            "w": 280,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 95.0,
+            "_source_ink": [
+              50,
+              276,
+              275,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "Hi",
+            "x": 509,
+            "y": 274,
+            "w": 49,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 79.0015869140625,
+            "_source_ink": [
+              511,
+              276,
+              44,
+              27
+            ],
+            "_layout_cell": true
+          },
+          {
+            "text": "DONE",
+            "x": 48,
+            "y": 309,
+            "w": 101,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 95.0,
+            "_source_ink": [
+              50,
+              311,
+              96,
+              27
+            ]
+          }
+        ],
+        "accuracy_percent": 85.36585365853658,
+        "errors": 12,
+        "characters": 82
+      }
+    },
+    {
+      "name": "状态菜单",
+      "name_en": "Status menu",
+      "file": "status.png",
+      "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgiPjx0ZXh0IHg9IjgiIHk9IjI4Ij5BcmNoaXZlZCBzY3JlZW5zaG90IG9taXR0ZWQgZnJvbSBwdWJsaWMgc291cmNlLjwvdGV4dD48L3N2Zz4=",
+      "width": 1008,
+      "height": 765,
+      "sha256": "96eaa4b5e204f7c377e23cf91b8b3315ef4277617583227285f2b3c9d1185582",
+      "before": {
+        "sha256": "96eaa4b5e204f7c377e23cf91b8b3315ef4277617583227285f2b3c9d1185582",
+        "accuracy": [
+          {
+            "box": [
+              690,
+              85,
+              925,
+              125
+            ],
+            "expected": "CHART",
+            "actual": "",
+            "edit_distance": 5,
+            "characters": 5
+          },
+          {
+            "box": [
+              690,
+              160,
+              925,
+              298
+            ],
+            "expected": "STATUS\nQUERY\nSCAN\nCOCKPIT",
+            "actual": "STATUS\nQUERY\nSCAN\nCOCKPIT",
+            "edit_distance": 0,
+            "characters": 22
+          },
+          {
+            "box": [
+              700,
+              404,
+              927,
+              467
+            ],
+            "expected": "ALERT",
+            "actual": "",
+            "edit_distance": 5,
+            "characters": 5
+          }
+        ],
+        "lines": [
+          {
+            "text": "STATUS",
+            "x": 703,
+            "y": 162,
+            "w": 152,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 93.0
+          },
+          {
+            "text": "QUERY",
+            "x": 703,
+            "y": 197,
+            "w": 127,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 92.35334014892578
+          },
+          {
+            "text": "SCAN",
+            "x": 703,
+            "y": 231,
+            "w": 101,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 79.0
+          },
+          {
+            "text": "COCKPIT",
+            "x": 703,
+            "y": 266,
+            "w": 178,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 95.0
+          }
+        ],
+        "accuracy_percent": 68.75,
+        "errors": 10,
+        "characters": 32
+      },
+      "after": {
+        "sha256": "96eaa4b5e204f7c377e23cf91b8b3315ef4277617583227285f2b3c9d1185582",
+        "accuracy": [
+          {
+            "box": [
+              690,
+              85,
+              925,
+              125
+            ],
+            "expected": "CHART",
+            "actual": "CHART",
+            "edit_distance": 0,
+            "characters": 5
+          },
+          {
+            "box": [
+              690,
+              160,
+              925,
+              298
+            ],
+            "expected": "STATUS\nQUERY\nSCAN\nCOCKPIT",
+            "actual": "STATUS\nQUERY\nSCAN\nCOCKPIT",
+            "edit_distance": 0,
+            "characters": 22
+          },
+          {
+            "box": [
+              700,
+              404,
+              927,
+              467
+            ],
+            "expected": "ALERT",
+            "actual": "ALERT",
+            "edit_distance": 0,
+            "characters": 5
+          }
+        ],
+        "lines": [
+          {
+            "text": "CHART",
+            "x": 703,
+            "y": 93,
+            "w": 127,
+            "h": 32,
+            "bg": [
+              255,
+              255,
+              255
+            ],
+            "fg": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 94.96527862548828,
+            "_source_ink": [
+              705,
+              95,
+              122,
+              27
+            ]
+          },
+          {
+            "text": "STATUS",
+            "x": 703,
+            "y": 162,
+            "w": 152,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 93.0,
+            "_source_ink": [
+              705,
+              164,
+              147,
+              27
+            ]
+          },
+          {
+            "text": "QUERY",
+            "x": 703,
+            "y": 197,
+            "w": 127,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 92.35334014892578,
+            "_source_ink": [
+              705,
+              199,
+              122,
+              31
+            ]
+          },
+          {
+            "text": "SCAN",
+            "x": 703,
+            "y": 231,
+            "w": 101,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 79.0,
+            "_source_ink": [
+              705,
+              233,
+              96,
+              27
+            ]
+          },
+          {
+            "text": "COCKPIT",
+            "x": 703,
+            "y": 266,
+            "w": 178,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 95.0,
+            "_source_ink": [
+              705,
+              268,
+              173,
+              27
+            ]
+          },
+          {
+            "text": "ALERT",
+            "x": 728,
+            "y": 408,
+            "w": 185,
+            "h": 55,
+            "bg": [
+              35,
+              166,
+              42
+            ],
+            "fg": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 92.00189208984375,
+            "_source_ink": [
+              730,
+              410,
+              180,
+              50
+            ]
+          }
+        ],
+        "accuracy_percent": 100.0,
+        "errors": 0,
+        "characters": 32
+      }
+    },
+    {
+      "name": "剧情页",
+      "name_en": "Storyline",
+      "file": "spacerogue-game.png",
+      "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgiPjx0ZXh0IHg9IjgiIHk9IjI4Ij5BcmNoaXZlZCBzY3JlZW5zaG90IG9taXR0ZWQgZnJvbSBwdWJsaWMgc291cmNlLjwvdGV4dD48L3N2Zz4=",
+      "width": 1021,
+      "height": 767,
+      "sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+      "before": {
+        "sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "accuracy": [
+          {
+            "box": [
+              0,
+              70,
+              450,
+              440
+            ],
+            "expected": "On a routine\ntrading mission\nin the backwater\nKaronus system\nyour merchant\nship, the\nPRINCESS BLUE\npicks up a\nSmall Craft\nDistress Beacon.",
+            "actual": "On a routine\ntrading mission\nin the backwater\nKaronus systen\nyour #erchant\nship, the\nPRINCESS BLUE\nPicks up a\nSmall Craft\nDistress Beacon.",
+            "edit_distance": 3,
+            "characters": 116
+          },
+          {
+            "box": [
+              0,
+              550,
+              1024,
+              768
+            ],
+            "expected": "\"No life readings,\" says Captain\nDalfree. \"Looks like a derelict.\nYou're on EVA duty, Private, so scope\nit out. Make it quick! We're behind\nschedule.\"",
+            "actual": "\"No life readings,” says Captain\nDalfree. “Looks like a derelict.\nYou’re on EVA duty, Private, so scope\nit out. Make it quick! He’re behind\nschedule.”",
+            "edit_distance": 1,
+            "characters": 126
+          }
+        ],
+        "lines": [
+          {
+            "text": "On a routine",
+            "x": 27,
+            "y": 90,
+            "w": 305,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 94.43441009521484
+          },
+          {
+            "text": "trading mission",
+            "x": 30,
+            "y": 125,
+            "w": 379,
+            "h": 35,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 88.0
+          },
+          {
+            "text": "in the backwater",
+            "x": 30,
+            "y": 159,
+            "w": 405,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 87.0
+          },
+          {
+            "text": "Karonus systen",
+            "x": 27,
+            "y": 194,
+            "w": 356,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 88.00762939453125
+          },
+          {
+            "text": "your #erchant",
+            "x": 27,
+            "y": 228,
+            "w": 328,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 64.77676391601562
+          },
+          {
+            "text": "ship, the",
+            "x": 27,
+            "y": 263,
+            "w": 229,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 96.25914001464844
+          },
+          {
+            "text": "PRINCESS BLUE",
+            "x": 27,
+            "y": 298,
+            "w": 331,
+            "h": 31,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 91.0
+          },
+          {
+            "text": "Picks up a",
+            "x": 27,
+            "y": 332,
+            "w": 254,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 92.43843841552734
+          },
+          {
+            "text": "Small Craft",
+            "x": 27,
+            "y": 367,
+            "w": 277,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 76.0
+          },
+          {
+            "text": "Distress Beacon.",
+            "x": 27,
+            "y": 401,
+            "w": 401,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 95.34757232666016
+          },
+          {
+            "text": "\"No life readings,” says Captain",
+            "x": 24,
+            "y": 570,
+            "w": 820,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 88.0
+          },
+          {
+            "text": "Dalfree. “Looks like a derelict.",
+            "x": 27,
+            "y": 605,
+            "w": 810,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 91.0
+          },
+          {
+            "text": "You’re on EVA duty, Private, so scope",
+            "x": 27,
+            "y": 639,
+            "w": 945,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 91.0
+          },
+          {
+            "text": "it out. Make it quick! He’re behind",
+            "x": 30,
+            "y": 674,
+            "w": 891,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 92.0
+          },
+          {
+            "text": "schedule.”",
+            "x": 27,
+            "y": 708,
+            "w": 254,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              245,
+              245,
+              245
+            ],
+            "confidence": 94.88341522216797
+          }
+        ],
+        "accuracy_percent": 98.34710743801654,
+        "errors": 4,
+        "characters": 242
+      },
+      "after": {
+        "sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "accuracy": [
+          {
+            "box": [
+              0,
+              70,
+              450,
+              440
+            ],
+            "expected": "On a routine\ntrading mission\nin the backwater\nKaronus system\nyour merchant\nship, the\nPRINCESS BLUE\npicks up a\nSmall Craft\nDistress Beacon.",
+            "actual": "On a routine\ntrading mission\nin the backwater\nKaronus systen\nyour #erchant\nship, the\nPRINCESS BLUE\nPicks up a\nSmall Craft\nDistress Beacon.",
+            "edit_distance": 3,
+            "characters": 116
+          },
+          {
+            "box": [
+              0,
+              550,
+              1024,
+              768
+            ],
+            "expected": "\"No life readings,\" says Captain\nDalfree. \"Looks like a derelict.\nYou're on EVA duty, Private, so scope\nit out. Make it quick! We're behind\nschedule.\"",
+            "actual": "\"No life readings,” says Captain\nDalfree. “Looks like a derelict.\nYou’re on EVA duty, Private, so scope\nit out. Make it quick! He’re behind\nschedule.”",
+            "edit_distance": 1,
+            "characters": 126
+          }
+        ],
+        "lines": [
+          {
+            "text": "On a routine",
+            "x": 27,
+            "y": 90,
+            "w": 305,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 94.43441009521484,
+            "_source_ink": [
+              29,
+              92,
+              300,
+              27
+            ]
+          },
+          {
+            "text": "trading mission",
+            "x": 30,
+            "y": 125,
+            "w": 379,
+            "h": 35,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 88.0,
+            "_source_ink": [
+              32,
+              127,
+              374,
+              30
+            ]
+          },
+          {
+            "text": "in the backwater",
+            "x": 30,
+            "y": 159,
+            "w": 405,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 87.0,
+            "_source_ink": [
+              32,
+              161,
+              400,
+              27
+            ]
+          },
+          {
+            "text": "Karonus systen",
+            "x": 27,
+            "y": 194,
+            "w": 356,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 88.00762939453125,
+            "_source_ink": [
+              29,
+              196,
+              351,
+              31
+            ]
+          },
+          {
+            "text": "your #erchant",
+            "x": 27,
+            "y": 228,
+            "w": 328,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 64.77676391601562,
+            "_source_ink": [
+              29,
+              230,
+              323,
+              31
+            ]
+          },
+          {
+            "text": "ship, the",
+            "x": 27,
+            "y": 263,
+            "w": 229,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 96.25914001464844,
+            "_source_ink": [
+              29,
+              265,
+              224,
+              31
+            ]
+          },
+          {
+            "text": "PRINCESS BLUE",
+            "x": 27,
+            "y": 298,
+            "w": 331,
+            "h": 31,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 91.0,
+            "_source_ink": [
+              29,
+              300,
+              326,
+              26
+            ]
+          },
+          {
+            "text": "Picks up a",
+            "x": 27,
+            "y": 332,
+            "w": 254,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 92.43843841552734,
+            "_source_ink": [
+              29,
+              334,
+              249,
+              31
+            ]
+          },
+          {
+            "text": "Small Craft",
+            "x": 27,
+            "y": 367,
+            "w": 277,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 76.0,
+            "_source_ink": [
+              29,
+              369,
+              272,
+              27
+            ]
+          },
+          {
+            "text": "Distress Beacon.",
+            "x": 27,
+            "y": 401,
+            "w": 401,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 95.34757232666016,
+            "_source_ink": [
+              29,
+              403,
+              396,
+              27
+            ]
+          },
+          {
+            "text": "\"No life readings,” says Captain",
+            "x": 24,
+            "y": 570,
+            "w": 820,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 88.0,
+            "_source_ink": [
+              26,
+              572,
+              815,
+              31
+            ]
+          },
+          {
+            "text": "Dalfree. “Looks like a derelict.",
+            "x": 27,
+            "y": 605,
+            "w": 810,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 91.0,
+            "_source_ink": [
+              29,
+              607,
+              805,
+              27
+            ]
+          },
+          {
+            "text": "You’re on EVA duty, Private, so scope",
+            "x": 27,
+            "y": 639,
+            "w": 945,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 91.0,
+            "_source_ink": [
+              29,
+              641,
+              940,
+              31
+            ]
+          },
+          {
+            "text": "it out. Make it quick! He’re behind",
+            "x": 30,
+            "y": 674,
+            "w": 891,
+            "h": 36,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 92.0,
+            "_source_ink": [
+              32,
+              676,
+              886,
+              31
+            ]
+          },
+          {
+            "text": "schedule.”",
+            "x": 27,
+            "y": 708,
+            "w": 254,
+            "h": 32,
+            "bg": [
+              0,
+              0,
+              0
+            ],
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "confidence": 94.88341522216797,
+            "_source_ink": [
+              29,
+              710,
+              249,
+              27
+            ]
+          }
+        ],
+        "accuracy_percent": 98.34710743801654,
+        "errors": 4,
+        "characters": 242
+      }
+    }
+  ],
+  "latency": {
+    "schema": "nkc-observed-paired-latency-v1",
+    "baseline": "0.01.15",
+    "current": "0.01.25",
+    "scene": "Space Rogue original storyline screenshot replay; not a running game",
+    "measured_path": "exact source image available -> version OCR -> tracking/settling -> actual DeepSeek streamed translation -> native GDI paint completed",
+    "excluded": [
+      "screen capture",
+      "background reconstruction from captured frames",
+      "foreground-window behavior",
+      "OS compositor presentation",
+      "monitor scanout",
+      "network context subtask"
+    ],
+    "method": "Three sequential old/new pairs on the same machine and image; fresh process and empty database for every sample; versions use their own scheduling defaults; same official provider and model; context web search disabled in both.",
+    "not_a_speed_guarantee": "n=3 per version; network/provider variation and changed OCR/output text are uncontrolled. Pair 1 current version is slower. Never label these values game FPS, pure OCR time, or measured screen-to-monitor latency.",
+    "excluded_failed_capture_probe": "e2e-baseline15-a.json has no confirmed native paint and is not a successful end-to-end sample. .15 uses desktop capture, not WGC.",
+    "summary": {
+      "0.01.15": {
+        "n": 3,
+        "api_calls": 6,
+        "first_ocr_ready_ms": {
+          "median": 540.27,
+          "minimum": 538.907,
+          "maximum": 545.053,
+          "samples": [
+            540.27,
+            538.907,
+            545.053
+          ]
+        },
+        "first_callback_ms": {
+          "median": 1769.707,
+          "minimum": 1723.738,
+          "maximum": 1816.227,
+          "samples": [
+            1816.227,
+            1769.707,
+            1723.738
+          ]
+        },
+        "first_native_paint_ms": {
+          "median": 1815.486,
+          "minimum": 1770.107,
+          "maximum": 1863.38,
+          "samples": [
+            1863.38,
+            1815.486,
+            1770.107
+          ]
+        },
+        "complete_ms": {
+          "median": 2429.752,
+          "minimum": 2236.471,
+          "maximum": 2432.6,
+          "samples": [
+            2429.752,
+            2236.471,
+            2432.6
+          ]
+        }
+      },
+      "0.01.25": {
+        "n": 3,
+        "api_calls": 6,
+        "first_ocr_ready_ms": {
+          "median": 661.233,
+          "minimum": 644.065,
+          "maximum": 708.95,
+          "samples": [
+            661.233,
+            708.95,
+            644.065
+          ]
+        },
+        "first_callback_ms": {
+          "median": 1403.097,
+          "minimum": 1285.525,
+          "maximum": 1962.808,
+          "samples": [
+            1962.808,
+            1285.525,
+            1403.097
+          ]
+        },
+        "first_native_paint_ms": {
+          "median": 1434.206,
+          "minimum": 1302.933,
+          "maximum": 1993.825,
+          "samples": [
+            1993.825,
+            1302.933,
+            1434.206
+          ]
+        },
+        "complete_ms": {
+          "median": 1933.521,
+          "minimum": 1912.102,
+          "maximum": 2494.505,
+          "samples": [
+            2494.505,
+            1912.102,
+            1933.521
+          ]
+        }
+      }
+    },
+    "observed_changes": {
+      "first_native_paint_ms": {
+        "median_ms_saved": 381.28,
+        "observed_median_time_reduction_percent": 21.002
+      },
+      "complete_ms": {
+        "median_ms_saved": 496.231,
+        "observed_median_time_reduction_percent": 20.423
+      }
+    },
+    "samples": [
+      {
+        "pair": 1,
+        "file": "latency-0.01.15-pair1.json",
+        "sha256": "79669b47a739efff5552bd7e9b55469d86ace9961b0ae9aa8209977ce1741590",
+        "version": "0.01.15",
+        "model": "deepseek-flash",
+        "measured_at": "2026-11-18T15:51:30+0800",
+        "source_sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "native_dll_sha256": "3afcb753c104099621f825e61a01b59de677c58a1c946590dc16d6d2fb580ba5",
+        "capture_interval_ms": 250,
+        "settle_ms": 450,
+        "first_ocr_ready_ms": 540.27,
+        "first_callback_ms": 1816.227,
+        "first_native_paint_ms": 1863.38,
+        "complete_ms": 2429.752,
+        "source_characters": 288,
+        "translation_characters": 121,
+        "api_calls": 2,
+        "prompt_tokens": 460,
+        "completion_tokens": 79
+      },
+      {
+        "pair": 1,
+        "file": "latency-0.01.25-pair1.json",
+        "sha256": "ad9add6ea509a981c42b0e60f5ae7c2aa160c91287f0104e87eb996cf0c6cb7d",
+        "version": "0.01.25",
+        "model": "deepseek-flash",
+        "measured_at": "2026-11-18T15:51:33+0800",
+        "source_sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "native_dll_sha256": "f8fa1d5f32529ae606644a6a3b8241cc561be0c9dd52137bdcc10900c6f4ec3e",
+        "capture_interval_ms": 50,
+        "settle_ms": 80,
+        "first_ocr_ready_ms": 661.233,
+        "first_callback_ms": 1962.808,
+        "first_native_paint_ms": 1993.825,
+        "complete_ms": 2494.505,
+        "source_characters": 288,
+        "translation_characters": 112,
+        "api_calls": 2,
+        "prompt_tokens": 518,
+        "completion_tokens": 73
+      },
+      {
+        "pair": 2,
+        "file": "latency-0.01.15-pair2.json",
+        "sha256": "05ef8307201b22a45e53c5ae37009086a4d831e93b9bb456e8098b471a570381",
+        "version": "0.01.15",
+        "model": "deepseek-flash",
+        "measured_at": "2026-11-18T15:51:36+0800",
+        "source_sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "native_dll_sha256": "3afcb753c104099621f825e61a01b59de677c58a1c946590dc16d6d2fb580ba5",
+        "capture_interval_ms": 250,
+        "settle_ms": 450,
+        "first_ocr_ready_ms": 538.907,
+        "first_callback_ms": 1769.707,
+        "first_native_paint_ms": 1815.486,
+        "complete_ms": 2236.471,
+        "source_characters": 288,
+        "translation_characters": 119,
+        "api_calls": 2,
+        "prompt_tokens": 460,
+        "completion_tokens": 79
+      },
+      {
+        "pair": 2,
+        "file": "latency-0.01.25-pair2.json",
+        "sha256": "fd165cd752232655458e06f9c5b5cf550d01d25373bfadc12f10d81c256092c8",
+        "version": "0.01.25",
+        "model": "deepseek-flash",
+        "measured_at": "2026-11-18T15:51:39+0800",
+        "source_sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "native_dll_sha256": "f8fa1d5f32529ae606644a6a3b8241cc561be0c9dd52137bdcc10900c6f4ec3e",
+        "capture_interval_ms": 50,
+        "settle_ms": 80,
+        "first_ocr_ready_ms": 708.95,
+        "first_callback_ms": 1285.525,
+        "first_native_paint_ms": 1302.933,
+        "complete_ms": 1912.102,
+        "source_characters": 288,
+        "translation_characters": 112,
+        "api_calls": 2,
+        "prompt_tokens": 518,
+        "completion_tokens": 71
+      },
+      {
+        "pair": 3,
+        "file": "latency-0.01.15-pair3.json",
+        "sha256": "839d4c9f2b86b6027967052ba58c3d41391c33d5c60856fbc8abfbb82ff990a1",
+        "version": "0.01.15",
+        "model": "deepseek-flash",
+        "measured_at": "2026-11-18T15:51:42+0800",
+        "source_sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "native_dll_sha256": "3afcb753c104099621f825e61a01b59de677c58a1c946590dc16d6d2fb580ba5",
+        "capture_interval_ms": 250,
+        "settle_ms": 450,
+        "first_ocr_ready_ms": 545.053,
+        "first_callback_ms": 1723.738,
+        "first_native_paint_ms": 1770.107,
+        "complete_ms": 2432.6,
+        "source_characters": 288,
+        "translation_characters": 122,
+        "api_calls": 2,
+        "prompt_tokens": 460,
+        "completion_tokens": 80
+      },
+      {
+        "pair": 3,
+        "file": "latency-0.01.25-pair3.json",
+        "sha256": "074968a0566baaf704be2b6b1dafa66fbeaa25ceb26cb935ab187148755bc7b0",
+        "version": "0.01.25",
+        "model": "deepseek-flash",
+        "measured_at": "2026-11-18T15:51:45+0800",
+        "source_sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+        "native_dll_sha256": "f8fa1d5f32529ae606644a6a3b8241cc561be0c9dd52137bdcc10900c6f4ec3e",
+        "capture_interval_ms": 50,
+        "settle_ms": 80,
+        "first_ocr_ready_ms": 644.065,
+        "first_callback_ms": 1403.097,
+        "first_native_paint_ms": 1434.206,
+        "complete_ms": 1933.521,
+        "source_characters": 288,
+        "translation_characters": 117,
+        "api_calls": 2,
+        "prompt_tokens": 518,
+        "completion_tokens": 78
+      }
+    ]
+  },
+  "axis_ms": 3000,
+  "font": {
+    "version": "0.01.25",
+    "kind": "Synthetic regression scene captured from actual native GDI overlay HWNDs.\n\nThis is not a game screenshot and makes no OCR/translation accuracy claim.\nInputs, source row geometry and translated strings are identical in both runs.\n",
+    "font_sizes": [
+      29,
+      29,
+      29,
+      29
+    ],
+    "font_spread_px": 0,
+    "native": [
+      {
+        "track_id": 1,
+        "revision": 1,
+        "font_px": 29,
+        "font_peers": 4,
+        "fits": true,
+        "font_face": "宋体",
+        "pixel_font": false,
+        "fixed_layout": true,
+        "source_rows": 1,
+        "aero": false,
+        "background_suppressed": false,
+        "background_mask_pixels": 0,
+        "background_repaired_pixels": 0,
+        "background_reason": "no_frame",
+        "background_frame": 0,
+        "background_builds": 0,
+        "background_opaque": true,
+        "paint": {
+          "buffered": true,
+          "buffer_allocations": 1,
+          "size": [
+            500,
+            32
+          ],
+          "commits": 1
+        },
+        "final": true,
+        "text_units": 16,
+        "bounds": [
+          30,
+          80,
+          500,
+          32
+        ],
+        "lines": [
+          {
+            "y": 1,
+            "x": 2,
+            "width": 495,
+            "height": 27,
+            "start": 0,
+            "length": 16,
+            "ink_y": 2,
+            "ink_height": 27,
+            "clip": [
+              0,
+              0,
+              500,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "track_id": 2,
+        "revision": 1,
+        "font_px": 29,
+        "font_peers": 4,
+        "fits": true,
+        "font_face": "宋体",
+        "pixel_font": false,
+        "fixed_layout": true,
+        "source_rows": 1,
+        "aero": false,
+        "background_suppressed": false,
+        "background_mask_pixels": 0,
+        "background_repaired_pixels": 0,
+        "background_reason": "no_frame",
+        "background_frame": 0,
+        "background_builds": 0,
+        "background_opaque": true,
+        "paint": {
+          "buffered": true,
+          "buffer_allocations": 1,
+          "size": [
+            500,
+            36
+          ],
+          "commits": 1
+        },
+        "final": true,
+        "text_units": 11,
+        "bounds": [
+          30,
+          114,
+          500,
+          36
+        ],
+        "lines": [
+          {
+            "y": 1,
+            "x": 2,
+            "width": 495,
+            "height": 31,
+            "start": 0,
+            "length": 11,
+            "ink_y": 2,
+            "ink_height": 27,
+            "clip": [
+              0,
+              0,
+              500,
+              36
+            ]
+          }
+        ]
+      },
+      {
+        "track_id": 3,
+        "revision": 1,
+        "font_px": 29,
+        "font_peers": 4,
+        "fits": true,
+        "font_face": "宋体",
+        "pixel_font": false,
+        "fixed_layout": true,
+        "source_rows": 1,
+        "aero": false,
+        "background_suppressed": false,
+        "background_mask_pixels": 0,
+        "background_repaired_pixels": 0,
+        "background_reason": "no_frame",
+        "background_frame": 0,
+        "background_builds": 0,
+        "background_opaque": true,
+        "paint": {
+          "buffered": true,
+          "buffer_allocations": 1,
+          "size": [
+            500,
+            35
+          ],
+          "commits": 1
+        },
+        "final": true,
+        "text_units": 6,
+        "bounds": [
+          30,
+          149,
+          500,
+          35
+        ],
+        "lines": [
+          {
+            "y": 1,
+            "x": 2,
+            "width": 495,
+            "height": 30,
+            "start": 0,
+            "length": 6,
+            "ink_y": 2,
+            "ink_height": 27,
+            "clip": [
+              0,
+              0,
+              500,
+              35
+            ]
+          }
+        ]
+      },
+      {
+        "track_id": 4,
+        "revision": 1,
+        "font_px": 29,
+        "font_peers": 4,
+        "fits": true,
+        "font_face": "宋体",
+        "pixel_font": false,
+        "fixed_layout": true,
+        "source_rows": 1,
+        "aero": false,
+        "background_suppressed": false,
+        "background_mask_pixels": 0,
+        "background_repaired_pixels": 0,
+        "background_reason": "no_frame",
+        "background_frame": 0,
+        "background_builds": 0,
+        "background_opaque": true,
+        "paint": {
+          "buffered": true,
+          "buffer_allocations": 1,
+          "size": [
+            500,
+            32
+          ],
+          "commits": 1
+        },
+        "final": true,
+        "text_units": 3,
+        "bounds": [
+          30,
+          184,
+          500,
+          32
+        ],
+        "lines": [
+          {
+            "y": 1,
+            "x": 2,
+            "width": 495,
+            "height": 27,
+            "start": 0,
+            "length": 3,
+            "ink_y": 2,
+            "ink_height": 27,
+            "clip": [
+              0,
+              0,
+              500,
+              32
+            ]
+          }
+        ]
+      }
+    ],
+    "source_geometry": [
+      {
+        "x": 30,
+        "y": 80,
+        "w": 500,
+        "h": 32,
+        "_source_rows": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 500,
+            "h": 32,
+            "ink_bounds": [
+              2,
+              2,
+              495,
+              27
+            ],
+            "font_size": 0
+          }
+        ]
+      },
+      {
+        "x": 30,
+        "y": 114,
+        "w": 500,
+        "h": 36,
+        "_source_rows": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 500,
+            "h": 36,
+            "ink_bounds": [
+              2,
+              2,
+              495,
+              31
+            ],
+            "font_size": 0
+          }
+        ]
+      },
+      {
+        "x": 30,
+        "y": 149,
+        "w": 500,
+        "h": 35,
+        "_source_rows": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 500,
+            "h": 35,
+            "ink_bounds": [
+              2,
+              2,
+              495,
+              30
+            ],
+            "font_size": 0
+          }
+        ]
+      },
+      {
+        "x": 30,
+        "y": 184,
+        "w": 500,
+        "h": 32,
+        "_source_rows": [
+          {
+            "x": 0,
+            "y": 0,
+            "w": 500,
+            "h": 32,
+            "ink_bounds": [
+              2,
+              2,
+              495,
+              27
+            ],
+            "font_size": 0
+          }
+        ]
+      }
+    ],
+    "request_count": 0,
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgiPjx0ZXh0IHg9IjgiIHk9IjI4Ij5BcmNoaXZlZCBzY3JlZW5zaG90IG9taXR0ZWQgZnJvbSBwdWJsaWMgc291cmNlLjwvdGV4dD48L3N2Zz4=",
+    "width": 560,
+    "height": 255,
+    "sha256": "d505295f4add7bfd4367d11c8156a142d71cc2bf05b6145ab84c22a5afbd2bd0"
+  },
+  "needy": {
+    "source_image": "ocr-private/needy-caution-full.png",
+    "sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+    "baseline15_local": {
+      "characters": 248,
+      "edits": 244,
+      "character_accuracy_percent": 1.613,
+      "definition": "100*(1-Levenshtein distance/reference characters); whitespace removed, Unicode NFKC normalized, curly quotes mapped; case-sensitive.",
+      "scope": "Only the supplied fixed screenshots and manually transcribed zones. OCR character accuracy, not translation semantic accuracy or a general-game success rate."
+    },
+    "current25_local": {
+      "characters": 248,
+      "edits": 105,
+      "character_accuracy_percent": 57.661,
+      "definition": "100*(1-Levenshtein distance/reference characters); whitespace removed, Unicode NFKC normalized, curly quotes mapped; case-sensitive.",
+      "scope": "Only the supplied fixed screenshots and manually transcribed zones. OCR character accuracy, not translation semantic accuracy or a general-game success rate."
+    },
+    "current25_ai_assisted": {
+      "characters": 248,
+      "edits": 0,
+      "character_accuracy_percent": 100.0,
+      "definition": "100*(1-Levenshtein distance/reference characters); whitespace removed, Unicode NFKC normalized, curly quotes mapped; case-sensitive.",
+      "scope": "Only this single original NEEDY GIRL OVERDOSE screenshot and its 9 manually transcribed Japanese body rows (248 normalized characters). This is source OCR transcription, not Chinese translation semantic accuracy or a universal recognition guarantee."
+    },
+    "ai_source": "vision-needy25.json",
+    "ai_source_sha256": "994c378579917c562dc81f8f7eed80b4d6f891c4d53e4b566ad1d0b6c8540b63",
+    "ai_transcriptions": [
+      {
+        "box": [
+          570,
+          370,
+          1430,
+          392
+        ],
+        "expected": "このゲームは、現代の日本と似て非なる世界観でできているよ",
+        "actual": "このゲームは、現代の日本と似て非なる世界観でできているよ",
+        "edit_distance": 0,
+        "characters": 28
+      },
+      {
+        "box": [
+          570,
+          402,
+          1430,
+          424
+        ],
+        "expected": "登場する人物も名称も、ぜーんぶ架空のモノだからけっして本気にしないでね",
+        "actual": "登場する人物も名称も、ぜーんぶ架空のモノだからけっして本気にしないでね",
+        "edit_distance": 0,
+        "characters": 35
+      },
+      {
+        "box": [
+          570,
+          434,
+          1430,
+          456
+        ],
+        "expected": "過激で鬱屈とした表現や演出を真似したりしたらダメ！",
+        "actual": "過激で鬱屈とした表現や演出を真似したりしたらダメ！",
+        "edit_distance": 0,
+        "characters": 25
+      },
+      {
+        "box": [
+          570,
+          466,
+          1430,
+          488
+        ],
+        "expected": "暴力的だったり、精神に負荷のかかるシーンがあるから、心がよわっている人はまず休も",
+        "actual": "暴力的だったり、精神に負荷のかかるシーンがあるから、心がよわっている人はまず休も",
+        "edit_distance": 0,
+        "characters": 40
+      },
+      {
+        "box": [
+          570,
+          499,
+          1430,
+          521
+        ],
+        "expected": "う！",
+        "actual": "う！",
+        "edit_distance": 0,
+        "characters": 2
+      },
+      {
+        "box": [
+          570,
+          530,
+          1430,
+          552
+        ],
+        "expected": "繊細で優しい人も、あまり病まないように気をつけて！",
+        "actual": "繊細で優しい人も、あまり病まないように気をつけて！",
+        "edit_distance": 0,
+        "characters": 25
+      },
+      {
+        "box": [
+          570,
+          562,
+          1430,
+          584
+        ],
+        "expected": "あと強く点滅する時もあるから、それにも気をつけてくれたら嬉しいな",
+        "actual": "あと強く点滅する時もあるから、それにも気をつけてくれたら嬉しいな",
+        "edit_distance": 0,
+        "characters": 32
+      },
+      {
+        "box": [
+          570,
+          594,
+          1430,
+          616
+        ],
+        "expected": "現実とネットとゲームの区別がつかない方は、いますぐ回線切って健やかに生きてね",
+        "actual": "現実とネットとゲームの区別がつかない方は、いますぐ回線切って健やかに生きてね",
+        "edit_distance": 0,
+        "characters": 38
+      },
+      {
+        "box": [
+          570,
+          626,
+          1430,
+          648
+        ],
+        "expected": "かわいいインターネット・エンジェルとの約束だよ",
+        "actual": "かわいいインターネット・エンジェルとの約束だよ",
+        "edit_distance": 0,
+        "characters": 23
+      }
+    ],
+    "ai_requests_previously_measured": {
+      "session_requests": 1,
+      "cache_hits": 0,
+      "glossary_hits": 0,
+      "shared_requests": 0,
+      "prompt_tokens": 4347,
+      "completion_tokens": 282,
+      "failures": 0,
+      "terms_learned": 0,
+      "composition_hits": 0,
+      "local_misses": 0,
+      "shared_dictionary_hits": 0,
+      "template_hits": 0,
+      "short_texts": 0,
+      "complex_texts": 0,
+      "last_text_category": "none",
+      "last_translation_route": "none",
+      "context_requests": 0,
+      "context_failures": 0,
+      "context_search_calls": 0,
+      "first_token_samples": 0,
+      "first_token_total_ms": 0.0,
+      "last_first_token_ms": null,
+      "mean_first_token_ms": null,
+      "api_calls": 1,
+      "requests_remaining": 1,
+      "unlimited_requests": false,
+      "in_flight": 0,
+      "model": "deepseek-flash",
+      "offline_only": false,
+      "aggressive_mode": false,
+      "expert_enabled": false,
+      "max_concurrency": 8,
+      "warmup_limit": 0,
+      "warmup_reserved": 0,
+      "smart_mode": false,
+      "smart_local_max_chars": 32,
+      "ai_only": true,
+      "context_max_chars": 6000,
+      "context_history_records": 24,
+      "context_manifest_errors": 0,
+      "context_web_search": false,
+      "context_agent_status": "disabled",
+      "context_cache_hits": 0,
+      "context_sources": 0,
+      "cached_sentences": 0,
+      "total_requests": 2,
+      "auto_terms": 0
+    },
+    "notes": [
+      "The AI result is evaluated from the already recorded authorized API run, without another paid request.",
+      "100% here means zero edit differences for these 248 source characters only; no general-game or translation-quality percentage is claimed.",
+      "The earlier 58.06% local-model experiment used x ordering within each row. This report consistently uses the existing compare22.py (y,x) ordering; the measured local score is 57.661%."
+    ],
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgiPjx0ZXh0IHg9IjgiIHk9IjI4Ij5BcmNoaXZlZCBzY3JlZW5zaG90IG9taXR0ZWQgZnJvbSBwdWJsaWMgc291cmNlLjwvdGV4dD48L3N2Zz4=",
+    "width": 1920,
+    "height": 1080
+  },
+  "provenance": [
+    {
+      "file": "reports/baseline15-ocr25.json",
+      "sha256": "892606e655fc8a165dc48ab38d71a51c76d5a0cffa33499979e18dde5edabff4"
+    },
+    {
+      "file": "reports/current25-ocr.json",
+      "sha256": "87eddda620a37a3ab4bb0a97714b868d7e06ad31f8733c2ffd86145651b0205f"
+    },
+    {
+      "file": "reports/latency-comparison25.json",
+      "sha256": "d3687a1c136aa39dbe7f2296682fcada2d96b29fe760f1c3351f0e863fa325f7"
+    },
+    {
+      "file": "reports/quality25-comparison.json",
+      "sha256": "529dd5463606e43dfe14ff161eb4f8fedb92ffdb6a1a23baba7c6103767d3db7"
+    },
+    {
+      "file": "reports/font25-0.01.25.json",
+      "sha256": "47d55c18210e8a196ba72737f859e36d37cca3a3b0d7fd4c76c8e4cb688b3559"
+    },
+    {
+      "file": "reports/ocr-private/needy-window-original25.png",
+      "sha256": "9d4f777b56e55e80e0e17db609773a6ecaea793ba85f86b48f9c15cd22b2347b"
+    },
+    {
+      "file": "reports/needy-live-translated25.png",
+      "sha256": "443b48e0791365df414880ba167c7fa97ecf38a02c87bf2c827b56f06307ecf2"
+    },
+    {
+      "file": "reports/needy-live25.json",
+      "sha256": "6dc3ecbc5ad14c9c41babac4a602aae0b74407b4b08ea84ed831c2549a05b59f"
+    }
+  ],
+  "claims_scope": {
+    "baseline": "Retained application 0.01.15, not raw third-party frameworks.",
+    "latency": "Static pixels available to confirmed native paint, not screen-to-monitor. n=3/version, actual API, web context disabled.",
+    "accuracy": "Fixed manual zones only; character transcription, not semantic translation quality or localization IoU.",
+    "font": "Current synthetic native regression only; no paired 0.01.15 font comparison.",
+    "competitors": "No commercial competitor measurement."
+  },
+  "game_evidence": {
+    "before": {
+      "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgiPjx0ZXh0IHg9IjgiIHk9IjI4Ij5BcmNoaXZlZCBzY3JlZW5zaG90IG9taXR0ZWQgZnJvbSBwdWJsaWMgc291cmNlLjwvdGV4dD48L3N2Zz4=",
+      "width": 1912,
+      "height": 1049,
+      "sha256": "9d4f777b56e55e80e0e17db609773a6ecaea793ba85f86b48f9c15cd22b2347b"
+    },
+    "after": {
+      "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDgiPjx0ZXh0IHg9IjgiIHk9IjI4Ij5BcmNoaXZlZCBzY3JlZW5zaG90IG9taXR0ZWQgZnJvbSBwdWJsaWMgc291cmNlLjwvdGV4dD48L3N2Zz4=",
+      "width": 1912,
+      "height": 1049,
+      "sha256": "443b48e0791365df414880ba167c7fa97ecf38a02c87bf2c827b56f06307ecf2"
+    },
+    "caption": "NEEDY GIRL OVERDOSE · 本次窗口模式实机译文截图",
+    "caption_en": "NEEDY GIRL OVERDOSE · visible translation captured in this windowed-mode test"
+  },
+  "live_measurement": {
+    "version": "0.01.25",
+    "kind": "Real running Windose game, WGC, local OCR, AI image refinement, web-assisted context, translation and GDI overlay",
+    "game": "NEEDY GIRL OVERDOSE",
+    "model": "deepseek-flash",
+    "first_callback_ms": 10138.521699998819,
+    "first_native_paint_ms": 10171.869900001184,
+    "narrative_complete_ms": 10822.040899998683,
+    "visibility_verified": true,
+    "success": true,
+    "limit": "Single live scene. Native paint observation excludes display scan-out; background search is model-selected, inspect its recorded status.",
+    "context_status": "searched",
+    "latest_context_search_calls": 1,
+    "session_context_search_calls": 2
+  },
+  "distributed_with_version": "0.01.27",
+  "measurement_version": "0.01.25",
+  "rebenchmarked": false,
+  "distribution_note": "Version 0.01.27 adds optional CUDA OCR, background web context and group font fitting fixes. Historical real-API, screenshot and game measurements retain their 0.01.25 / 0.01.15 labels. This version has a separate simulated scheduling probe, not a real game/API latency measurement. See TEST_REPORT.json for current validation scope.",
+  "current_version_offline_probe": {
+    "schema": "nkc-offline-context-latency-v1",
+    "version": "0.01.27",
+    "network_used": false,
+    "credentials_used": false,
+    "game_ui_used": false,
+    "method": "Three fresh-engine samples per version, httpx MockTransport. Simulated web context waits 300ms; display translation waits 15ms. Captures first display callback and completion; awaits background separately for accounting. This is a scheduling regression probe, not real API/game latency or OCR performance.",
+    "baseline": {
+      "version": "0.01.26",
+      "samples": [
+        {
+          "first_callback_ms": 318.136,
+          "translation_complete_ms": 324.309,
+          "request_order": [
+            "context",
+            "display"
+          ],
+          "api_calls": 2,
+          "context_requests": 1
+        },
+        {
+          "first_callback_ms": 318.019,
+          "translation_complete_ms": 323.606,
+          "request_order": [
+            "context",
+            "display"
+          ],
+          "api_calls": 2,
+          "context_requests": 1
+        },
+        {
+          "first_callback_ms": 317.317,
+          "translation_complete_ms": 323.127,
+          "request_order": [
+            "context",
+            "display"
+          ],
+          "api_calls": 2,
+          "context_requests": 1
+        }
+      ]
+    },
+    "current": {
+      "version": "0.01.27",
+      "samples": [
+        {
+          "first_callback_ms": 16.837,
+          "translation_complete_ms": 23.776,
+          "request_order": [
+            "display",
+            "context"
+          ],
+          "api_calls": 2,
+          "context_requests": 1
+        },
+        {
+          "first_callback_ms": 16.3,
+          "translation_complete_ms": 22.927,
+          "request_order": [
+            "display",
+            "context"
+          ],
+          "api_calls": 2,
+          "context_requests": 1
+        },
+        {
+          "first_callback_ms": 16.61,
+          "translation_complete_ms": 22.345,
+          "request_order": [
+            "display",
+            "context"
+          ],
+          "api_calls": 2,
+          "context_requests": 1
+        }
+      ]
+    },
+    "medians": {
+      "baseline_first_callback_ms": 318.019,
+      "current_first_callback_ms": 16.61
+    },
+    "checks": {
+      "background_wait_not_in_first_translation_path": true,
+      "request_count_preserved": 2,
+      "context_request_count_preserved": 1
+    },
+    "tests": {
+      "command": "python -m pytest -q tests/test_context_agent25.py tests/test_context_latency27.py tests/test_translation.py tests/test_context_archive.py",
+      "result": "130 passed in 4.86s"
+    },
+    "limits": [
+      "No new real API timing was measured.",
+      "The first request uses only already-available context; later requests can use completed search reference.",
+      "At most one background context request; total network capacity remains shared. max_concurrency=1 leaves web refresh deferred.",
+      "Existing .25 game observation included vision and web search; its 10138.5ms first callback cannot be fully attributed to web context from available timestamps."
+    ]
+  },
+  "current_version_cuda_ocr": {
+    "version": "0.01.27",
+    "scope": "Fixed original screenshots to raw CUDA OCR output. No capture, AI, translation or overlay. Accuracy uses manual truth zones and NFKC whitespace-normalized Levenshtein distance.",
+    "scene": "needy-caution-full.png",
+    "characters": 248,
+    "rounds": 5,
+    "gpu": "NVIDIA GeForce RTX 3070, 617.42, 8192 MiB",
+    "api_calls": 0,
+    "cache_used": false,
+    "measurements": [
+      {
+        "quality": 0,
+        "warm_client_ms": 135.433,
+        "warm_ocr_ms": 113.767,
+        "character_accuracy_percent": 97.581,
+        "edits": 6,
+        "image_sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+        "cuda": {
+          "provider": "CUDAExecutionProvider",
+          "kernels_verified": true,
+          "kernel_counts": {
+            "det": 190,
+            "rec": 181
+          },
+          "ort_version": "1.32.0",
+          "model": "PP-OCRv6-small",
+          "arena_budget_only": true,
+          "quality": 0,
+          "det_limit_side": 768,
+          "limit_type": "max",
+          "rec_batch_size": 4,
+          "det_arena_bytes": 644245094,
+          "rec_arena_bytes": 429496730,
+          "memory_mb": 1024
+        }
+      },
+      {
+        "quality": 75,
+        "warm_client_ms": 210.82,
+        "warm_ocr_ms": 189.26,
+        "character_accuracy_percent": 98.387,
+        "edits": 4,
+        "image_sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+        "cuda": {
+          "provider": "CUDAExecutionProvider",
+          "kernels_verified": true,
+          "kernel_counts": {
+            "det": 190,
+            "rec": 181
+          },
+          "ort_version": "1.32.0",
+          "model": "PP-OCRv6-small",
+          "arena_budget_only": true,
+          "quality": 75,
+          "det_limit_side": 1632,
+          "limit_type": "max",
+          "rec_batch_size": 4,
+          "det_arena_bytes": 644245094,
+          "rec_arena_bytes": 429496730,
+          "memory_mb": 1024
+        }
+      },
+      {
+        "quality": 100,
+        "warm_client_ms": 242.65,
+        "warm_ocr_ms": 220.524,
+        "character_accuracy_percent": 96.774,
+        "edits": 8,
+        "image_sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+        "cuda": {
+          "provider": "CUDAExecutionProvider",
+          "kernels_verified": true,
+          "kernel_counts": {
+            "det": 190,
+            "rec": 181
+          },
+          "ort_version": "1.32.0",
+          "model": "PP-OCRv6-small",
+          "arena_budget_only": true,
+          "quality": 100,
+          "det_limit_side": 1920,
+          "limit_type": "max",
+          "rec_batch_size": 4,
+          "det_arena_bytes": 644245094,
+          "rec_arena_bytes": 429496730,
+          "memory_mb": 1024
+        }
+      }
+    ],
+    "source": "reports/cuda-benchmark27.json",
+    "limits": "Client timing includes BMP/IPC/helper OCR; excludes capture, translation, overlay and monitor. No monotonic quality or all-game claim."
+  },
+  "current_version_native_replay": {
+    "version": "0.01.27",
+    "kind": "Native GDI replay of saved row geometry/translation; not a live-game test.",
+    "source_record_version": "0.01.25",
+    "measurements": [
+      {
+        "version": "0.01.26",
+        "font_px": 14,
+        "rows": 9,
+        "text_units": 184,
+        "drawable_rows": 9
+      },
+      {
+        "version": "0.01.27",
+        "font_px": 19,
+        "rows": 9,
+        "text_units": 184,
+        "drawable_rows": 9
+      }
+    ],
+    "source": "reports/font27-replay.json",
+    "focused_tests": 66,
+    "test_log": "reports/font27-tests.log"
+  }
+}

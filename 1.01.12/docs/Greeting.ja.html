@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NKC_Galgame_Translator</title><link rel="stylesheet" href="tour.css"><script defer src="tour.js"></script></head>
+<body><div class="tour"><svg class="scenery" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sun" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#ffe0a8"/><stop offset=".41" stop-color="#ffa1bd"/><stop offset="1" stop-color="#e850cb"/></linearGradient>
+      <radialGradient id="glow"><stop stop-color="#ed75da" stop-opacity=".50"/><stop offset="1" stop-color="#ed75da" stop-opacity="0"/></radialGradient>
+      <linearGradient id="ridge" x2="1" y2="0"><stop stop-color="#795191"/><stop offset=".68" stop-color="#ff9fe9"/><stop offset="1" stop-color="#eab4ff"/></linearGradient>
+      <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#1a1234"/><stop offset="1" stop-color="#2d1652"/></linearGradient>
+      <clipPath id="sun-disc"><circle cx="1065" cy="224" r="147"/></clipPath>
+    </defs>
+    <circle cx="1065" cy="224" r="280" fill="url(#glow)"/>
+    <path d="M628 93h2m98 90h3m24-120h2m86 56h2m173-68h2m126 8h3m167 72h3m-41-76h2m90 140h3m-81 16h2m-51-115h2m-580 139h3" stroke="#fbdfff" stroke-width="2" stroke-linecap="round" opacity=".69"/>
+    <g clip-path="url(#sun-disc)" fill="url(#sun)">
+      <path d="M912 74h306v175H912z M912 255h306v15H912z M912 277h306v15H912z M912 301h306v13H912z M912 325h306v12H912z M912 349h306v13H912z M912 375h306v9H912z"/>
+    </g>
+    <g class="mountains-back">
+      <polygon points="-80,400 36,368 96,382 160,334 230,355 311,317 407,357 478,339 545,390 620,343 695,363 772,305 816,324 852,294 933,347 984,320 1031,362 1078,333 1139,350 1212,262 1242,298 1280,282 1376,333 1430,315 1530,364 1530,650 -80,650" fill="#4e3673" stroke="url(#ridge)" stroke-width="2"/>
+      <polyline points="772,305 778,363 816,324 840,386 852,294 893,388 933,347 984,320 1011,396 1031,362 1078,333 1110,395 1139,350 1212,262 1231,360 1242,298 1282,365 1280,282 1376,333" fill="none" stroke="#dba9fc" stroke-width="1" opacity=".56"/>
+    </g>
+    <g class="mountains-front">
+      <polygon points="-100,441 64,385 125,422 185,405 245,449 311,410 383,431 462,394 511,426 578,398 670,446 743,407 806,433 858,408 923,450 1011,394 1058,418 1129,383 1225,445 1288,399 1328,411 1380,376 1540,433 1540,650 -100,650" fill="#291b48" stroke="#8bbdff" stroke-opacity=".68" stroke-width="2"/>
+      <polyline points="923,450 1011,394 1052,469 1058,418 1113,458 1129,383 1225,445 1288,399 1304,461 1328,411 1361,460 1380,376 1468,451" fill="none" stroke="#8bbdff" stroke-opacity=".43"/>
+    </g>
+    <path d="M0 475h1440v165H0z" fill="url(#floor)"/>
+    <path d="M0 482h1440M0 493h1440M0 508h1440M0 529h1440M0 559h1440M0 598h1440M835 475-120 640M859 475 209 640M887 475l-391 165M910 475l-150 165M931 475l105 165M955 475l358 165M980 475l615 165" fill="none" stroke="#bd78e9" stroke-opacity=".35"/>
+  </svg>
+<header><b class="brand">NKC_Galgame_Translator</b><nav aria-label="Language"><a href="Greeting_cn.html" lang="zh-CN">中文</a> <a href="Greeting.en.html" lang="en">English</a> <a href="Greeting.ja.html" lang="ja" aria-current="page">日本語 (beta)</a></nav></header>
+<main aria-live="polite"><section class="slide"><p class="kicker">原文の位置に訳文を表示</p><h1>辞書を引く手を休めて、 <span>物語の続きを。</span></h1><p class="detail">セリフは元の吹き出しで読めます。選択肢も元の場所に表示されるので、そのままクリックできます。</p></section>
+<section class="slide pain-points" hidden><p class="kicker">対応言語が見つからないとき</p><h1>遊びたいのに、 <span>言葉が壁になる。</span></h1><ul><li>好きな作品に、自分の読める言語の版が出るとは限りません。</li><li>別枠の字幕では、セリフや選択肢と訳文の間を何度も見比べることになります。</li><li>有志の翻訳パッチを探すのはひと苦労。配布サイトによっては不要なソフトが付いてくることもあります。</li><li>正規版を買って、起動して初めて希望の言語を選べないことに気付く場合もあります。</li></ul></section>
+<section class="slide" hidden><p class="kicker">背景の色と模様を読み取る</p><h1>セリフ欄の雰囲気を <span>そのままに。</span></h1><p class="detail">文字の周囲を複数箇所で読み取り、その色や模様に合わせて訳文の背景を描きます。</p></section>
+<section class="slide" hidden><p class="kicker">ポインターで優先読み取り</p><h1>読み飛ばされた行に <span>ポインターを。</span></h1><p class="detail">未翻訳の文字に Pointer を近づけると、その周辺から優先して読み取ります。画面全体の認識も続きます。</p></section>
+<section class="slide" hidden><p class="kicker">翻訳チーム用ツール · ベータ</p><h1>一画面ずつ、 <span>対訳を手元に。</span></h1><p class="detail">設定で有効にすると、ページごとの画像と、選別した原文・訳文の組を保存できます。対訳は TXT、JSON、CSV で書き出せます。</p></section>
+</main>
+<footer><div class="progress"><span class="count">1 / 5</span><span class="track" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+<p class="note" role="status">キーを押すと次へ進みます。← で前に戻ります。</p><div class="controls"><button type="button" id="previous" disabled>前へ</button><button type="button" id="next" class="primary" data-next="次へ" data-finish="完了してアプリを起動" data-done="ガイドが完了しました。ゲームを選んで翻訳を始められます。" data-error="起動できませんでした。もう一度お試しください。" data-local="Browserの確認画面でアプリを開いてください。">次へ</button></div></footer>
+</div></body></html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx version="1.4">
+  <header creationtool="Nishokuchou examples" creationtoolversion="0.01.10"
+          segtype="sentence" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en"><seg>Start</seg></tuv>
+      <tuv xml:lang="zh-CN"><seg>开始</seg></tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en"><seg>Open the door</seg></tuv>
+      <tuv xml:lang="zh-CN"><seg>打开门</seg></tuv>
+    </tu>
+  </body>
+</tmx>

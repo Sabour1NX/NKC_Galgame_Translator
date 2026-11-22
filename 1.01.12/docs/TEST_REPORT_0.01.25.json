@@ -1,0 +1,135 @@
+{
+  "schema": 2,
+  "version": "0.01.25",
+  "date": "2026-11-18",
+  "platform": "Windows-11-10.0.26320-SP0",
+  "validation_status": "passed_with_explicit_skip",
+  "automated_tests": {
+    "passed": 1646,
+    "failed_unresolved": 0,
+    "skipped": 1,
+    "skipped_test": "test_overlay_options.py::test_overlay_follows_client_drag_without_new_ocr_and_rejects_stale_resize",
+    "skip_reason": "Windows foreground lock held by another active app; test refuses to send input or steal focus. Not counted as passed.",
+    "total": 1647,
+    "deduplication": "1625 initial passes + 2 desktop recheck passes + 19 newly collected visible-client tests. The 9 existing multi-region checks and repeated skip are not added twice."
+  },
+  "execution": {
+    "initial_run": {
+      "passed": 1625,
+      "failed": 2,
+      "skipped": 1,
+      "duration_seconds": 200.69,
+      "log": "reports/tests-full25.log"
+    },
+    "desktop_recheck": {
+      "passed": 2,
+      "failed": 0,
+      "skipped": 1,
+      "duration_seconds": 0.7,
+      "log": "reports/tests-desktop25.log",
+      "scope": "Only the two failed desktop-capture tests and the skipped owned-window movement test, outside the sandbox. No game input or administrator/UAC elevation.",
+      "resolved": [
+        "test_native_aero.py::test_aero_repairs_only_glyphs_and_preserves_curve_through_ink_bounds",
+        "test_overlay_options.py::test_game_only_capture_never_reads_screenshot_visible_overlay"
+      ]
+    },
+    "additional_affected_run": {
+      "passed": 28,
+      "failed": 0,
+      "skipped": 0,
+      "duration_seconds": 0.24,
+      "new_unique_tests": 19,
+      "repeated_existing_tests": 9,
+      "log": "reports/tests-visible-final25.log",
+      "scope": [
+        "tests/test_visible_client25.py",
+        "tests/test_multi_regions24.py"
+      ]
+    },
+    "final_collection": {
+      "collected": 1647,
+      "duration_seconds": 0.57,
+      "log": "reports/tests-collected25.log"
+    }
+  },
+  "source_selfcheck": true,
+  "packaged_selfcheck": true,
+  "renamed_path_selfcheck": true,
+  "automated_unit_test_network_requests": 0,
+  "selfcheck_dialogs": 0,
+  "selfcheck_network_requests": 0,
+  "real_api_validation_separate": true,
+  "features": {
+    "multiple_capture_regions": true,
+    "selection_gap_masking": true,
+    "native_styled_font_export": true,
+    "installed_font_coverage_check": true,
+    "visible_client_and_selection_clipping": "28 affected checks passed; 19 new unique cases",
+    "consistent_paragraph_font": "Native synthetic regression: four rows 29 px; original-width character spacing retained",
+    "vision_geometry": "AI text is mapped to measured local anchors; unconfirmed anchors are excluded",
+    "context_layer": "Bounded optional server-side search; independent display-only translation stream"
+  },
+  "accuracy_baseline": "0.01.15",
+  "accuracy_report": "PERFORMANCE_REPORT.json",
+  "space_rogue": {
+    "source_files": [
+      "baseline15-ocr25.json",
+      "current25-ocr.json"
+    ],
+    "baseline15": {
+      "characters": 356,
+      "edits": 57,
+      "character_accuracy_percent": 83.989,
+      "definition": "100*(1-Levenshtein distance/reference characters); whitespace removed, Unicode NFKC normalized, curly quotes mapped; case-sensitive.",
+      "scope": "Only the supplied fixed screenshots and manually transcribed zones. OCR character accuracy, not translation semantic accuracy or a general-game success rate."
+    },
+    "current25_local": {
+      "characters": 356,
+      "edits": 16,
+      "character_accuracy_percent": 95.506,
+      "definition": "100*(1-Levenshtein distance/reference characters); whitespace removed, Unicode NFKC normalized, curly quotes mapped; case-sensitive.",
+      "scope": "Only the supplied fixed screenshots and manually transcribed zones. OCR character accuracy, not translation semantic accuracy or a general-game success rate."
+    },
+    "scope": "Three fixed original Space Rogue screenshots, 356 normalized characters; local OCR in pixel mode for both versions."
+  },
+  "japanese_fixed_scene": {
+    "characters": 248,
+    "body_rows": 9,
+    "baseline15_local_accuracy": 1.613,
+    "current25_local_accuracy": 57.661,
+    "current25_saved_ai_transcription_edits": 0,
+    "scope": "Single fixed image, source transcription only; not translation semantic accuracy or a general-game guarantee"
+  },
+  "live_game": {
+    "game": "NEEDY GIRL OVERDOSE",
+    "mode": "windowed x2",
+    "source": "Japanese",
+    "target": "Simplified Chinese",
+    "visibility_verified": true,
+    "first_native_submit_ms": 10171.869900001184,
+    "narrative_complete_ms": 10822.040899998683,
+    "native_body_font_px": 14,
+    "context_status": "searched",
+    "session_context_search_calls": 2,
+    "limitations": "Single quality-assisted scene. Original title Caution remains; OK unchanged. Native submit timing excludes monitor presentation."
+  },
+  "timing_comparison": {
+    "baseline": "0.01.15",
+    "version": "0.01.25",
+    "paired_runs": 3,
+    "first_submit_median_ms": [
+      1815.486,
+      1434.206
+    ],
+    "complete_submit_median_ms": [
+      2429.752,
+      1933.521
+    ],
+    "scope": "Actual API and GDI, static original image, fresh process and empty DB. Excludes capture, captured-background repair, foreground, DWM, monitor and web context.",
+    "first_pair_current_version_slower": true
+  },
+  "legal_notice": "Current data-flow explanation includes optional provider-side search.",
+  "source_and_native_abi": 2,
+  "dependency_note": "Existing locked production dependencies and models unchanged; no new external dependency security audit claimed. Experimental tessdata_best model was not adopted or added to production.",
+  "schema_validation_note": "Release verifier checks inventory, references and hashes. Optional CycloneDX JSON schema validation depends on a separately installed validator."
+}

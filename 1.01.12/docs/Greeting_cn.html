@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NKC_Galgame_Translator · 二色蝶</title><link rel="stylesheet" href="tour.css"><script defer src="tour.js"></script></head>
+<body><div class="tour"><svg class="scenery" viewBox="0 0 1440 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sun" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#ffe0a8"/><stop offset=".41" stop-color="#ffa1bd"/><stop offset="1" stop-color="#e850cb"/></linearGradient>
+      <radialGradient id="glow"><stop stop-color="#ed75da" stop-opacity=".50"/><stop offset="1" stop-color="#ed75da" stop-opacity="0"/></radialGradient>
+      <linearGradient id="ridge" x2="1" y2="0"><stop stop-color="#795191"/><stop offset=".68" stop-color="#ff9fe9"/><stop offset="1" stop-color="#eab4ff"/></linearGradient>
+      <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#1a1234"/><stop offset="1" stop-color="#2d1652"/></linearGradient>
+      <clipPath id="sun-disc"><circle cx="1065" cy="224" r="147"/></clipPath>
+    </defs>
+    <circle cx="1065" cy="224" r="280" fill="url(#glow)"/>
+    <path d="M628 93h2m98 90h3m24-120h2m86 56h2m173-68h2m126 8h3m167 72h3m-41-76h2m90 140h3m-81 16h2m-51-115h2m-580 139h3" stroke="#fbdfff" stroke-width="2" stroke-linecap="round" opacity=".69"/>
+    <g clip-path="url(#sun-disc)" fill="url(#sun)">
+      <path d="M912 74h306v175H912z M912 255h306v15H912z M912 277h306v15H912z M912 301h306v13H912z M912 325h306v12H912z M912 349h306v13H912z M912 375h306v9H912z"/>
+    </g>
+    <g class="mountains-back">
+      <polygon points="-80,400 36,368 96,382 160,334 230,355 311,317 407,357 478,339 545,390 620,343 695,363 772,305 816,324 852,294 933,347 984,320 1031,362 1078,333 1139,350 1212,262 1242,298 1280,282 1376,333 1430,315 1530,364 1530,650 -80,650" fill="#4e3673" stroke="url(#ridge)" stroke-width="2"/>
+      <polyline points="772,305 778,363 816,324 840,386 852,294 893,388 933,347 984,320 1011,396 1031,362 1078,333 1110,395 1139,350 1212,262 1231,360 1242,298 1282,365 1280,282 1376,333" fill="none" stroke="#dba9fc" stroke-width="1" opacity=".56"/>
+    </g>
+    <g class="mountains-front">
+      <polygon points="-100,441 64,385 125,422 185,405 245,449 311,410 383,431 462,394 511,426 578,398 670,446 743,407 806,433 858,408 923,450 1011,394 1058,418 1129,383 1225,445 1288,399 1328,411 1380,376 1540,433 1540,650 -100,650" fill="#291b48" stroke="#8bbdff" stroke-opacity=".68" stroke-width="2"/>
+      <polyline points="923,450 1011,394 1052,469 1058,418 1113,458 1129,383 1225,445 1288,399 1304,461 1328,411 1361,460 1380,376 1468,451" fill="none" stroke="#8bbdff" stroke-opacity=".43"/>
+    </g>
+    <path d="M0 475h1440v165H0z" fill="url(#floor)"/>
+    <path d="M0 482h1440M0 493h1440M0 508h1440M0 529h1440M0 559h1440M0 598h1440M835 475-120 640M859 475 209 640M887 475l-391 165M910 475l-150 165M931 475l105 165M955 475l358 165M980 475l615 165" fill="none" stroke="#bd78e9" stroke-opacity=".35"/>
+  </svg>
+<header><b class="brand">NKC_Galgame_Translator · 二色蝶</b><nav aria-label="Language"><a href="Greeting_cn.html" lang="zh-CN" aria-current="page">中文</a> <a href="Greeting.en.html" lang="en">English</a> <a href="Greeting.ja.html" lang="ja">日本語 (beta)</a></nav></header>
+<main aria-live="polite"><section class="slide"><p class="kicker">原位翻译</p><h1>放下词典，<span>回到故事里。</span></h1><p class="detail">对白与菜单在游戏原位显示译文，照常点击就能继续。</p></section>
+<section class="slide pain-points" hidden><p class="kicker">为什么需要原位翻译</p><h1>遇到这些情况？</h1><ul><li>冷门作品常常没有官方中文。</li><li>悬浮字幕和原文分开，菜单与对白要来回对照。</li><li>找汉化包费时，还可能下载到捆绑软件。</li><li>买了正版，打开才发现游戏没有中文。</li></ul></section>
+<section class="slide" hidden><p class="kicker">背景多点采样</p><h1>译文融入<span>游戏背景</span></h1><p class="detail">从文字四周采样颜色和纹理，让对白框尽量保留原来的样子。</p></section>
+<section class="slide" hidden><p class="kicker">AI 注意力</p><h1>鼠标一晃，<span>补上漏翻</span></h1><p class="detail">将指针移到漏翻的文字旁，优先补读这一带。全屏识别继续运行。</p></section>
+<section class="slide" hidden><p class="kicker">汉化组工具 · Beta</p><h1>把一页对白<span>存成汉化素材</span></h1><p class="detail">在设置中开启工具，按页保存截图，并将遴选后的原文和译文导出为 TXT、JSON 或 CSV。</p></section></main>
+<footer><div class="progress"><span class="count">1 / 5</span><span class="track" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+<p class="note" role="status">按任意普通键继续，按 ← 返回。</p><div class="controls"><button type="button" id="previous" disabled>上一页</button><button type="button" id="next" class="primary" data-next="下一页" data-finish="完成并打开二色蝶" data-done="已完成，可以回到二色蝶了。" data-error="启动未完成，请再试一次。" data-local="请在浏览器中确认打开已安装的二色蝶。">下一页</button></div></footer>
+</div></body></html>

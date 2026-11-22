@@ -1,0 +1,3 @@
+# Windows x64 / CPython 3.14.10; exact verified wheels.
+# Install using pip --require-hashes --only-binary=:all:.
+tesserocr==2.13.0 --hash=sha256:385820149f88e1a423a0109b6ccd5b0025400f2a3ec30e4de5bdf5a5b06d2442

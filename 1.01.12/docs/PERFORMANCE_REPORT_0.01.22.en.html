@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Named framework comparison</title><style>body{max-width:1000px;margin:40px auto;padding:24px;font:17px/1.8 system-ui;background:#f6f3ef;color:#252329}a{color:#bd2d41}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #ccc}h1{line-height:1.3}</style><h1>NKC_Galgame_Translator baseline framework 0.01.15 versus tuned framework 0.01.22</h1>
+<p>Measured 18 November 2026. Baseline means the oldest retained product build before this response-tuning work, not an untouched third-party framework. Same CPython 3.14.10, Tkinter/Tk 9.0, Tcl 9.0.4, C++17/Win32/GDI/WinRT, Tesseract 5.5.4/tesserocr 2.13.0, httpx 0.28.1, Pillow 13.0.0 and English model files. Pixel OCR only; no Windows OCR or real LLM benchmark. No competitor measurements.</p>
+<h2>Measured changes</h2>
+<table>
+<thead>
+<tr>
+<th>Revisiting an identical image</th>
+<th style="text-align:right">Baseline ms</th>
+<th style="text-align:right">Tuned ms</th>
+<th style="text-align:right">Equivalent speed ratio</th>
+<th style="text-align:right">Equivalent speed increase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>剧情页</td>
+<td style="text-align:right">360.791</td>
+<td style="text-align:right">9.440</td>
+<td style="text-align:right">38.22×</td>
+<td style="text-align:right">+3721.9%</td>
+</tr>
+<tr>
+<td>状态菜单</td>
+<td style="text-align:right">86.569</td>
+<td style="text-align:right">7.713</td>
+<td style="text-align:right">11.22×</td>
+<td style="text-align:right">+1022.4%</td>
+</tr>
+<tr>
+<td>货物价格表</td>
+<td style="text-align:right">137.993</td>
+<td style="text-align:right">2.733</td>
+<td style="text-align:right">50.49×</td>
+<td style="text-align:right">+4949.1%</td>
+</tr>
+</tbody>
+</table>
+<p>Each OCR case has 12 A→B→A measurements. The headline maximum is the cargo-table cache-hit case, 50.5× / +4949.1%. This is OCR result retrieval only, not live translation throughput or game FPS. Ratio = old latency / new latency; increase = (ratio−1)×100%. The raw JSON includes all timings, cold single observations and sampled memory.</p>
+<p>Synthetic first callback: 703.87→185.45 ms, +279.5% equivalent speed, 73.7% less time. Fixed 80 ms provider, zero-cost OCR, no real network/rendering. Shared follower partial: 497.88→82.63 ms; provider emits at 80 ms and completes 400 ms later. The old engine's local paths are disabled with a fresh database to compare network misses, not local-cache response.</p>
+<p>Region-aligned character accuracy: 83.99%→89.61% (+5.62 percentage points); 57→37 edits across 356 normalized reference characters. Error count falls 35.1%. Improvement comes from cargo column separation; story and status accuracy are unchanged. This includes spatial grouping/reading order, not merely glyph classification or translation meaning. The interactive report displays original screenshots and actual OCR boxes, including remaining misses.</p>
+<h2>Tuning techniques</h2>
+<p>Parallel whole-frame AUTO/SPARSE discovery with isolated engines and deterministic merge; measured columns/ink before bounded regional refinement; exact frame cache (16 entries/128 MiB accounted budget) and 256 crop refinements; capture/settle 250/450→50/80 ms; confirmed capture-time credit; streaming UI 8 ms; connection reuse and in-flight partial sharing. Historical translation records remain context in the AI-only current version.</p>
+<h2>Limits and earlier mistakes</h2>
+<p>Changed-frame status OCR is slower in 0.01.22. Increasing regional workers from 4 to 8 makes cargo recognition about 1.7% slower and sampled memory about 35% higher, while story is slightly faster. All 1/2/4/8-worker text/box hashes match. This does not demonstrate that more threads degrade current recognition content.</p>
+<p>Earlier user feedback concerned fragmented text, unstable layout and scene-specific rule tuning. We describe this as scenario-adaptation overfitting risk; no model was retrained and no cross-game holdout evaluation proves statistical model overfitting. Whole-frame-first discovery, bounded pools and stable ordering address fragmentation. Thread study: 6 measured runs per scene after warmup, refinement cache cleared, helper-only timings excluding IPC/postprocessing. Three screenshots from one game are not a general-game accuracy claim.</p>
+<p>Public evidence now includes requested Space Rogue screenshots, but no game program, credentials or private translation records. See <a href="PERFORMANCE_REPORT_0.01.22.html">interactive report</a> and <a href="PERFORMANCE_REPORT_0.01.22.json">raw measurements</a>.</p>
+</html>

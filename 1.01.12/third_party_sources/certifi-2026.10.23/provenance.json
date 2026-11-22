@@ -1,0 +1,20 @@
+{
+  "component": "certifi",
+  "version": "2026.10.23",
+  "license": "MPL-2.0",
+  "source_filename": "certifi-2026.10.23.tar.gz",
+  "source_url": "https://files.pythonhosted.org/packages/fd/11/b524cbd9bbdaca58608e4cf4053fd463417549e1959fa8d3aa18319f9555/certifi-2026.10.23.tar.gz",
+  "metadata_url": "https://pypi.org/pypi/certifi/2026.10.23/json",
+  "sha256": "a9895e6e2758b371e0545e321a3a8fd1fcfd9829ada8824a936dfb16aaaf36cd",
+  "bytes": 136225,
+  "source_modified": false,
+  "notes": "Complete original source distribution supplied with the release; no download code executed. Installed wheel metadata confirms same version.",
+  "additional_original_files": [
+    {
+      "file": "MPL-2.0.txt",
+      "url": "https://www.mozilla.org/media/MPL/2.0/index.txt",
+      "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+      "bytes": 16726
+    }
+  ]
+}

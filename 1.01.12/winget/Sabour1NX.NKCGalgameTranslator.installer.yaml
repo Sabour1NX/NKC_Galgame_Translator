@@ -1,0 +1,12 @@
+PackageIdentifier: Sabour1NX.NKCGalgameTranslator
+PackageVersion: 1.01.12
+InstallerType: inno
+Scope: user
+UpgradeBehavior: install
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12/NKC_Galgame_Translator-1.01.12-winget-x64.exe
+  InstallerSha256: E83394321138AA7B75830CBD8D5ED6AEFA986A977DA123B384037F435C77EB2A
+  ProductCode: Sabour1NX.NKCGalgameTranslator_is1
+ManifestType: installer
+ManifestVersion: 1.10.0

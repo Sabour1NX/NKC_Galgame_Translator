@@ -1,0 +1,148 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:"><title>NKC_Galgame_Translator · 二色蝶 0.01.58 · 使用指南</title><style>*{box-sizing:border-box}body{margin:0;background:#f6f3ef;color:#252429;font:17px/1.85 "Microsoft YaHei UI",system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:38px 32px}header{border-top:5px solid #bc2942;padding:26px 0 36px}h1{font-size:48px;line-height:1.3;letter-spacing:-1px}h2{margin-top:38px;font-size:25px}p{color:#635b60}a{color:#b4233f;text-decoration:none}nav{display:flex;gap:24px;flex-wrap:wrap}.eyebrow{color:#bc2942;font-size:12px;letter-spacing:3px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{padding:24px;background:#fff;border:1px solid #e3d9d3;border-radius:12px}.card h2{margin:4px 0 8px}.card p{font-size:15px}code{font:13px/1.6 Consolas,monospace;overflow-wrap:anywhere}table{display:block;overflow:auto;border-collapse:collapse;width:100%}td,th{padding:12px;border-bottom:1px solid #ddd;text-align:left}.button{display:inline-block;background:#b92741;color:#fff;padding:10px 20px;border-radius:6px}footer{border-top:1px solid #ddd;margin-top:40px;padding:18px 0;font-size:13px}pre{white-space:pre-wrap;overflow-wrap:anywhere}img{max-width:100%}@media(max-width:700px){main{padding:20px}.grid{grid-template-columns:1fr}h1{font-size:36px}}</style></head><body><main><h1>二色蝶·游戏实时翻译</h1><p>顶部入口改为「Galgame 翻译」。快捷键启动时显示独立提示。设置可选二色蝶、霓虹波、modern_windows 和随心配，随心配接受 #RRGGBB。霓虹波使用个人主页的紫、粉、薄荷青配色与矢量山景，主窗口退到后台后暂停动画。</p><p>汉化组工具（Beta）默认关闭，协议确认后首次询问，也可在设置中启用。默认保存到软件根目录。单页翻译完成后截取游戏窗口，并在默认 15 秒的遴选期后写入完成度和 OCR 证据更好的译文。等待可设 1–120 秒。按档案名称和日期建文件，同日开始新的翻译会话时追加序号。支持 TXT、JSON 和 CSV，TXT 保留时间戳、原文、空行与译文。截图以同名前缀保存为 PNG。JSON 与 CSV 含对应截图文件名。是否在截图中显示译文取决于截图设置。</p><p>Aoichan 的双箭头保留在游戏画面。识别副本先排除箭头，再生成文字框，译文覆盖在原文字形边缘收口。自动存档说明的绿色字幕按实际字色重建背景，同一物理行只采用一条识别结果。</p><p>Aoichan「要跳过开场吗？」的完整 OCR 读法合并为同一个文字对象。闪烁提示或短暂的识别框变化出现时，已显示的译文保留字号、字距和基线。游戏窗口大小真实变化时重新排版。</p><p>Aoichan 中的人名「葵」按已确认的原文校正。对白末尾的闪烁双箭头从文字定位和覆盖范围中排除。合租广告和随后的旁白独立跟踪，合租房、押金和礼金等措辞按对应原文显示。</p><p>设置中的「画面变化敏感度」范围为 0–100，默认 70。数值越高，越容易识别切场和局部原文变化。确认原文已变时立即清除对应译文，即使新译文仍在生成。画面稳定时，旧译文暂留默认 250 毫秒，可设为 0–10000 毫秒，设为 0 关闭。已确认滚动时，短暂丢失的译文沿原方向最多暂留 80 毫秒。游戏进程退出时自动停止翻译。</p><section><h2>API 配置</h2><p>默认接口采用 OpenAI 兼容的 Chat Completions 格式。三个槽位都可选择 DeepSeek（推荐）、ChatGPT、其他（自定义）、Ollama 或本地。DeepSeek 默认地址为 https://api.deepseek.com，推荐模型为 deepseek-flash。Ollama 预填 http://127.0.0.1:11434/v1；本地预填 http://127.0.0.1:1234/v1，地址和端口可改。先启动本机服务，再填写其中已加载的模型名。服务无需认证时，密钥留空即可翻译。图片识别需要支持图片输入的模型。</p></section>
+<h2>0.01.27 整组拟合与短续行</h2>
+<p>同一段正文以源行墨迹高度的中位数作稳定参考。至少三行且有至少两条宽正文、宽正文占多数时，极短续行或明显低墨迹行不单独把整组压成极小字号。单个 Region 内，短续行溢出可尝试把完整字簇分配到紧邻前行已测得的空余宽度，最多检查 64 个候选且续行至少保留一簇；行框不扩大。不能容纳的弱证据行保留原文字像素。跨 Region 不挪动文字；普通、中宽长译文仍约束共同字号。</p>
+<p>流式阶段显示当前参考字号能容纳的前缀，完整译文仍累计保存；完成后再执行整组拟合和满宽字距。标题、列、源字号/风格、固定字号与显式字号上限边界保留。少数弱框可能仍显示原文，流式尾部可能等到 final 后出现。这是显示修复，不代表 OCR 或语义翻译准确率提高。</p>
+<p>不新增用户配置，不改变 ABI 2 或原有导出签名；原生诊断新增 <code>font_intrinsic_px</code> 与 <code>lines[].drawable</code>。<code>fits=true</code> 表示可靠约束行已拟合，弱异常行仍可能 <code>drawable=false</code>，逐行可见性应检查该字段。本版 C++ 核心需要重新编译与验收，旧版 native audit 不构成本版二进制证据。</p>
+<h2>0.01.27 CUDA 识别与实际回退</h2>
+<p>首次语言设置和常规设置共用 CUDA 控件。<code>cuda_enabled</code> 默认开启；只在 OCR <strong>自动模式</strong>且源语言为英语、日语或中文时尝试 CUDA。手动 Windows / Pixel 模式明确走 CPU；自动模式检测到经典英语像素画面且便携识别可用时优先 CPU Pixel 路径（<code>pixel_priority</code>）；其他语言继续使用已有本地识别。组件缺失、无兼容 GPU、模型校验或推理失败时回退 Windows / Tesseract，并显示实际状态，不能把“文件已安装”当作“CUDA 已运行”。失败后的当前 OCR 实例不反复重试 GPU，修改设置后停止并重新开始。</p>
+<table>
+<thead>
+<tr>
+<th>设置</th>
+<th>默认</th>
+<th>范围与作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cuda_enabled</code></td>
+<td><code>true</code></td>
+<td>开关；不自动下载或安装组件</td>
+</tr>
+<tr>
+<td><code>cuda_quality</code></td>
+<td><code>75</code></td>
+<td>0–100，高性能到高精度；线性调节检测长边，按 32 像素量化</td>
+</tr>
+<tr>
+<td><code>cuda_memory_mb</code></td>
+<td><code>1024</code></td>
+<td>256–16384 MiB；推理内存 arena 预算，不会强行占满 1 GiB，运行库和驱动另有开销</td>
+</tr>
+</tbody>
+</table>
+<p>检测长边约为 <code>768 + 11.52 × cuda_quality</code> 后按 32 像素量化；75 对应 1632 像素。仅缩小超出上限的图像，小图在不同档位可能等效；数值不是准确率百分比，也不保证单调提速或提高精度。CUDA 模型为 PP-OCRv6-small，GPU/依赖验证结果以本版报告为准，不提前声称所有 NVIDIA 显卡可用。</p>
+<p>启用可选云端 AI 图像精读时，CUDA 已输出的行仅在置信度不低于 95 且没有拒绝标记时直接送译，其余仍走核验路径。<strong>95 是模型分数门槛，不是 95% 实测准确率承诺</strong>。CUDA 本地 OCR 不上传图片；云端精读仍遵循独立开关和图片发送规则。</p>
+<h2>选择实际游戏窗口</h2>
+<ol>
+<li>先启动 <code>Windose.exe</code>，让 NEEDY GIRL OVERDOSE 的游戏画面出现，再刷新窗口列表。</li>
+<li>选择类似 <strong>Windose · Windose.exe · PID 123</strong> 的条目；PID 由系统分配，每次启动可能不同。相同名称的文件夹窗口属于 <code>explorer.exe</code>，不会作为翻译目标。判断依据是窗口与进程身份，不是标题中是否出现游戏名称；普通英语程序仍可选择。</li>
+<li>选择“整个游戏窗口”或手动框选 1–8 个区域，再点击“开始翻译”，然后切回游戏。窗口选择时会重新检查 HWND/PID；关闭或重启游戏后请刷新并重新选择。</li>
+<li>状态会指名目标窗口，区分后台等待、最小化、隐藏、窗口关闭或进程变化，以及实际识别、未找到文字、等待 AI 和已显示译文。<strong>等待窗口表示尚未处理该游戏画面</strong>；将目标游戏恢复并置于前台后继续，不会自动抢走焦点。</li>
+</ol>
+<p>主界面顶部使用紧凑 API 配置工具栏，不再占用空间展示大图标、大标题与标语；窗口/任务栏图标保留。遇到实际错误时错误信息保留至停止或重新开始，不会被普通状态刷新掩盖。</p>
+<p>0.01.27 加入可选 CUDA OCR、后台联网语境与整组字号修复。本版新增同图 OCR 评审，对照 0.01.15，分别报告冷启动、背景变化热路径、复访缓存和逐字精度；真实 API 链路另列。历史证据保留原版本标签，当前方法与范围见性能报告及 TEST_REPORT.json。</p>
+<h2>游戏翻译 Harness：理解与显示分层</h2>
+<p>二色蝶把模型放在有边界的游戏翻译流程中：程序管理原文与坐标、语境参考、请求额度、对象修订和原位显示，模型负责理解与译文。质量优先意味着先验证文本完整性和定位，再考虑缓存与调度；增加识别步骤或联网参考可能增加等待时间。</p>
+<p>程序先读取完整文字区域，再整理有用的背景参考、请求当前译文，最后按原行位置显示。这些步骤各自独立：联网资料用于帮助理解，游戏中只显示本段译文。</p>
+<p>在“设置 → 上下文层与显示层”可开启联网理解游戏背景；公开默认关闭，保存后重新开始翻译。仅官方 DeepSeek <code>deepseek-flash</code> 的已支持服务端搜索接口使用此扩展，其他兼容服务仍可普通翻译。模型决定是否搜索，界面区分实际取得来源与未搜索；启用开关不代表每次都进行了搜索。背景参考缓存不替代后续译文请求。<a href="CONTEXT_AGENT.md">联网理解接口与费用边界</a>。</p>
+<p>同一连续正文组保持统一字号。短译文完成后仍可增大字距填满原行；长行在自动范围内要求缩字时，同组一起缩小，不能只放大其中一行。标题、不同源字号、不同列和字体风格保持独立；达字号下限仍放不下时保留原文。坐标来自本地 OCR，字号一致不代表错误的 OCR 框已经被修正。</p>
+<p>当前实际游戏测试改用 NEEDY GIRL OVERDOSE，关注日文小字、多色面板和段内字号；既有 Space Rogue 固定截图保留为回归材料。测试范围、计时和剩余限制以本版测试与性能报告为准，不把一张图的结果推广为全游戏结论。</p>
+<p>适用版本：0.01.27 · 文档复核：2026-11-18。历史记录保留原版号。</p>
+<h2>多区域与自动字体</h2>
+<p>在屏幕翻译页选择游戏窗口，点击“框选区域”。连续拖动添加 <strong>1–8 个不重叠矩形</strong>；按 <strong>Enter 确认</strong>，按退格或右键撤销最后一个，Esc 取消并保留原选择。每框至少 20 × 20 像素；合并外接矩形每轴不超过 4096 像素。请把一整段文字留在同一框内，并留少量边距。区域随游戏客户区移动，缩放后裁到客户区；更换游戏窗口后恢复整个客户区。选区仅在本次界面会话保留。</p>
+<p>多个选区使用同一帧捕获，框外间隙先遮成黑色再进入 OCR 或可选 AI 图像精读；语句团和对象关联不跨选区。框选不同区域不会分别启动多个 OCR 进程，也不改变翻译并发上限。全屏游戏建议切换窗口模式。</p>
+<p>打开“设置 → 译文外观 → 按原文自动选择相似风格字体（支持目标语言）”，保存后重新开始翻译。程序根据原文字形近似选择像素、衬线、无衬线或等宽风格，并逐框检查字体是否支持目标语言与当前译文字形。无需下载字体。默认关闭，关闭时仍使用手动字体。自动字号及上下限独立设置，过长译文继续在允许范围内缩小。</p>
+<p>字体匹配不等于还原游戏字体；装饰字、复杂背景、短词和误识别可能影响风格判断。字形不全时改用已安装且覆盖译文的后备字体；没有合适字体时保留原文。当前自动覆盖检查保守支持 BMP 字符；含补充平面字符或 emoji 的该框保留原文，可切回手动字体使用 Windows 字体回退。</p>
+<p><strong>看懂游戏，就在原位。</strong></p>
+<p>多种语言实时翻译，译文跟随原文位置，让你专注游戏。0.01.27 · Windows 10/11 x64。</p>
+<h2>在游戏里阅读译文</h2>
+<p>剧情、菜单和说明文字显示在原来的区域。多个文字框可以并发翻译，译文随接收过程逐步呈现；窗口移动时译文跟随，鼠标点击可穿过覆盖层。</p>
+<p>支持自定义字体、固定字号和自动字号范围。较长译文在设定范围内缩小，菜单与价格保持分栏。源语言标注、方括号及截图是否包含译文均可设置。</p>
+<h2>三步开始</h2>
+<ol>
+<li>解压整个程序文件夹到可写目录，运行 <strong>NKC_Galgame_Translator.exe</strong>。请保留全部配套文件，无需另装 Python。</li>
+<li>首次选择界面语言并阅读协议。打开顶部 <strong>API 配置 · 3 槽位</strong>，填写服务地址、模型和密钥。已有密钥显示圆点占位；密钥由当前 Windows 用户加密保存。</li>
+<li>打开窗口化游戏，选择游戏窗口及源、目标语言，选择整个客户区或文字区域后开始翻译。切回游戏即可查看译文。</li>
+</ol>
+<h2>按你的习惯设置</h2>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>软件语言</td>
+<td>中文、English、日本語；首次参考系统语言，之后可在设置调整</td>
+</tr>
+<tr>
+<td>游戏档案</td>
+<td>可选；为同一游戏保留术语与语境参考</td>
+</tr>
+<tr>
+<td>字体与字号</td>
+<td>使用已安装字体；自动字号默认 8–72 像素，可调整上下限</td>
+</tr>
+<tr>
+<td>源语言标注</td>
+<td>可选择始终显示、仅多种外文时显示或关闭</td>
+</tr>
+<tr>
+<td>截图与录屏</td>
+<td>默认包含译文，也可关闭；具体捕获方式受 Windows 与录制工具影响</td>
+</tr>
+<tr>
+<td>翻译并发</td>
+<td>可调；默认 8，需遵守 API 服务的并发与速率限制</td>
+</tr>
+<tr>
+<td>本次请求额度</td>
+<td>可设置次数或无上限，服务商余额与限速仍生效</td>
+</tr>
+</tbody>
+</table>
+<h2>选择适合游戏的响应设置</h2>
+<p>“响应优先”预设使用 50 ms 截图间隔和 80 ms 稳定等待。逐字显示的剧情可将稳定等待调到 150–300 ms，以减少中间文本的请求。需要降低占用时选择“均衡占用”。保存后停止并重新开始翻译生效。</p>
+<p>普通行、选中状态和彩色提示分别分析；Space Rogue Classic 等像素游戏可选“像素字体”识别。自动模式也能判断典型像素 HUD 和平坦彩色画面。</p>
+<h2>了解实测表现</h2>
+<p>本版测量与 0.01.15 的对照见 <a href="PERFORMANCE_REPORT.html">性能与识别报告</a>。分别列出本地OCR、真实API首个及完整译文回调时间；本次未测原生绘制或显示器呈现，回调到达不等于屏幕可见，也不以150ms作为总延迟上限。NEEDY GIRL OVERDOSE 是当前实际游戏测试对象，重点覆盖日文小字与多色面板；固定图片回放、合成排版回归和真实 API 测试分别标注，不能据此保证全游戏兼容。</p>
+<h2>使用提示</h2>
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>没有译文</td>
+<td>确认游戏在前台、选区及语言正确、API 有余额；像素字体尝试像素模式</td>
+</tr>
+<tr>
+<td>首段等待较长</td>
+<td>检查网络及 API 响应；AI 图像精读会增加识别请求，默认关闭</td>
+</tr>
+<tr>
+<td>逐字对话多次翻译</td>
+<td>增加稳定等待，适当缩小选区</td>
+</tr>
+<tr>
+<td>字号过小</td>
+<td>调整字号范围或减少标签；放不下时保留原文</td>
+</tr>
+<tr>
+<td>API 返回 429</td>
+<td>降低翻译并发，检查服务商限流</td>
+</tr>
+</tbody>
+</table>
+<p>动态背景、特殊字体、渐变与低对比画面会影响识别。无法可靠显示时保留原画面。AI 译文可能需要结合上下文判断。</p>
+<h2>API、记录与许可</h2>
+<p>需要用户自行提供兼容 OpenAI 接口的 HTTPS API、模型与可用密钥；服务费用由对应服务商计收。三个 API 槽位独立保存，密钥加密绑定当前 Windows 用户。公开试用版不含私人密钥，也没有额外设置试用倒计时。</p>
+<p>成功译文、原文与语境保存在本地游戏档案中，供后续 AI 请求参考。没有 API 时可浏览已有记录，不能生成新译文。迁移个人运行目录时保留 config/ 与 data/；密钥通常只能由原 Windows 用户解密。</p>
+<p>许可与使用条件见 <a href="USER_AGREEMENT.md">用户协议</a>（免责声明与 MIT）。软件为覆盖式翻译，不改写游戏进程。开发者可查阅 <a href="PROJECT_MANUAL.html">完整项目手册</a>、<a href="PROJECT_MANUAL.en.html">English manual</a>、<a href="PROJECT_GUIDE.html">结构与流程图</a> 和 <a href="API.md">接口规范</a>。</p>
+</main></body></html>

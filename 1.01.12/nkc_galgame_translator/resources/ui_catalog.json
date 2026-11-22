@@ -1,0 +1,2762 @@
+{
+  "占用率折线": [
+    "Usage line color",
+    "使用率の線色"
+  ],
+  "内存／显存折线": [
+    "Memory line color",
+    "RAM / VRAM の線色"
+  ],
+  "主题默认": [
+    "Use theme color",
+    "テーマの色に戻す"
+  ],
+  "请使用 #RRGGBB 格式的颜色。": [
+    "Use a color in #RRGGBB format.",
+    "色は #RRGGBB 形式で入力してください。"
+  ],
+  "后端 LLM（{model}）翻译模式": [
+    "Translation backend: LLM ({model})",
+    "翻訳 Backend：LLM（{model}）"
+  ],
+  "模型调用失败": [
+    "Translation service unavailable",
+    "翻訳サービスに接続できませんでした"
+  ],
+  "模型：{model}\n错误码：{code}": [
+    "Model: {model}\nError code: {code}",
+    "Model：{model}\nError Code：{code}"
+  ],
+  "资源图样式": [
+    "Graph style",
+    "Chart の表示形式"
+  ],
+  "矢量山峰 (beta)": [
+    "Mountain ridges (beta)",
+    "山並み (beta)"
+  ],
+  "普通折线": [
+    "Line graph",
+    "折れ線"
+  ],
+  "选择栏目背景图": [
+    "Choose chart image",
+    "Chart の背景画像を選ぶ"
+  ],
+  "恢复主题背景": [
+    "Use theme background",
+    "テーマの背景に戻す"
+  ],
+  "请选择不超过 2400 万像素的本地 PNG、JPEG 或 BMP 图片。": [
+    "Choose a local PNG, JPEG or BMP image of up to 24 megapixels.",
+    "2400 万画素以下のローカル PNG、JPEG、BMP 画像を選んでください。"
+  ],
+  "轻量模式": [
+    "Lightweight mode",
+    "軽量モード"
+  ],
+  "仅翻译鼠标附近文字。": [
+    "Translate only the text near your pointer.",
+    "Pointer の近くにある文字だけを翻訳します。"
+  ],
+  "GPU 利用率": [
+    "GPU utilization",
+    "GPU 使用率"
+  ],
+  "GPU 显存": [
+    "VRAM usage",
+    "VRAM 使用量"
+  ],
+  "峰值 {value}": [
+    "Peak {value}",
+    "Peak {value}"
+  ],
+  "Ctrl+Alt+L · 轻量模式": [
+    "Ctrl+Alt+L · Lightweight",
+    "Ctrl+Alt+L · 軽量モード"
+  ],
+  "AI 语境备注": [
+    "Translation context",
+    "翻訳時に参照するメモ"
+  ],
+  "语境档案管理": [
+    "Manage game profiles",
+    "ゲームの Profile を管理"
+  ],
+  "选择已有档案继续翻译，或创建新档案。修改后请保存。": [
+    "Resume a saved profile or create a new one. Save after editing.",
+    "保存済み Profile で再開するか、新規作成します。編集後は保存してください。"
+  ],
+  "新建档案": [
+    "New profile",
+    "新規 Profile"
+  ],
+  "刷新": [
+    "Refresh",
+    "更新"
+  ],
+  "档案名称": [
+    "Profile name",
+    "Profile 名"
+  ],
+  "语言": [
+    "Languages",
+    "言語"
+  ],
+  "已完成片段": [
+    "Completed segments",
+    "翻訳済みの項目"
+  ],
+  "更新时间": [
+    "Updated",
+    "更新日時"
+  ],
+  "原文语言": [
+    "Source text is in",
+    "原文に使われている言語"
+  ],
+  "目标语言": [
+    "Translation language",
+    "訳文の言語"
+  ],
+  "档案备注": [
+    "Profile notes",
+    "Profile のメモ"
+  ],
+  "备注会作为后续翻译参考；最多16384字，不会作为覆盖文字显示。": [
+    "Notes guide later translations (up to 16384 characters). They are never displayed in the overlay.",
+    "メモは以後の翻訳の参考にします（16384文字まで）。Overlay には表示しません。"
+  ],
+  "档案进度": [
+    "Translation progress",
+    "翻訳の進み具合"
+  ],
+  "累计活动时长": [
+    "Total active time",
+    "累計稼働時間"
+  ],
+  "语境范围": [
+    "Saved contexts",
+    "保存された Context"
+  ],
+  "最近译文时间": [
+    "Latest translation",
+    "最後の翻訳日時"
+  ],
+  "语境摘录（本地）": [
+    "Context excerpt (local)",
+    "文脈の抜粋（ローカル）"
+  ],
+  "最近原文（节选）": [
+    "Last source text (preview)",
+    "直近の原文（抜粋）"
+  ],
+  "最近译文（节选）": [
+    "Last translation (preview)",
+    "直近の訳文（抜粋）"
+  ],
+  "压缩存储": [
+    "Compressed storage",
+    "圧縮保存"
+  ],
+  "尚无翻译记录": [
+    "No translations yet",
+    "翻訳履歴はまだありません"
+  ],
+  "保存档案": [
+    "Save profile",
+    "Profile を保存"
+  ],
+  "继续此档案": [
+    "Resume translation",
+    "この設定で翻訳を再開"
+  ],
+  "保存并继续": [
+    "Save and resume translation",
+    "保存して翻訳を再開"
+  ],
+  "删除档案": [
+    "Delete profile",
+    "Profile を削除"
+  ],
+  "再次点击删除": [
+    "Click again to delete",
+    "もう一度クリックして削除"
+  ],
+  "取消删除": [
+    "Cancel deletion",
+    "削除を取り消す"
+  ],
+  "关闭": [
+    "Close",
+    "閉じる"
+  ],
+  "再次点击删除将移除此档案及其本地翻译历史。此操作不可撤销。": [
+    "Click Delete again to remove this profile and its local translation history. This cannot be undone.",
+    "もう一度削除を押すと、この Profile とローカルの翻訳履歴を削除します。元に戻せません。"
+  ],
+  "新档案尚未保存": [
+    "New profile has not been saved",
+    "新規 Profile は未保存です"
+  ],
+  "有未保存的更改": [
+    "Unsaved changes",
+    "未保存の変更があります"
+  ],
+  "档案已保存": [
+    "Profile saved",
+    "Profile を保存しました"
+  ],
+  "档案已删除": [
+    "Profile deleted",
+    "Profile を削除しました"
+  ],
+  "请选择已保存的档案": [
+    "Select a saved profile",
+    "保存済みの Profile を選択してください"
+  ],
+  "档案名称不能为空": [
+    "Enter a profile name",
+    "Profile 名を入力してください"
+  ],
+  "备注最多16384字": [
+    "Notes must be 16384 characters or fewer",
+    "メモは16384文字以内で入力してください"
+  ],
+  "档案不存在或已被删除": [
+    "Profile no longer exists",
+    "Profile が存在しないか、削除されています"
+  ],
+  "已有档案名称不可修改，请新建档案": [
+    "Saved profile names cannot be changed. Create a new profile instead.",
+    "保存済みの名前は変更できません。新しい Profile を作成してください。"
+  ],
+  "档案名称已存在，请选择已有档案": [
+    "That name already exists. Select the saved profile.",
+    "同じ名前が存在します。保存済みの Profile を選択してください。"
+  ],
+  "当前无法切换档案，请先停止翻译。": [
+    "Stop translation before switching profiles.",
+    "Profile を切り替える前に翻訳を停止してください。"
+  ],
+  "档案列表为空，可创建第一个档案。": [
+    "No profiles yet. Create your first profile.",
+    "Profile はまだありません。最初の Profile を作成してください。"
+  ],
+  "操作失败": [
+    "Operation failed",
+    "操作に失敗しました"
+  ],
+  "CUDA 文字识别": [
+    "CUDA text recognition",
+    "CUDA 文字認識"
+  ],
+  "启用 CUDA OCR（不可用时自动回退）": [
+    "Enable CUDA OCR (automatic fallback when unavailable)",
+    "CUDA OCR を使う（使用できない場合は自動切替）"
+  ],
+  "高性能": [
+    "Performance",
+    "高速"
+  ],
+  "高精度": [
+    "Accuracy",
+    "高精度"
+  ],
+  "CUDA 精度系数": [
+    "OCR quality",
+    "認識の精度"
+  ],
+  "CUDA 显存预算（MiB）": [
+    "GPU memory budget (MiB)",
+    "VRAM 上限（MiB）"
+  ],
+  "默认 1024 MiB（1 GiB）。这是推理显存预算，运行库会有额外开销；无兼容显卡或组件时回退本地识别。": [
+    "Default: 1024 MiB (1 GiB). This is an inference memory budget; runtime overhead is additional. Without a compatible GPU or component pack, local OCR is used.",
+    "既定は 1024 MiB（1 GiB）。推論用 VRAM の予算で、Runtime の使用量は別途必要です。対応 GPU または追加 Component がない場合は Local OCR を使用します。"
+  ],
+  "精度系数 {quality} / 100 · 线性调节识别分辨率，速度与精度以实际画面为准。": [
+    "Quality coefficient {quality} / 100 · Linearly adjusts recognition resolution; actual speed and accuracy depend on the scene.",
+    "精度係数 {quality} / 100・認識解像度を線形調整します。実際の速度と精度は画面によって異なります。"
+  ],
+  "CUDA OCR 已启用": [
+    "CUDA OCR active",
+    "CUDA OCR 動作中"
+  ],
+  "正在预热 CUDA OCR，完成后即可开始。": [
+    "Warming up CUDA OCR. Translation will be ready shortly.",
+    "CUDA OCR を準備中です。完了後に翻訳を開始できます。"
+  ],
+  "CUDA OCR 已预热，就绪。": [
+    "CUDA OCR is warmed up and ready.",
+    "CUDA OCR の準備が完了しました。"
+  ],
+  "像素画面优先使用精读 OCR": [
+    "Pixel scenes use the pixel-text OCR path",
+    "Pixel Art の画面では専用 OCR を優先"
+  ],
+  "CUDA 不可用，已回退本地 OCR": [
+    "CUDA unavailable; using local OCR",
+    "CUDA が使用できないため Local OCR に切替"
+  ],
+  "CUDA 组件未安装，使用本地 OCR": [
+    "CUDA components missing; using local OCR",
+    "CUDA Component 未導入・Local OCR 使用"
+  ],
+  "使用所选本地 OCR 模式": [
+    "Using the selected local OCR mode",
+    "選択した Local OCR モードを使用"
+  ],
+  "此语言使用本地 OCR": [
+    "Using local OCR for this language",
+    "この言語は Local OCR を使用"
+  ],
+  "按原文自动选择相似风格字体（支持目标语言）": [
+    "Match the source font style automatically (target-language support)",
+    "原文に近い書体を自動選択（翻訳先言語に対応）"
+  ],
+  "自动字体近似匹配像素、衬线、无衬线或等宽风格，逐框检查译文字形。无法匹配时保留原文；关闭后使用上方手动字体。": [
+    "Approximate pixel, serif, sans-serif or monospaced styles, checking translated glyphs per box. Keep the source if no supported font is available. Turn off to use the manual font above.",
+    "Pixel Font・明朝・ゴシック・等幅のスタイルを近似し、枠ごとに訳文の文字対応を確認します。対応書体がなければ原文を保持します。オフにすると上の指定書体を使います。"
+  ],
+  "拖动添加区域（最多 8 个）· Enter 确认 · 退格/右键撤销 · Esc 取消": [
+    "Drag to add regions (up to 8) · Enter to confirm · Backspace/right-click to undo · Esc to cancel",
+    "ドラッグで領域を追加（最大8個）· Enter で確定 · Backspace/右クリックで戻す · Esc で取消"
+  ],
+  "已选区域：{count}": [
+    "Selected regions: {count}",
+    "選択した領域：{count}"
+  ],
+  "已选 {count} 个区域，随游戏窗口移动": [
+    "{count} regions selected; follow the game window",
+    "{count}個の領域を選択・ゲームの Window に追従"
+  ],
+  "API 请求无上限": [
+    "Unlimited API requests",
+    "API Request 数を無制限にする"
+  ],
+  "API 请求无上限须为开或关。": [
+    "Unlimited API requests must be on or off.",
+    "API Request 数の無制限設定はオンかオフにしてください。"
+  ],
+  "开启“API 请求无上限”仅取消本次运行的请求次数限制，并发、超时和重试次数仍按设置执行。关闭后恢复填写的请求额度；额度为 0 表示不允许请求，不代表无上限。仅本地模式始终不调用 API。": [
+    "Unlimited API requests removes only the request-count limit for this session. Concurrency, timeouts and retry counts still apply. Turning it off restores the entered quota; 0 permits no requests and does not mean unlimited. Local-only mode never calls the API.",
+    "無制限設定は、今回の起動中の Request 回数制限だけを解除します。同時実行数、Timeout、再試行回数の設定は有効です。オフにすると入力済みの上限に戻ります。0 は Request 禁止を意味し、無制限ではありません。ローカル専用モードは常に API を呼び出しません。"
+  ],
+  "自动识别": [
+    "Automatic OCR",
+    "自動認識"
+  ],
+  "平移采样": [
+    "Motion sampling",
+    "移動時の Sampling"
+  ],
+  "本机密集采样目标约 {ms} ms，由显存分档决定。": [
+    "Fast capture targets about {ms} ms based on VRAM.",
+    "高速 Sampling は VRAM に応じて約 {ms} ms 間隔です。"
+  ],
+  "启用全局翻译开关快捷键": [
+    "Enable global translation toggle",
+    "翻訳を切り替える Global Shortcut を有効にする"
+  ],
+  "{key} · 开关翻译": [
+    "{key} · Toggle translation",
+    "{key}・翻訳の切り替え"
+  ],
+  "翻译开关快捷键不可用：{error}": [
+    "Translation toggle unavailable: {error}",
+    "翻訳切り替えを登録できません：{error}"
+  ],
+  "翻译开关与重新翻译需要使用不同的快捷键。": [
+    "Toggle and retranslate need different shortcuts.",
+    "翻訳切り替えと再翻訳には異なる Shortcut を設定してください。"
+  ],
+  "没有选中文档（游戏档案）。": [
+    "No game profile is selected.",
+    "ゲームの Profile が選択されていません。"
+  ],
+  "没有找到与此档案匹配的游戏窗口，请手动选择。": [
+    "No matching game window was found. Select a window manually.",
+    "一致するゲームの Window が見つかりません。手動で選択してください。"
+  ],
+  "确认翻译窗口": [
+    "Confirm game window",
+    "翻訳する Window を確認"
+  ],
+  "找到与档案匹配的窗口：{window}。上次 PID：{pid}。是否使用此窗口翻译？": [
+    "Found a matching window: {window}. Previous PID: {pid}. Translate this window?",
+    "一致する Window：{window}。前回の PID：{pid}。この Window を翻訳しますか？"
+  ],
+  "采样关闭": [
+    "Off",
+    "オフ"
+  ],
+  "采样自动": [
+    "Automatic",
+    "自動"
+  ],
+  "超采样": [
+    "Oversampling",
+    "Oversampling"
+  ],
+  "关闭：按截图间隔。自动：移动时短时提速。超采样：从开始就密集采样。": [
+    "Off follows the capture interval. Automatic speeds up briefly during motion. Oversampling starts at the faster rate.",
+    "オフは設定した撮影間隔、自動は移動中に一時加速、Oversampling は開始時から高頻度で撮影します。"
+  ],
+  "像素文字精读": [
+    "Pixel-text recognition",
+    "Pixel Font の精密認識"
+  ],
+  "本地文字识别": [
+    "Local text recognition",
+    "ローカル文字認識"
+  ],
+  "新游戏积极模式 · {completed}/{limit}": [
+    "New-game learning · {completed}/{limit}",
+    "新しいゲームの学習・{completed}/{limit}"
+  ],
+  "多语种自动翻译 · {progress}": [
+    "Multilingual translation · {progress}",
+    "多言語の自動翻訳・{progress}"
+  ],
+  "新游戏自动积极模式次数（0 关闭）": [
+    "New-game LLM translations (0 disables)",
+    "新しいゲームの LLM 翻訳回数（0 で無効）"
+  ],
+  "智能混合本地短文本字符上限": [
+    "Smart mode: maximum characters for local short text",
+    "スマート翻訳：ローカル短文の文字数上限"
+  ],
+  "智能混合：自动选择本地或 LLM 翻译": [
+    "Smart mode: automatically choose local or LLM translation",
+    "スマート翻訳：ローカル翻訳と LLM を自動選択"
+  ],
+  "智能混合 · 本地 / LLM 自动选择": [
+    "Smart mode · Automatic local / LLM selection",
+    "スマート翻訳・ローカル／LLM を自動選択"
+  ],
+  "短文本优先本地，复杂对白交给 LLM；已有准确整句译文可直接复用，本地未命中自动联网。": [
+    "Short text uses local translation first; complex dialogue goes to the LLM. Existing exact sentence translations can be reused, and local misses are translated online.",
+    "短い文章はローカル翻訳を優先し、複雑な会話は LLM に送ります。原文全体に一致する保存済み訳文は再利用でき、ローカルで見つからない場合はオンラインで翻訳します。"
+  ],
+  "智能翻译模式须为开或关。": [
+    "Smart translation mode must be on or off.",
+    "スマート翻訳モードはオンかオフにしてください。"
+  ],
+  "智能翻译短文本上限须为 1 至 256 的整数。": [
+    "The smart-mode short-text limit must be an integer from 1 to 256.",
+    "スマート翻訳の短文上限は 1～256 の整数にしてください。"
+  ],
+  "AI 图像精读最短间隔（毫秒）": [
+    "Minimum AI image-reading interval (ms)",
+    "AI 画像認識の最短間隔（ミリ秒）"
+  ],
+  "AI 图像精读：将游戏选区图片发送至当前 API": [
+    "AI image reading: send the selected game region to the current API",
+    "AI 画像認識：ゲームの選択領域を現在の API に送信"
+  ],
+  "OCR 模式须为自动、Windows 或像素文字。": [
+    "OCR mode must be Automatic, Windows, or Pixel text.",
+    "OCR モードは自動、Windows、Pixel Font から選択してください。"
+  ],
+  "新游戏自动积极模式次数须为 0 至 1000 的整数。": [
+    "New-game learning must be an integer from 0 to 1000.",
+    "新しいゲームの学習回数は 0～1000 の整数にしてください。"
+  ],
+  "自动积极模式的游戏标识无效。": [
+    "The game identity for automatic learning is invalid.",
+    "自動学習用のゲーム識別情報が無効です。"
+  ],
+  "自动模式会为适合的像素文字启用本地精读。AI 图像精读会发送所选游戏区域图片，等待稳定画面后调用，速度取决于网络；失败或离线时保留本地识别。": [
+    "Automatic mode uses local pixel-text recognition when suitable. AI image reading sends an image of the selected game region after the scene settles. Speed depends on the network; local OCR is kept if it fails or the app is offline.",
+    "自動モードは、適した Pixel Font にローカル精密認識を使用します。AI 画像認識は画面が安定してから、ゲームの選択領域の画像を送信します。速度は通信環境に左右されます。失敗時やオフライン時は Local OCR を使用します。"
+  ],
+  "新游戏默认前 512 次成功翻译使用 LLM 学习，之后自动智能混合：短文本优先本地、复杂对白用 LLM，准确整句译文可复用。进度按游戏和语言对保存；次数设为 0 可关闭学习阶段。手动积极模式持续生效；已有历史译文的命名档案不自动重新收集。": [
+    "For a new game, the first 512 successful translations use the LLM for learning by default. Smart mode then handles short text locally and complex dialogue with the LLM, while reusing exact sentence translations. Progress is saved per game and language pair; set 0 to disable learning. Always use LLM remains active until turned off. Named profiles with existing translations are not automatically relearned.",
+    "新しいゲームでは、既定で最初の 512 回の翻訳成功まで LLM を使って学習します。その後はスマート翻訳で短文をローカル、複雑な会話を LLM で処理し、原文全体に一致する訳文は再利用します。進捗はゲームと言語の組み合わせごとに保存します。回数を 0 にすると学習を無効にできます。「毎回 LLM を使用」は手動でオフにするまで継続します。既存の訳文がある名前付き設定は自動で再学習しません。"
+  ],
+  "短文本需为单行、未超字符上限、英文不超过 6 个词且不含句子标点。复杂内容跳过词条组合；本地未命中时自动调用 LLM。识别与翻译共用请求额度，额度耗尽时学习暂停、已有本地译文仍可用，识别请求不计入成功翻译次数。": [
+    "Short text must be a single line within the character limit, with no sentence punctuation and at most 6 English words. Complex text skips term combinations; local misses automatically use the LLM. Recognition and translation share the request quota. Learning pauses when the quota is exhausted, while saved local translations remain available. Recognition calls do not count as successful translations.",
+    "短文は 1 行で文字数上限内、英文は 6 語以内とし、文の区切り記号を含めない条件です。複雑な文章では用語の組み合わせを使わず、ローカルに一致する訳がなければ LLM を呼び出します。認識と翻訳は Request 枠を共有します。上限に達すると学習は一時停止しますが、保存済みのローカル訳文は利用できます。認識の呼び出しは翻訳成功回数に含みません。"
+  ],
+  "AI 图像精读需要 API，离线时使用本地识别。": [
+    "AI image reading needs an API connection. Use local OCR while offline.",
+    "AI 画像認識には API 接続が必要です。オフライン時は Local OCR を使用してください。"
+  ],
+  "AI 图像精读失败，继续使用本地识别。": [
+    "AI image reading failed; local OCR remains in use.",
+    "AI 画像認識に失敗したため、Local OCR を継続します。"
+  ],
+  "图像识别已停止。": [
+    "Image recognition was stopped.",
+    "画像認識を停止しました。"
+  ],
+  "AI 图像识别区域超过限制。": [
+    "The AI recognition region exceeds the allowed dimensions.",
+    "AI 認識領域のサイズが上限を超えています。"
+  ],
+  "AI 图像识别响应超过限制。": [
+    "The AI image-recognition response exceeds the size limit.",
+    "AI 画像認識の応答サイズが上限を超えています。"
+  ],
+  "AI 图像识别回复不完整，继续使用本地识别。": [
+    "The AI image-recognition reply is incomplete; local OCR remains in use.",
+    "AI 画像認識の応答が不完全なため、Local OCR を継続します。"
+  ],
+  "AI 图像识别图片超过 8 MiB 限制。": [
+    "The image for AI recognition exceeds 8 MiB.",
+    "AI 認識用の画像が 8 MiB の上限を超えています。"
+  ],
+  "AI 图像识别文字框位置无效。": [
+    "The local text-box positions for AI recognition are invalid.",
+    "AI 認識用のローカル文字枠の位置が無効です。"
+  ],
+  "AI 图像识别文字框数据无效。": [
+    "The local text-box data for AI recognition is invalid.",
+    "AI 認識用のローカル文字枠データが無効です。"
+  ],
+  "AI 图像识别文字框数据超过限制。": [
+    "The text-box data for AI recognition exceeds the limit.",
+    "AI 認識用の文字枠データが上限を超えています。"
+  ],
+  "AI 图像识别格式无效，继续使用本地识别。": [
+    "The AI transcription format is invalid; local OCR remains in use.",
+    "AI 文字起こしの形式が無効なため、Local OCR を継続します。"
+  ],
+  "AI 图像识别结果超过限制。": [
+    "The AI transcription result exceeds the limit.",
+    "AI 文字起こしの結果が上限を超えています。"
+  ],
+  "AI 图像识别网络失败或超时，继续使用本地识别。": [
+    "AI image recognition could not connect or timed out; local OCR remains in use.",
+    "AI 画像認識の接続失敗または Timeout のため、Local OCR を継続します。"
+  ],
+  "AI 图像识别语言代码无效。": [
+    "The language code for AI image recognition is invalid.",
+    "AI 画像認識の Language Code が無効です。"
+  ],
+  "AI 图像识别请求失败（HTTP {code}），继续使用本地识别。": [
+    "AI image recognition failed (HTTP {code}); local OCR remains in use.",
+    "AI 画像認識に失敗しました（HTTP {code}）。Local OCR を継続します。"
+  ],
+  "AI 图像识别超时。": [
+    "AI image recognition timed out.",
+    "AI 画像認識が Timeout しました。"
+  ],
+  "AI 图像识别返回不支持的压缩格式。": [
+    "AI image recognition returned an unsupported compression format.",
+    "AI 画像認識が未対応の圧縮形式を返しました。"
+  ],
+  "让每一段故事，都读得懂。": [
+    "Read every story.",
+    "どんな物語も、読めるように。"
+  ],
+  "日语": [
+    "Japanese",
+    "日本語"
+  ],
+  "英语": [
+    "English",
+    "英語"
+  ],
+  "简体中文": [
+    "Simplified Chinese",
+    "簡体字中国語"
+  ],
+  "繁体中文": [
+    "Traditional Chinese",
+    "繁体字中国語"
+  ],
+  "韩语": [
+    "Korean",
+    "韓国語"
+  ],
+  "法语": [
+    "French",
+    "フランス語"
+  ],
+  "德语": [
+    "German",
+    "ドイツ語"
+  ],
+  "西班牙语": [
+    "Spanish",
+    "スペイン語"
+  ],
+  "屏幕翻译": [
+    "Screen translation",
+    "画面翻訳"
+  ],
+  "翻译词典": [
+    "Glossary",
+    "用語集"
+  ],
+  "文本翻译": [
+    "Translate text manually",
+    "テキスト翻訳"
+  ],
+  "使用协议": [
+    "User agreement",
+    "利用規約"
+  ],
+  "设置": [
+    "Settings",
+    "設定"
+  ],
+  "打开使用手册": [
+    "Open user guide",
+    "使い方を見る"
+  ],
+  "未找到随包手册，请检查完整发行目录。": [
+    "The bundled manual is missing. Check the complete release folder.",
+    "同梱マニュアルがありません。配布 Folder を確認してください。"
+  ],
+  "设置已保存；界面语言立即生效，译文外观用于下一次翻译。": [
+    "Saved. Interface language applies now; overlay appearance applies when translation restarts.",
+    "保存しました。表示言語はすぐに反映され、訳文の外観は次の翻訳開始時に適用されます。"
+  ],
+  "仅在同屏出现多种外文时标注": [
+    "Label only when multiple foreign languages appear on screen",
+    "画面に複数の外国語があるときだけ言語名を表示"
+  ],
+  "仅同屏识别到至少两种目标语言之外的外文时标注；地域变体按同一种语言计。": [
+    "Show labels only when at least two languages other than the target language are detected on screen. Regional variants count as the same language.",
+    "画面内に翻訳先以外の言語が 2 種類以上検出された場合のみ、言語名を表示します。地域ごとの表記は同じ言語として数えます。"
+  ],
+  "单语：": [
+    "Single language: ",
+    "単一言語："
+  ],
+  "混合：": [
+    "Mixed languages: ",
+    "複数言語："
+  ],
+  "欢迎": [
+    "Welcome",
+    "ようこそ"
+  ],
+  "开始": [
+    "Start",
+    "開始"
+  ],
+  "API 配置 · 3 槽位": [
+    "API connections (3 slots)",
+    "API 接続設定（3 Slots）"
+  ],
+  "刷新窗口": [
+    "Refresh windows",
+    "Window を更新"
+  ],
+  "原语言": [
+    "Source language",
+    "原文の言語"
+  ],
+  "译为": [
+    "Translate to",
+    "翻訳先"
+  ],
+  "游戏档案（可选）": [
+    "Game profile (optional)",
+    "ゲーム別設定（任意）"
+  ],
+  "语境备注（可选）": [
+    "Context notes (optional)",
+    "文脈のメモ（任意）"
+  ],
+  "清空": [
+    "Clear",
+    "クリア"
+  ],
+  "可留空使用未指定档案，也可输入新档案。通用词典是独立的跨游戏词库，可在设置中启用。": [
+    "Leave blank for an unnamed profile, or enter a new name. The shared dictionary works across games and can be enabled in Settings.",
+    "空欄なら未指定の設定を使います。新しい名前も入力できます。共通辞書はゲーム間で共有され、設定から有効にできます。"
+  ],
+  "日英混合画面建议选日语；纯汉字按所选原语言处理。": [
+    "For mixed Japanese and English screens, select Japanese. Text containing only Chinese characters uses the selected source language.",
+    "日本語と英語が混在する画面では日本語を選んでください。漢字のみの文章は、選択した原文の言語として扱います。"
+  ],
+  "仅本地翻译词典（不调用 API）": [
+    "Local dictionary only (no API calls)",
+    "ローカル辞書のみ（API 呼び出しなし）"
+  ],
+  "仅本地翻译词典": [
+    "Local dictionary only",
+    "ローカル辞書のみ"
+  ],
+  "未配置 API Key，已自动使用本地模式。": [
+    "No API key configured. Local mode is active.",
+    "API Key が未設定のため、ローカルモードを使用しています。"
+  ],
+  "命中缓存、词典或专家规则时替换；未命中保留原文。": [
+    "Replace text when a cache, dictionary, or local rule matches; otherwise keep the original.",
+    "Cache、辞書、ローカルルールに一致すれば置き換え、一致しなければ原文を残します。"
+  ],
+  "每次直接调用 LLM；完成译文写入词典供普通/离线模式复用。": [
+    "Call the LLM for each task. Completed translations are saved for reuse in normal or offline mode.",
+    "各タスクで LLM を直接呼び出します。完成した訳文は保存され、通常・オフラインモードで再利用できます。"
+  ],
+  "优先读取本地翻译词典与专家规则，未命中内容通过 API 翻译。": [
+    "Try the local dictionary and rules first; translate unmatched text through the API.",
+    "ローカル辞書とルールを優先し、一致しない文章を API で翻訳します。"
+  ],
+  "请使用窗口化或无边框模式。译文跟随原文字位置，切出游戏后自动隐藏。": [
+    "Play in windowed or borderless mode. Switch away from the game to hide the translation.",
+    "Window またはボーダーレスでプレイしてください。別のアプリに切り替えると訳文は非表示になります。"
+  ],
+  "框选区域": [
+    "Select areas",
+    "範囲を指定"
+  ],
+  "整个游戏窗口": [
+    "Entire game window",
+    "ゲーム画面全体"
+  ],
+  "开始翻译": [
+    "Start translation",
+    "翻訳開始"
+  ],
+  "停止 / 还原": [
+    "Stop and show original",
+    "停止して原文に戻す"
+  ],
+  "尚未选择区域": [
+    "No region selected",
+    "領域が未選択です"
+  ],
+  "识别整个客户区（对话区域更省资源和 API 费用）": [
+    "Recognizing the full client area. A dialogue-only region uses fewer resources and API requests.",
+    "ゲーム画面全体を認識します。会話部分だけを選ぶと、処理負荷と API 利用を減らせます。"
+  ],
+  "请选择实际游戏窗口（未自动选择其他应用）": [
+    "Choose a game window",
+    "ゲームの Window を選択"
+  ],
+  "请先选择游戏窗口。": [
+    "Select a game window first.",
+    "先にゲームの Window を選択してください。"
+  ],
+  "拖动选择翻译区域 · Esc 取消": [
+    "Drag to select a translation region · Esc to cancel",
+    "ドラッグで翻訳領域を選択・Esc でキャンセル"
+  ],
+  "这是本地翻译记忆库：保存整句译文与固定术语，让同一游戏里的名字和用词保持一致。": [
+    "This local translation memory stores sentences and fixed terms to keep names and terminology consistent within each game.",
+    "文章の訳と固定用語を保存するローカル Translation Memory です。同じゲーム内で名前や用語の訳を統一します。"
+  ],
+  "使用屏幕翻译页的游戏档案与语言对。在线翻译可学习短词；离线使用前可手动添加原文和固定译文。": [
+    "Uses the game profile and language pair from Screen translation. Online translation can learn short terms; you can add entries manually before offline use.",
+    "画面翻訳ページのゲーム別設定と言語ペアを使用します。オンライン翻訳では短い用語を学習でき、オフライン利用前に手動で辞書登録することもできます。"
+  ],
+  "通用词典列表最多展示前 200 条；游戏词条优先。修改后相关缓存失效，可在文本翻译页查看本地命中规则。": [
+    "Shows up to 200 shared entries. Game-specific entries take priority. Editing invalidates related cached results; Text translation shows which local rule matched.",
+    "共通辞書は先頭 200 件まで表示します。ゲーム固有の項目が優先されます。編集すると関連 Cache が無効になり、テキスト翻訳で一致したルールを確認できます。"
+  ],
+  "查看通用词典（跨游戏）": [
+    "Show shared dictionary (all games)",
+    "共通辞書を表示（ゲーム間で共有）"
+  ],
+  "导入词典…": [
+    "Import dictionary…",
+    "辞書をインポート…"
+  ],
+  "原文": [
+    "Original text",
+    "原文"
+  ],
+  "固定译文": [
+    "Term translation",
+    "用語の訳"
+  ],
+  "保存并锁定": [
+    "Save term",
+    "訳語を登録"
+  ],
+  "刷新列表": [
+    "Refresh list",
+    "一覧を更新"
+  ],
+  "删除选中术语": [
+    "Delete selected term",
+    "選択した用語を削除"
+  ],
+  "术语已保存": [
+    "Term saved",
+    "用語を保存しました"
+  ],
+  "使用屏幕翻译页的游戏档案、原语言和目标语言，也会查询同一份翻译词典。": [
+    "Uses the game profile and source/target languages from Screen translation, including the same translation dictionary.",
+    "画面翻訳ページのゲーム別設定・原文の言語・翻訳先を使い、同じ翻訳辞書を参照します。"
+  ],
+  "翻译文本": [
+    "Translate text",
+    "テキストを翻訳"
+  ],
+  "译文（可选中复制）": [
+    "Translation (select to copy)",
+    "訳文（選択してコピーできます）"
+  ],
+  "请输入待翻译文本。": [
+    "Enter text to translate.",
+    "翻訳する文章を入力してください。"
+  ],
+  "开始翻译前，请阅读并确认本页协议。": [
+    "Read and accept this agreement before translating.",
+    "翻訳を始める前に、このページの規約を確認して同意してください。"
+  ],
+  "我已阅读并同意上述协议": [
+    "I have read and agree to the terms above",
+    "上記の規約を読み、同意します"
+  ],
+  "同意并继续": [
+    "Agree and continue",
+    "同意して続行"
+  ],
+  "退出程序": [
+    "Exit",
+    "終了"
+  ],
+  "请先阅读并同意使用协议。": [
+    "Read and accept the user agreement first.",
+    "先に利用規約を読み、同意してください。"
+  ],
+  "请先勾选阅读并同意协议。": [
+    "Check the agreement box first.",
+    "規約への同意にチェックを入れてください。"
+  ],
+  "已确认当前版本协议。": [
+    "The current agreement has been accepted.",
+    "現行版の規約に同意済みです。"
+  ],
+  "协议已确认。": [
+    "Agreement accepted.",
+    "規約に同意しました。"
+  ],
+  "操作未完成，请检查配置或数据目录是否可写后重试。": [
+    "Could not complete the operation. Check your settings and write access to the data folder, then try again.",
+    "操作を完了できませんでした。設定とデータ Folder の書き込み権限を確認し、再試行してください。"
+  ],
+  "准备就绪。译文逐步出现，背景随译文逐步遮盖，完成后覆盖整段原文。\n本地模式命中缓存或术语即替换；未命中保留原文，不发起 API 请求。\n": [
+    "Ready. Translations and their background masks appear progressively; completed text covers the entire original region.\nIn local mode, cached translations or terms replace matching text. Unmatched text stays unchanged and makes no API request.\n",
+    "準備完了。訳文と背景 Mask が少しずつ表示され、翻訳が完成すると原文の領域全体を覆います。\nローカルモードでは Cache や用語に一致した文章を置き換えます。一致しない原文はそのまま残り、API は呼び出しません。\n"
+  ],
+  "请先停止翻译并等待当前请求结束。": [
+    "Stop translation and wait for pending requests to finish.",
+    "翻訳を停止し、処理中の Request が完了するまでお待ちください。"
+  ],
+  "请先停止翻译并等待当前请求结束，再修改 API 设置。": [
+    "Stop translation and wait for pending requests before changing API settings.",
+    "API 設定を変更する前に翻訳を停止し、処理中の Request の完了をお待ちください。"
+  ],
+  "请先停止翻译并等待当前请求结束，再切换模式。": [
+    "Stop translation and wait for pending requests before switching modes.",
+    "モードを切り替える前に翻訳を停止し、処理中の Request の完了をお待ちください。"
+  ],
+  "请先停止翻译并等待当前操作完成。": [
+    "Stop translation and wait for the current operation to finish.",
+    "翻訳を停止し、現在の操作が完了するまでお待ちください。"
+  ],
+  "请先停止翻译或等待词典操作完成。": [
+    "Stop translation or wait for the dictionary operation to finish.",
+    "翻訳を停止するか、辞書操作の完了をお待ちください。"
+  ],
+  "请先停止翻译或等待词典操作完成，再保存设置。": [
+    "Stop translation or wait for the dictionary operation before saving settings.",
+    "設定を保存する前に、翻訳を停止するか辞書操作の完了をお待ちください。"
+  ],
+  "已有翻译或词典操作正在进行。": [
+    "A translation or dictionary operation is already running.",
+    "翻訳または辞書操作を実行中です。"
+  ],
+  "正在完成词典操作，完成后关闭。": [
+    "Finishing the dictionary operation before closing.",
+    "辞書操作の完了後に終了します。"
+  ],
+  "积极模式不能与仅本地模式同时启用，请先在设置页关闭积极模式。": [
+    "Always use LLM and local-only mode cannot be combined. Turn off Always use LLM in Settings first.",
+    "毎回 LLM を使用するモードとローカル専用モードは併用できません。設定で毎回 LLM を使用するモードを先にオフにしてください。"
+  ],
+  "请先在设置页关闭积极模式，再启用仅本地词典。": [
+    "Turn off Always use LLM in Settings before enabling local-only mode.",
+    "ローカル専用モードを使う前に、設定で毎回 LLM を使用するモードをオフにしてください。"
+  ],
+  "积极模式需要已配置的 API 密钥，并关闭“仅本地翻译词典”。": [
+    "Always use LLM requires an API key and local-only mode must be off.",
+    "毎回 LLM を使用するには API Key を設定し、ローカル辞書専用モードをオフにしてください。"
+  ],
+  "源语言与目标语言不能相同。": [
+    "Source and target languages must be different.",
+    "原文の言語と翻訳先には異なる言語を選んでください。"
+  ],
+  "游戏语境最多 16384 字符，请缩短后重试。": [
+    "Game context is limited to 16,384 characters. Shorten it and try again.",
+    "ゲームの文脈は 16,384 文字までです。短くして再試行してください。"
+  ],
+  "识别线程正在结束，请稍候再开始。": [
+    "Recognition is stopping. Wait a moment before restarting.",
+    "認識処理を終了しています。少し待ってから再開してください。"
+  ],
+  "API 配置需要更新，请打开顶部入口查看原因。": [
+    "API settings need attention. Open API settings at the top for details.",
+    "API 設定の更新が必要です。上部の API 設定で詳細を確認してください。"
+  ],
+  "请选择 1 至 3 中的一个 API 槽位。": [
+    "Select API slot 1, 2, or 3.",
+    "API Slot 1～3 のいずれかを選択してください。"
+  ],
+  "请填写 API 密钥，或选择“仅使用本地词典”。": [
+    "Enter an API key, or choose Local dictionary only.",
+    "API Key を入力するか、ローカル辞書のみを選択してください。"
+  ],
+  "API 地址已改变。请重新填写该地址对应的密钥，再保存；留空仅能保留同一地址的密钥。": [
+    "The API address changed. Enter a key for the new address before saving. Leaving it blank only preserves a key for the same address.",
+    "API URL が変更されています。新しいアドレスの API Key を入力してから保存してください。空欄で維持できるのは同じアドレスの API Key だけです。"
+  ],
+  "API 配置": [
+    "API settings",
+    "API 設定"
+  ],
+  "API 地址": [
+    "API address",
+    "API URL"
+  ],
+  "模型": [
+    "Model",
+    "Model"
+  ],
+  "API 密钥": [
+    "API key",
+    "API Key"
+  ],
+  "清除这个槽位已保存的密钥": [
+    "Clear the saved key for this slot",
+    "この Slot に保存した API Key を削除"
+  ],
+  "仅使用本地词典": [
+    "Use local dictionary only",
+    "ローカル辞書だけを使用"
+  ],
+  "已配置": [
+    "Configured",
+    "設定済み"
+  ],
+  "待填写": [
+    "Not set",
+    "未設定"
+  ],
+  "待填写密钥": [
+    "Key not set",
+    "API Key 未設定"
+  ],
+  "需重新配置": [
+    "Reconfiguration required",
+    "再設定が必要です"
+  ],
+  "API 地址已改变：请重新填写该地址的密钥，原密钥不会随地址转移。": [
+    "The API address changed. Re-enter a key for this address; the previous key will not transfer.",
+    "API URL が変更されています。このアドレスの API Key を再入力してください。以前の API Key は引き継がれません。"
+  ],
+  "请选择 1 至 3 中的一个槽位。": [
+    "Select slot 1, 2, or 3.",
+    "Slot 1～3 のいずれかを選択してください。"
+  ],
+  "已保存密钥。同一 API 地址留空保留；填写新密钥可替换。": [
+    "A key is saved. Leave blank to keep it for the same address, or enter a new key to replace it.",
+    "API Key は保存済みです。同じ API URL では空欄で維持でき、新しい API Key を入力すると置き換えます。"
+  ],
+  "此槽位尚无密钥。请填写密钥，或选择仅使用本地词典。": [
+    "This slot has no key. Enter one, or choose Local dictionary only.",
+    "この Slot には API Key がありません。API Key を入力するか、ローカル辞書のみを選択してください。"
+  ],
+  "三个独立槽位，分别保存 API 地址、模型与加密密钥。": [
+    "Three independent slots, each with its own API address, model, and encrypted key.",
+    "API URL、Model、暗号化した API Key を 3 つの独立した Slot に保存できます。"
+  ],
+  "切换槽位保留本次填写；仅当前槽位会被保存，关闭窗口放弃未保存内容。": [
+    "Switching slots keeps unsaved edits in this window. Save applies only to the selected slot; closing discards unsaved edits.",
+    "Slot を切り替えても、この Window 内の入力内容は維持されます。保存は選択中の Slot にのみ適用され、閉じると未保存の内容は破棄されます。"
+  ],
+  "保存不会调用 API。密钥由当前 Windows 账户加密保存。": [
+    "Saving makes no API request. Keys are encrypted for the current Windows account.",
+    "保存時に API は呼び出しません。API Key は現在の Windows Account 用に暗号化して保存します。"
+  ],
+  "翻译与识别设置": [
+    "Translation and recognition settings",
+    "翻訳と認識の設定"
+  ],
+  "保存后用于下一次翻译。运行中请先停止；提高并发会同时增加服务请求和资源占用。": [
+    "Saved settings apply to the next translation session. Stop the current session first. Higher concurrency increases simultaneous requests and resource use.",
+    "保存した設定は次回の翻訳から適用されます。実行中なら先に停止してください。同時処理数を増やすと、同時 Request 数とリソース使用量も増えます。"
+  ],
+  "译文外观": [
+    "Translation appearance",
+    "訳文の表示"
+  ],
+  "覆盖字体": [
+    "Overlay font",
+    "表示 Font"
+  ],
+  "软件界面语言": [
+    "Interface language",
+    "画面の表示言語"
+  ],
+  "选择系统已安装的字体，也可输入字体名称。缺少字体或字形时由 Windows 回退；字号仍自动适配文字框。": [
+    "Choose an installed font or enter its family name. Windows substitutes missing fonts or glyphs. Text size still fits the text box automatically.",
+    "インストール済みの Font を選ぶか、Font 名を入力してください。Font や文字がない場合は Windows が代替します。文字サイズは引き続き領域に自動調整されます。"
+  ],
+  "外观预览，不调用 API，也不改写翻译词典。": [
+    "Appearance preview only; no API call or dictionary changes.",
+    "表示のプレビューのみです。API 呼び出しや辞書の変更は行いません。"
+  ],
+  "欢迎来到星际世界": [
+    "Welcome to the stars",
+    "星々の世界へようこそ"
+  ],
+  "请输入有效的系统字体名称后再保存。": [
+    "Enter a valid system font name before saving.",
+    "有効な System Font 名を入力してから保存してください。"
+  ],
+  "翻译并发上限": [
+    "Concurrent translations",
+    "翻訳の最大同時処理数"
+  ],
+  "优先识别和翻译鼠标附近的文字": [
+    "Prioritize text near the pointer",
+    "Pointer 付近の文字を優先する"
+  ],
+  "后台压缩游戏语境（额外消耗 API 请求）": [
+    "Summarize game context in background (uses API requests)",
+    "ゲームの文脈をバックグラウンドで要約する（API Request を消費）"
+  ],
+  "文字匹配工作线程": [
+    "Text matching workers",
+    "文字照合の Worker Thread 数"
+  ],
+  "同时追踪文字框": [
+    "Tracked text boxes",
+    "同時追跡する文字枠数"
+  ],
+  "截图间隔（毫秒）": [
+    "Capture interval (ms)",
+    "Capture 間隔（ミリ秒）"
+  ],
+  "文字稳定等待（毫秒）": [
+    "Text stability delay (ms)",
+    "文字の安定待ち時間（ミリ秒）"
+  ],
+  "漏识别保留帧数": [
+    "Missed-frame retention",
+    "認識漏れ時の保持 Frame 数"
+  ],
+  "旧译文暂留（毫秒）": [
+    "Previous translation hold (ms)",
+    "直前の訳文の保持時間（ミリ秒）"
+  ],
+  "画面变化敏感度": [
+    "Screen change sensitivity",
+    "画面変化の感度"
+  ],
+  "暂留适用于画面稳定时的短暂漏识别。设为 0 关闭。画面变化敏感度越高，清除旧译文越早。": [
+    "The hold covers brief OCR gaps on a stable screen. Set it to 0 to disable. Higher sensitivity clears stale translations sooner.",
+    "画面が安定している間の一時的な認識漏れに対して訳文を保持します。0 で無効になります。画面変化の感度が高いほど、古い訳文を早く消去します。"
+  ],
+  "便携 OCR 最低置信度": [
+    "Portable OCR confidence threshold",
+    "ポータブル OCR の最低信頼度"
+  ],
+  "本次运行 API 请求额度": [
+    "API request limit per session",
+    "今回の Session の API 上限回数"
+  ],
+  "API 超时（秒）": [
+    "API timeout (seconds)",
+    "API Timeout（秒）"
+  ],
+  "失败重试次数": [
+    "Retries after failure",
+    "失敗時の再試行回数"
+  ],
+  "翻译最大输出 Token": [
+    "Maximum translation output tokens",
+    "訳文の最大出力 Token 数"
+  ],
+  "单次最大输入字符": [
+    "Maximum input characters",
+    "1 回の最大入力文字数"
+  ],
+  "显示源语言标注": [
+    "Show source-language label",
+    "原文の言語を表示"
+  ],
+  "显示译文外侧方括号 [ ]": [
+    "Wrap translations in brackets [ ]",
+    "訳文を角括弧 [ ] で囲む"
+  ],
+  "合并相邻对话行": [
+    "Merge adjacent dialogue lines",
+    "隣接する会話行を結合"
+  ],
+  "在线译文自动学习短术语": [
+    "Learn short terms from online translations",
+    "オンラインの訳文から短い用語を学習"
+  ],
+  "启用本地专家规则（数字模板、完整词条组合）": [
+    "Use local rules (number templates and complete term combinations)",
+    "ローカルルールを使用（数値 Template・用語の完全な組み合わせ）"
+  ],
+  "使用跨游戏通用词典": [
+    "Use the shared dictionary across games",
+    "ゲーム間で共通辞書を使用"
+  ],
+  "积极模式：每次翻译请求直接调用 LLM": [
+    "Always use LLM: request a model translation for every task",
+    "毎回 LLM を使用：各翻訳タスクで Model を直接呼び出す"
+  ],
+  "积极模式每次直接调用 LLM，跳过读取词典、缓存与重复请求合并；完成译文写入词典供普通/离线模式复用。仅在文字需要翻译时触发，受并发和额度限制；不能与仅本地模式同时启用。": [
+    "Always use LLM skips dictionary and cache reads and duplicate-request sharing. Completed translations are saved for normal/offline reuse. Requests run only when translation is needed and obey concurrency and request limits. Cannot be combined with local-only mode.",
+    "毎回 LLM を使用するモードでは、辞書・Cache の参照と重複 Request の共有を省略します。完成した訳文は通常・オフライン利用のために保存されます。翻訳が必要なときだけ動作し、同時処理数と回数の上限に従います。ローカル専用モードとは併用できません。"
+  ],
+  "OCR 置信度仅用于便携 OCR 后端；Windows 系统 OCR 不提供该项置信度。请求额度为当前引擎计数，保存参数后新建引擎重新计数，重试也占额度。": [
+    "The confidence threshold applies only to portable OCR; Windows OCR does not supply this score. Request limits count the current engine session. Saving settings creates a new engine and resets the count; retries count toward the limit.",
+    "信頼度の設定はポータブル OCR にのみ適用されます。Windows OCR はこの値を提供しません。Request 上限は現在の Engine の累計です。設定保存後の新しい Engine で回数がリセットされ、再試行も上限に含まれます。"
+  ],
+  "保存设置": [
+    "Save settings",
+    "設定を保存"
+  ],
+  "设置已保存，下次开始翻译时生效。": [
+    "Settings saved. They apply when translation starts again.",
+    "設定を保存しました。次回の翻訳開始時に適用されます。"
+  ],
+  "字体名称不能包含控制字符。": [
+    "Font names cannot contain control characters.",
+    "Font 名に制御文字は使用できません。"
+  ],
+  "字体名称须为 1 至 31 个 UTF-16 字符。": [
+    "Font names must contain 1–31 UTF-16 code units.",
+    "Font 名は UTF-16 で 1～31 Code Unit にしてください。"
+  ],
+  "参数必须是键值配置。": [
+    "Settings must be key-value pairs.",
+    "設定はキーと値の組み合わせにしてください。"
+  ],
+  "界面语言须为简体中文、English 或日本語。": [
+    "Choose Simplified Chinese, English, or Japanese for the interface.",
+    "表示言語には簡体字中国語、英語、日本語のいずれかを選んでください。"
+  ],
+  "先预览，再导入": [
+    "Preview before importing",
+    "プレビューしてからインポート"
+  ],
+  "CSV / TSV / JSON / TMX · 最多 20 MiB、100000 条；当前游戏词典最多 5000 条。": [
+    "CSV / TSV / JSON / TMX · Up to 20 MiB and 100,000 entries; up to 5,000 entries per game dictionary.",
+    "CSV / TSV / JSON / TMX・最大 20 MiB、100,000 件。ゲーム別辞書は最大 5,000 件です。"
+  ],
+  "选择文件": [
+    "Choose file",
+    "File を選択"
+  ],
+  "导入通用词典（同一语言对，跨游戏使用）": [
+    "Import into shared dictionary (same language pair, across games)",
+    "共通辞書へインポート（同じ言語ペアでゲーム間共有）"
+  ],
+  "同原文冲突时替换已有译文（默认保留已有）": [
+    "Replace conflicting translations (existing entries kept by default)",
+    "原文が重複した場合は既存の訳を置換（既定では既存を保持）"
+  ],
+  "选择文件后点击预览；此步骤不会修改词典。": [
+    "Choose a file, then preview it. This step does not change the dictionary.",
+    "File を選び、プレビューしてください。この段階では辞書は変更されません。"
+  ],
+  "预览文件": [
+    "Preview file",
+    "File をプレビュー"
+  ],
+  "确认导入": [
+    "Import",
+    "インポートを実行"
+  ],
+  "选择词典文件": [
+    "Choose dictionary file",
+    "辞書 File を選択"
+  ],
+  "词典文件": [
+    "Dictionary files",
+    "辞書 File"
+  ],
+  "全部文件": [
+    "All files",
+    "すべての File"
+  ],
+  "通用词典": [
+    "Shared dictionary",
+    "共通辞書"
+  ],
+  "（未指定）": [
+    "(Unspecified)",
+    "（未指定）"
+  ],
+  "请先选择词典文件。": [
+    "Choose a dictionary file first.",
+    "先に辞書 File を選択してください。"
+  ],
+  "请先预览文件。": [
+    "Preview the file first.",
+    "先に File をプレビューしてください。"
+  ],
+  "请等待本次解析或写入完成。": [
+    "Wait for the current parsing or write operation to finish.",
+    "現在の解析または書き込みが完了するまでお待ちください。"
+  ],
+  "正在解析文件…": [
+    "Reading file…",
+    "File を解析しています…"
+  ],
+  "正在写入词典…": [
+    "Writing dictionary…",
+    "辞書を書き込んでいます…"
+  ],
+  "词典文件无法解析，请检查文件格式。": [
+    "Could not parse the dictionary. Check the file format.",
+    "辞書を解析できませんでした。File 形式を確認してください。"
+  ],
+  "导入未完成，请检查词典文件和数据目录。": [
+    "Import failed. Check the dictionary file and data folder.",
+    "インポートできませんでした。辞書 File とデータ Folder を確認してください。"
+  ],
+  "无法打开本地词典，请检查数据目录是否可写。": [
+    "Could not open the local dictionary. Check write access to the data folder.",
+    "ローカル辞書を開けませんでした。データ Folder に書き込めるか確認してください。"
+  ],
+  "未开始识别": [
+    "Recognition not started",
+    "認識は開始されていません"
+  ],
+  "就绪 · 屏幕覆盖翻译": [
+    "Ready · On-screen translation",
+    "準備完了・画面上に翻訳を表示"
+  ],
+  "追踪对象 0 · 已显示译文 0": [
+    "Tracked 0 · Translations shown 0",
+    "追跡 0 件・訳文表示 0 件"
+  ],
+  "积极模式 · 每次调用 LLM": [
+    "Always use LLM",
+    "毎回 LLM を使用"
+  ],
+  "词典优先 · 在线翻译": [
+    "Dictionary first · Online translation",
+    "辞書優先・オンライン翻訳"
+  ],
+  "未命中保留原文": [
+    "Keep unmatched original text",
+    "一致しない原文は保持"
+  ],
+  "新内容联网翻译": [
+    "Translate new text online",
+    "新しい文章をオンラインで翻訳"
+  ],
+  "游戏词典整句": [
+    "Game dictionary sentence",
+    "ゲーム別辞書の文章"
+  ],
+  "整句缓存": [
+    "Sentence cache",
+    "文章 Cache"
+  ],
+  "通用词典整句": [
+    "Shared dictionary sentence",
+    "共通辞書の文章"
+  ],
+  "数字模板规则": [
+    "Number template rule",
+    "数値 Template のルール"
+  ],
+  "完整词条组合": [
+    "Complete term combination",
+    "用語の完全な組み合わせ"
+  ],
+  "LLM 直译": [
+    "Direct LLM translation",
+    "LLM による直接翻訳"
+  ],
+  "LLM 翻译": [
+    "LLM translation",
+    "LLM 翻訳"
+  ],
+  "仅本地翻译词典 · 未命中，已保留原文": [
+    "Local dictionary · No match; original text kept",
+    "ローカル辞書・一致なし、原文を保持しました"
+  ],
+  "当前槽位 {index} · {status}": [
+    "Current slot {index} · {status}",
+    "使用中の Slot {index}・{status}"
+  ],
+  "槽位 {index}\n{status}": [
+    "Slot {index}\n{status}",
+    "Slot {index}\n{status}"
+  ],
+  "导入目标：{source} → {target} · 游戏档案：{profile}": [
+    "Import destination: {source} → {target} · Game profile: {profile}",
+    "インポート先：{source} → {target}・ゲーム別設定：{profile}"
+  ],
+  "导入目标：{source} → {target} · 通用词典": [
+    "Import destination: {source} → {target} · Shared dictionary",
+    "インポート先：{source} → {target}・共通辞書"
+  ],
+  "槽位 {index} 已启用 · {mode}": [
+    "Slot {index} active · {mode}",
+    "Slot {index} を使用中・{mode}"
+  ],
+  "正在编辑：槽位 {index}{suffix}": [
+    "Editing slot {index}{suffix}",
+    "編集中：Slot {index}{suffix}"
+  ],
+  "保存并使用槽位 {index}": [
+    "Save and use slot {index}",
+    "Slot {index} を保存して使用"
+  ],
+  "槽位 {index} 已保存；其他槽位还有未保存内容。": [
+    "Slot {index} saved; other slots have unsaved edits.",
+    "Slot {index} を保存しました。他の Slot には未保存の内容があります。"
+  ],
+  "追踪对象 {tracked} · 已显示译文 {shown} · 翻译并发上限 {workers}": [
+    "Tracked {tracked} · Translations shown {shown} · Concurrency {workers}",
+    "追跡 {tracked} 件・訳文表示 {shown} 件・最大同時処理数 {workers}"
+  ],
+  "区域 {width} × {height}，随游戏窗口移动": [
+    "Region {width} × {height}; follows the game window",
+    "領域 {width} × {height}・ゲームの Window に追従"
+  ],
+  "原文超过 {limit} 字符，请分段翻译或在设置中调整上限。": [
+    "Input exceeds {limit} characters. Split it into smaller parts or adjust the limit in Settings.",
+    "原文が {limit} 文字を超えています。分割して翻訳するか、設定で上限を変更してください。"
+  ],
+  "{label}须为 {minimum} 至 {maximum} 的整数。": [
+    "{label} must be an integer from {minimum} to {maximum}.",
+    "{label} は {minimum}～{maximum} の整数にしてください。"
+  ],
+  "{label}须为开或关。": [
+    "{label} must be on or off.",
+    "{label} はオンかオフにしてください。"
+  ],
+  "预览成功，共 {count} 条；上方展示前 5 条，尚未写入。": [
+    "Preview ready: {count} entries; the first 5 are shown above. Nothing has been imported yet.",
+    "プレビュー完了：{count} 件。上に先頭 5 件を表示しています。まだインポートしていません。"
+  ],
+  "已导入：新增 {inserted}，更新 {updated}，保留/跳过 {skipped}。": [
+    "Imported: {inserted} added, {updated} updated, {skipped} kept/skipped.",
+    "インポート完了：追加 {inserted} 件、更新 {updated} 件、保持／スキップ {skipped} 件。"
+  ],
+  "本机缺少 {language} OCR。已安装：{installed}。文本翻译仍可使用。": [
+    "OCR for {language} is unavailable. Installed: {installed}. Text translation is still available.",
+    "{language} の OCR がありません。インストール済み：{installed}。テキスト翻訳は引き続き利用できます。"
+  ],
+  "截图 {capture} ms · OCR {ocr} ms · {count} 行": [
+    "Capture {capture} ms · OCR {ocr} ms · {count} lines",
+    "Capture {capture} ms・OCR {ocr} ms・{count} 行"
+  ],
+  "就绪 · ": [
+    "Ready · ",
+    "準備完了・"
+  ],
+  "当前槽位 ": [
+    "Current slot ",
+    "使用中の Slot "
+  ],
+  "槽位 ": [
+    "Slot ",
+    "Slot "
+  ],
+  " 已启用 · ": [
+    " active · ",
+    " を使用中・"
+  ],
+  "当前使用 · ": [
+    "Active · ",
+    "使用中・"
+  ],
+  "正在编辑：槽位 ": [
+    "Editing slot ",
+    "編集中：Slot "
+  ],
+  "（当前使用）": [
+    " (active)",
+    "（使用中）"
+  ],
+  "保存并使用槽位 ": [
+    "Save and use slot ",
+    "保存して使用：Slot "
+  ],
+  " 已保存；其他槽位还有未保存内容。": [
+    " saved; other slots have unsaved edits.",
+    " を保存しました。他の Slot には未保存の内容があります。"
+  ],
+  "设置已保存 · ": [
+    "Settings saved · ",
+    "設定を保存しました・"
+  ],
+  "正在运行 · ": [
+    "Running · ",
+    "実行中・"
+  ],
+  " · 切回游戏即开始识别": [
+    " · Switch to the game to recognize text",
+    "・ゲームに戻ると文字を認識します"
+  ],
+  "已停止 · ": [
+    "Stopped · ",
+    "停止しました・"
+  ],
+  " · 原画面恢复": [
+    " · Original screen restored",
+    "・元の画面を復元"
+  ],
+  "追踪对象 ": [
+    "Tracked ",
+    "追跡 "
+  ],
+  " · 已显示译文 ": [
+    " · Translations shown ",
+    "・訳文表示 "
+  ],
+  " · 翻译并发上限 ": [
+    " · Concurrency ",
+    "・最大同時処理数 "
+  ],
+  " · 正在查询或翻译": [
+    " · Looking up or translating",
+    "・辞書参照／翻訳中"
+  ],
+  " · 翻译完成 · ": [
+    " · Translation complete · ",
+    "・翻訳完了・"
+  ],
+  " · 缓存 ": [
+    " · Cache ",
+    "・Cache "
+  ],
+  " 字符 · Ctrl+Enter 翻译": [
+    " characters · Ctrl+Enter to translate",
+    " 文字・Ctrl+Enter で翻訳"
+  ],
+  " · 请分段输入": [
+    " · Split into smaller parts",
+    "・分割して入力してください"
+  ],
+  "协议版本：": [
+    "Agreement version: ",
+    "規約のバージョン："
+  ],
+  "导入目标：": [
+    "Import destination: ",
+    "インポート先："
+  ],
+  "游戏档案：": [
+    "Game profile: ",
+    "ゲーム別設定："
+  ],
+  "区域 ": [
+    "Region ",
+    "領域 "
+  ],
+  "，随游戏窗口移动": [
+    "; follows the game window",
+    "・ゲームの Window に追従"
+  ],
+  "截图 ": [
+    "Capture ",
+    "Capture "
+  ],
+  " 行": [
+    " lines",
+    " 行"
+  ],
+  "原文超过 ": [
+    "Input exceeds ",
+    "原文が "
+  ],
+  " 字符，请分段翻译或在设置中调整上限。": [
+    " characters. Split it into smaller parts or adjust the limit in Settings.",
+    " 文字を超えています。分割して翻訳するか、設定で上限を変更してください。"
+  ],
+  "本机缺少 ": [
+    "OCR unavailable for ",
+    "OCR がありません："
+  ],
+  " OCR。已安装：": [
+    ". Installed OCR: ",
+    "。インストール済み："
+  ],
+  "。文本翻译仍可使用。": [
+    ". Text translation is still available.",
+    "。テキスト翻訳は引き続き利用できます。"
+  ],
+  "预览成功，共 ": [
+    "Preview ready: ",
+    "プレビュー完了："
+  ],
+  " 条；上方展示前 5 条，尚未写入。": [
+    " entries; first 5 shown above. Not imported yet.",
+    " 件。上に先頭 5 件を表示しています。まだインポートしていません。"
+  ],
+  "已导入：新增 ": [
+    "Imported: added ",
+    "インポート完了：追加 "
+  ],
+  "，更新 ": [
+    ", updated ",
+    "、更新 "
+  ],
+  "，保留/跳过 ": [
+    ", kept/skipped ",
+    "、保持／スキップ "
+  ],
+  "须为 ": [
+    " must be ",
+    " は "
+  ],
+  " 至 ": [
+    " to ",
+    "～"
+  ],
+  " 的整数。": [
+    " as an integer.",
+    " の整数にしてください。"
+  ],
+  "须为开或关。": [
+    " must be on or off.",
+    " はオンかオフにしてください。"
+  ],
+  "密钥加密需要 Windows 用户账户。": [
+    "Key encryption requires a Windows user account.",
+    "API Key の暗号化には Windows ユーザー Account が必要です。"
+  ],
+  "密钥文件格式无效，请重新填写 API 密钥。": [
+    "Invalid credential file. Enter the API key again.",
+    "Key File の形式が無効です。API Key を再入力してください。"
+  ],
+  "API 地址或模型格式无效，该槽位已停用并显示默认值；请核对服务商后重新填写密钥。": [
+    "The API address or model is invalid. This slot is disabled and shows defaults. Verify the provider and enter the key again.",
+    "API URL または Model の形式が無効です。この Slot を無効にして既定値を表示しています。サービス提供元を確認し、API Key を再入力してください。"
+  ],
+  "未找到当前槽位已保存的 API 密钥，请重新填写。": [
+    "No saved key was found for the current slot. Enter it again.",
+    "現在の Slot の保存済み API Key が見つかりません。再入力してください。"
+  ],
+  "无法解密已保存的 API 密钥，请在当前 Windows 账户下重新填写。": [
+    "The saved key could not be decrypted. Enter it again under this Windows account.",
+    "保存済みの API Key を復号できません。この Windows Account で再入力してください。"
+  ],
+  "无法加密 API 密钥，原配置未被清除。": [
+    "Could not encrypt the API key. The previous configuration was not removed.",
+    "API Key を暗号化できませんでした。以前の設定は削除していません。"
+  ],
+  "API 密钥加密校验失败，原配置未被清除。": [
+    "Key encryption verification failed. The previous configuration was not removed.",
+    "API Key の暗号化確認に失敗しました。以前の設定は削除していません。"
+  ],
+  "API 密钥保存校验失败，原配置未被清除。": [
+    "Saved-key verification failed. The previous configuration was not removed.",
+    "API Key の保存確認に失敗しました。以前の設定は削除していません。"
+  ],
+  "未找到已保存的 API 密钥，请重新填写。": [
+    "No saved API key was found. Enter it again.",
+    "保存済みの API Key が見つかりません。再入力してください。"
+  ],
+  "API 槽位必须是 1、2 或 3。": [
+    "API slot must be 1, 2, or 3.",
+    "API Slot は 1、2、3 のいずれかにしてください。"
+  ],
+  "配置文件无法读取，请检查 config/local.json 与示例配置。": [
+    "Could not read the configuration. Check config/local.json and the example configuration.",
+    "設定 File を読み込めません。config/local.json と設定例を確認してください。"
+  ],
+  "无法读取已保存的 API 密钥，请重新填写。": [
+    "Could not read the saved API key. Enter it again.",
+    "保存済みの API Key を読み込めません。再入力してください。"
+  ],
+  "API 槽位配置无效，请检查本地配置。": [
+    "Invalid API slot configuration. Check the local settings.",
+    "API Slot の設定が無効です。ローカル設定を確認してください。"
+  ],
+  "API 地址与密钥绑定不一致，或旧密钥尚未绑定地址；请核对服务商后重新填写该槽位密钥。": [
+    "The key is bound to a different API address or has no address binding. Verify the provider and enter this slot’s key again.",
+    "API Key の登録先 API URL が異なるか、まだ登録されていません。サービス提供元を確認し、この Slot の API Key を再入力してください。"
+  ],
+  "配置文件超过 1 MiB 上限，本次未保存。": [
+    "Configuration exceeds the 1 MiB limit. Nothing was saved.",
+    "設定 File が 1 MiB の上限を超えています。保存していません。"
+  ],
+  "无法保存设置，已有配置与密钥未被主动清除。": [
+    "Could not save settings. Existing settings and keys were not deliberately removed.",
+    "設定を保存できませんでした。既存の設定や API Key を明示的に削除してはいません。"
+  ],
+  "设置格式无效。": [
+    "Invalid settings format.",
+    "設定の形式が無効です。"
+  ],
+  "API 地址和模型必须是文本。": [
+    "API address and model must be text.",
+    "API URL と Model は文字列にしてください。"
+  ],
+  "其他槽位的加密密钥无法读取，不能覆盖；请恢复原密钥文件后重试。": [
+    "Another slot’s encrypted key is unreadable and cannot be overwritten. Restore the credential file and try again.",
+    "他の Slot の暗号化した API Key を読み込めないため、上書きできません。元の Key File を復元して再試行してください。"
+  ],
+  "原 API 密钥尚未完成加密迁移，请先恢复配置。": [
+    "The old API key has not finished encrypted migration. Restore the configuration first.",
+    "以前の API Key の暗号化移行が完了していません。先に設定を復元してください。"
+  ],
+  "API 地址已改变或旧密钥未绑定，请核对服务商并重新填写密钥。": [
+    "The API address changed or the old key is unbound. Verify the provider and enter the key again.",
+    "API URL が変わったか、以前の API Key がアドレスに登録されていません。サービス提供元を確認して API Key を再入力してください。"
+  ],
+  "原密钥不可读取，请重新填写。": [
+    "The previous key cannot be read. Enter it again.",
+    "以前の API Key を読み込めません。再入力してください。"
+  ],
+  "API 地址须为公开 HTTPS 地址，不能包含账号、查询参数、片段或控制字符。": [
+    "Use a public HTTPS API address without user credentials, query parameters, fragments, or control characters.",
+    "公開 HTTPS の API URL を指定してください。ユーザー情報、Query、フラグメント、制御文字は使用できません。"
+  ],
+  "API 密钥必须是文本。": [
+    "API key must be text.",
+    "API Key は文字列にしてください。"
+  ],
+  "API 密钥含有控制字符，请检查粘贴内容。": [
+    "The API key contains control characters. Check the pasted value.",
+    "API Key に制御文字が含まれています。貼り付けた内容を確認してください。"
+  ],
+  "API 密钥须为不含空格的 ASCII 文本，最多 8192 字符。": [
+    "API keys must be ASCII text without spaces, up to 8,192 characters.",
+    "API Key は空白を含まない ASCII 文字列で、8,192 文字以内にしてください。"
+  ],
+  "模型标识不能为空，最多 256 字符，不能含控制字符。": [
+    "Model ID is required, must be at most 256 characters, and cannot contain control characters.",
+    "Model ID は必須です。256 文字以内で、制御文字は使用できません。"
+  ],
+  "语言代码须为 en、ja、zh-Hans 等有效格式，最多 64 字符。": [
+    "Use a valid language code such as en, ja, or zh-Hans, up to 64 characters.",
+    "en、ja、zh-Hans などの有効な Language Code を 64 文字以内で指定してください。"
+  ],
+  "本地翻译词典未命中，保留原文": [
+    "No local dictionary match; keeping original text",
+    "ローカル辞書に一致する項目がないため、原文を保持します"
+  ],
+  "文本包含无效 Unicode 或不支持的控制字符。": [
+    "Text contains invalid Unicode or unsupported control characters.",
+    "文章に無効な Unicode または未対応の制御文字が含まれています。"
+  ],
+  "API 重试次数已用尽。": [
+    "No API retries remain.",
+    "API の再試行回数を使い切りました。"
+  ],
+  "翻译参数无效，请在设置页填写范围内的数值。": [
+    "Invalid translation parameters. Enter values within the allowed ranges in Settings.",
+    "翻訳 Parameter が無効です。設定ページで範囲内の値を入力してください。"
+  ],
+  "API 流行超过上限，本次结果未缓存。": [
+    "An API stream line exceeded the limit. The result was not cached.",
+    "API Stream の 1 行が上限を超えました。結果は Cache していません。"
+  ],
+  "API 总响应时间超过限制，本次结果未缓存。": [
+    "API response time exceeded the limit. The result was not cached.",
+    "API の総応答時間が上限を超えました。結果は Cache していません。"
+  ],
+  "API 响应超过 2 MiB 上限，本次结果未缓存。": [
+    "The API response exceeded 2 MiB. The result was not cached.",
+    "API の応答が 2 MiB を超えました。結果は Cache していません。"
+  ],
+  "积极模式需要当前槽位的 API 密钥，并关闭仅本地词典模式。": [
+    "Always use LLM requires a key in the current slot and local-only mode must be off.",
+    "毎回 LLM を使用するには、現在の Slot に API Key を設定し、ローカル専用モードをオフにしてください。"
+  ],
+  "翻译已停止。": [
+    "Translation stopped.",
+    "翻訳を停止しました。"
+  ],
+  "游戏档案和语言代码必须是文本。": [
+    "Game profile and language codes must be text.",
+    "ゲーム別設定と Language Code は文字列にしてください。"
+  ],
+  "游戏档案名称不得超过 256 字符。": [
+    "Game profile names cannot exceed 256 characters.",
+    "ゲーム別設定の名前は 256 文字以内にしてください。"
+  ],
+  "术语和译文不能为空，且长度不得超过 256 字符。": [
+    "Terms and translations must be nonempty and at most 256 characters.",
+    "用語と訳は空欄にせず、それぞれ 256 文字以内にしてください。"
+  ],
+  "导入词典必须指定有效的源语言和目标语言代码。": [
+    "Dictionary imports require valid source and target language codes.",
+    "辞書のインポートには有効な原文と翻訳先の Language Code が必要です。"
+  ],
+  "文本过长，请缩小识别区域；上下文最多 16384 字符。": [
+    "Text is too long. Select a smaller region; context is limited to 16,384 characters.",
+    "文章が長すぎます。認識領域を狭くしてください。文脈は 16,384 文字までです。"
+  ],
+  "API 返回无效 UTF-8，本次结果未缓存。": [
+    "The API returned invalid UTF-8. The result was not cached.",
+    "API が無効な UTF-8 を返しました。結果は Cache していません。"
+  ],
+  "模型返回了未知术语占位符，本次结果未写入翻译词典。": [
+    "The model returned an unknown term placeholder. The result was not saved to the dictionary.",
+    "Model が不明な用語 Placeholder を返しました。結果は辞書に保存していません。"
+  ],
+  "词典批次格式无效或超过 100000 项。": [
+    "Invalid dictionary batch or more than 100,000 entries.",
+    "辞書の一括データが無効か、100,000 件を超えています。"
+  ],
+  "词条和译文须为非空文本，单字段最多 4096 字符。": [
+    "Entries and translations must be nonempty text, up to 4,096 characters per field.",
+    "見出し語と訳は空欄にせず、各 Field 4,096 文字以内にしてください。"
+  ],
+  "数字模板的原文和译文必须各包含一个 {n}。": [
+    "A number template must contain exactly one {n} in both source and translation.",
+    "数値 Template の原文と訳には、それぞれ {n} を 1 つ含めてください。"
+  ],
+  "本地查询文本或语境过长。": [
+    "Local lookup text or context is too long.",
+    "ローカル検索の文章または文脈が長すぎます。"
+  ],
+  "请调整请求限额或关闭积极模式。": [
+    "Adjust the request limit or turn off Always use LLM.",
+    "Request 上限を変更するか、毎回 LLM を使用するモードをオフにしてください。"
+  ],
+  "本地缓存仍然可用。": [
+    "Local cached translations remain available.",
+    "ローカルの翻訳 Cache は引き続き使用できます。"
+  ],
+  "API 流行数量超过上限，本次结果未缓存。": [
+    "The API stream exceeded the line-count limit. The result was not cached.",
+    "API Stream の行数が上限を超えました。結果は Cache していません。"
+  ],
+  "术语占位符未被模型完整保留，本次结果未写入翻译词典。": [
+    "The model did not preserve all term placeholders. The result was not saved to the dictionary.",
+    "Model が用語 Placeholder をすべて保持しませんでした。結果は辞書に保存していません。"
+  ],
+  "当前游戏的术语表已达到 5000 项上限。": [
+    "This game’s glossary has reached the 5,000-entry limit.",
+    "このゲームの用語集が 5,000 件の上限に達しました。"
+  ],
+  "同一批次含同原文的冲突译文，请先消除歧义。": [
+    "This batch contains conflicting translations for the same source. Resolve them first.",
+    "同じ原文に異なる訳が登録されています。先に競合を解消してください。"
+  ],
+  "API 网络连接失败或超时，请检查网络；本次结果未缓存。": [
+    "The API connection failed or timed out. Check the network; the result was not cached.",
+    "API 接続が失敗または Timeout しました。Network を確認してください。結果は Cache していません。"
+  ],
+  "翻译期间术语表已更新，请重新翻译以应用最新术语。": [
+    "The glossary changed during translation. Translate again to apply the latest terms.",
+    "翻訳中に用語集が更新されました。最新の用語を適用するには再翻訳してください。"
+  ],
+  "API 密钥无效": [
+    "Invalid API key",
+    "API Key が無効です"
+  ],
+  "API 余额不足": [
+    "Insufficient API balance",
+    "API の残高が不足しています"
+  ],
+  "API 访问被拒绝": [
+    "API access denied",
+    "API へのアクセスが拒否されました"
+  ],
+  "模型或 API 路径不存在": [
+    "Model or API endpoint not found",
+    "Model または API Endpoint が見つかりません"
+  ],
+  "API 请求过于频繁": [
+    "API rate limit exceeded",
+    "API の呼び出し頻度の上限に達しました"
+  ],
+  "API 请求失败": [
+    "API request failed",
+    "API Request が失敗しました"
+  ],
+  "API 返回不支持的压缩编码，本次结果未缓存。": [
+    "The API returned an unsupported compression encoding. The result was not cached.",
+    "API が未対応の圧縮形式を返しました。結果は Cache していません。"
+  ],
+  "API 回复未完整结束、被截断或为空，本次结果未缓存。": [
+    "The API response was incomplete, truncated, or empty. The result was not cached.",
+    "API の応答が未完了、途中で切断、または空でした。結果は Cache していません。"
+  ],
+  "API 流事件数量超过上限，本次结果未缓存。": [
+    "The API stream exceeded the event-count limit. The result was not cached.",
+    "API Stream のイベント数が上限を超えました。結果は Cache していません。"
+  ],
+  "API 流事件超过上限，本次结果未缓存。": [
+    "An API stream event exceeded the size limit. The result was not cached.",
+    "API Stream のイベントがサイズ上限を超えました。結果は Cache していません。"
+  ],
+  "API 返回了无效的流式数据，本次结果未缓存。": [
+    "The API returned invalid streaming data. The result was not cached.",
+    "API が無効な Streaming Data を返しました。結果は Cache していません。"
+  ],
+  "API 返回文本超过上限。": [
+    "The API returned more text than allowed.",
+    "API の返した文章が上限を超えています。"
+  ],
+  "目标词典最多允许 {limit} 项，本次未写入。": [
+    "The target dictionary allows up to {limit} entries. Nothing was written.",
+    "インポート先の辞書は最大 {limit} 件です。書き込みは行っていません。"
+  ],
+  "已达到本次启动的 {limit} 次 API 请求限额；{hint}": [
+    "This session’s limit of {limit} API requests has been reached; {hint}",
+    "今回の Session の API 上限 {limit} 回に達しました。{hint}"
+  ],
+  "目标词典最多允许 ": [
+    "The target dictionary allows up to ",
+    "インポート先の辞書は最大 "
+  ],
+  " 项，本次未写入。": [
+    " entries. Nothing was written.",
+    " 件です。書き込みは行っていません。"
+  ],
+  "已达到本次启动的 ": [
+    "Reached this session’s limit of ",
+    "今回の Session の上限 "
+  ],
+  " 次 API 请求限额；": [
+    " API requests; ",
+    " 回の API Request に達しました。"
+  ],
+  "无法解码词典，请使用 UTF-8、带 BOM 的 UTF-16 或 GB18030 编码。": [
+    "Unable to decode the dictionary. Use UTF-8, UTF-16 with a BOM, or GB18030.",
+    "辞書の Encoding を読み取れません。UTF-8、BOM 付き UTF-16、または GB18030 を使用してください。"
+  ],
+  "请选择有效的源语言和目标语言。": [
+    "Select valid source and target languages.",
+    "有効な原文の言語と翻訳先の言語を選択してください。"
+  ],
+  "词典文件超过 20 MiB 上限，请拆分后导入。": [
+    "The dictionary exceeds the 20 MiB limit. Split it before importing.",
+    "辞書 File が 20 MiB の上限を超えています。分割してからインポートしてください。"
+  ],
+  "词典文件为空。": [
+    "The dictionary file is empty.",
+    "辞書 File が空です。"
+  ],
+  "不支持 UTF-32，请另存为 UTF-8 或带 BOM 的 UTF-16。": [
+    "UTF-32 is not supported. Save as UTF-8 or UTF-16 with a BOM.",
+    "UTF-32 には対応していません。UTF-8 または BOM 付き UTF-16 で保存してください。"
+  ],
+  "JSON 对象超过 100000 项上限，请拆分后导入。": [
+    "The JSON object exceeds the 100,000-item limit. Split it before importing.",
+    "JSON Object が 100,000 項目の上限を超えています。分割してからインポートしてください。"
+  ],
+  "JSON 不允许 NaN 或无穷值。": [
+    "JSON must not contain NaN or infinity.",
+    "JSON に NaN または無限大の値は使用できません。"
+  ],
+  "TMX 不允许 DTD 或实体声明，请导出不含这些声明的词典。": [
+    "TMX must not contain DTD or entity declarations. Export a dictionary without them.",
+    "TMX に DTD または実体宣言は使用できません。これらを含めずに辞書をエクスポートしてください。"
+  ],
+  "TMX 缺少 body。": [
+    "The TMX file has no body element.",
+    "TMX に body 要素がありません。"
+  ],
+  "源语言和目标语言不能相同。": [
+    "Choose different source and target languages.",
+    "原文の言語と翻訳先の言語は別の言語を指定してください。"
+  ],
+  "无法读取词典文件，请检查文件是否存在及读取权限。": [
+    "Unable to read the dictionary. Check that the file exists and is readable.",
+    "辞書を読み込めません。File の存在と読み取り権限を確認してください。"
+  ],
+  "第 {index} 条记录的原文和译文必须是文本。": [
+    "Record {index}: source and translation must be text.",
+    "Record {index}：原文と訳文には文字列を指定してください。"
+  ],
+  "第 {index} 条记录的字段超过 4096 字符。": [
+    "Record {index}: a field exceeds 4,096 characters.",
+    "Record {index}：Field が 4,096 文字を超えています。"
+  ],
+  "第 {index} 条记录的原文和译文不能为空。": [
+    "Record {index}: source and translation must not be empty.",
+    "Record {index}：原文と訳文は空にできません。"
+  ],
+  "第 {index} 条记录包含无效 Unicode 或不支持的控制字符。": [
+    "Record {index}: invalid Unicode or unsupported control characters.",
+    "Record {index}：無効な Unicode または未対応の制御文字が含まれています。"
+  ],
+  "词典超过 100000 条记录上限，请拆分后导入。": [
+    "The dictionary exceeds the 100,000-record limit. Split it before importing.",
+    "辞書が 100,000 Record の上限を超えています。分割してからインポートしてください。"
+  ],
+  "未找到所选语言对的有效词条。": [
+    "No valid entries were found for the selected language pair.",
+    "選択した言語の組み合わせに有効な項目が見つかりません。"
+  ],
+  "JSON 对象含有同名但内容不同的字段，请先消除冲突。": [
+    "The JSON object has duplicate field names with different values. Resolve the conflicts first.",
+    "JSON Object に、同じ名前で値が異なる Field があります。先に競合を解消してください。"
+  ],
+  "JSON 词典应为原文到译文的对象，或含 source/target 的数组。": [
+    "A JSON dictionary must map source text to translations, or be an array with source/target fields.",
+    "JSON 辞書は原文と訳文を対応させた Object、または source/target Field を持つ配列にしてください。"
+  ],
+  "支持 CSV、TSV、JSON 和 TMX 词典文件。": [
+    "Supported dictionary formats: CSV, TSV, JSON, and TMX.",
+    "対応する辞書形式：CSV、TSV、JSON、TMX。"
+  ],
+  "词典格式无法解析，请检查分隔符、引号或 JSON/TMX 结构。": [
+    "Unable to parse the dictionary. Check delimiters, quotation marks, or the JSON/TMX structure.",
+    "辞書を解析できません。区切り文字、引用符、JSON/TMX の構造を確認してください。"
+  ],
+  "无法读取或解析词典，请检查文件格式和编码。": [
+    "Unable to read or parse the dictionary. Check its format and encoding.",
+    "辞書を読み込みまたは解析できません。File 形式と Encoding を確認してください。"
+  ],
+  "文件含有无效空字符；UTF-16 文件必须带 BOM。": [
+    "The file contains invalid null characters. UTF-16 files must have a BOM.",
+    "File に無効なヌル文字が含まれています。UTF-16 File には BOM が必要です。"
+  ],
+  "第 {index} 条记录与前面的同一原文存在不同译文，请先消除冲突。": [
+    "Record {index} conflicts with an earlier translation of the same source. Resolve the conflict first.",
+    "Record {index} は、同じ原文の既存 Record と訳文が異なります。先に競合を解消してください。"
+  ],
+  "无表头词典必须恰好两列；多列词典需要原文和译文表头。": [
+    "A dictionary without a header must have exactly two columns. More columns require source and translation headers.",
+    "Header のない辞書は 2 列にしてください。3 列以上の場合は原文と訳文の Header が必要です。"
+  ],
+  "第 {index} 行的列数与表头或首行不一致。": [
+    "Row {index} has a different number of columns than the header or first row.",
+    "行 {index} の列数が Header または最初の行と一致しません。"
+  ],
+  "TMX 结构过深或元素过多，请拆分为较小文件。": [
+    "The TMX structure is too deeply nested or contains too many elements. Split it into smaller files.",
+    "TMX の階層が深すぎるか、要素が多すぎます。小さい File に分割してください。"
+  ],
+  "XML 根元素必须为 tmx。": [
+    "The XML root element must be tmx.",
+    "XML のルート要素は tmx にしてください。"
+  ],
+  "TMX 的 tu 记录必须直接位于 body 内。": [
+    "TMX tu records must be direct children of body.",
+    "TMX の tu Record は body の直下に置いてください。"
+  ],
+  "TMX 超过 100000 条记录上限，请拆分后导入。": [
+    "TMX exceeds the 100,000-record limit. Split it before importing.",
+    "TMX が 100,000 Record の上限を超えています。分割してからインポートしてください。"
+  ],
+  "表头必须唯一指定原文列和译文列，例如 source,target 或 word,translation。": [
+    "Headers must identify one source column and one translation column, such as source,target or word,translation.",
+    "Header は原文列と訳文列を一意に指定してください。例：source,target または word,translation。"
+  ],
+  "TMX 只能有一个 body。": [
+    "TMX must have only one body element.",
+    "TMX の body 要素は 1 つだけにしてください。"
+  ],
+  "JSON 结构过深或对象过多，请拆分文件。": [
+    "The JSON structure is too deeply nested or contains too many objects. Split the file.",
+    "JSON の階層が深すぎるか、Object が多すぎます。File を分割してください。"
+  ],
+  "第 {index} 条 JSON 记录需要 source 和 target 字段。": [
+    "JSON record {index} requires source and target fields.",
+    "JSON Record {index} には source と target Field が必要です。"
+  ],
+  "TMX 第 {index} 条记录缺少唯一 seg 文本。": [
+    "TMX record {index} must contain exactly one seg text element.",
+    "TMX Record {index} には、seg テキスト要素を 1 つだけ指定してください。"
+  ],
+  "TMX 第 {index} 条记录含多个冲突语言版本，请选择更具体的语言。": [
+    "TMX record {index} has conflicting language variants. Select a more specific language.",
+    "TMX Record {index} に競合する言語のバリエーションがあります。より具体的な言語を選択してください。"
+  ],
+  " · 保留原文 {count} 框": [
+    " · Original text kept in {count} boxes",
+    " · 原文を保持：{count} 枠"
+  ],
+  "准备就绪。译文逐步出现，背景随译文逐步遮盖。新译文由 AI 生成，历史词条和语境作为参考。\n": [
+    "Ready. Translation and coverage appear progressively. AI generates new translations using saved terms and context as references.\n",
+    "準備完了。訳文と背景の置き換えが順次表示されます。AI が過去の用語と文脈を参考に新しい訳文を生成します。\n"
+  ],
+  "截图和录屏包含译文": [
+    "Include translations in screenshots and recordings",
+    "Screenshot と録画に訳文を含める"
+  ],
+  "自动调整译文字号": [
+    "Automatically fit translation font size",
+    "訳文の文字サイズを自動調整"
+  ],
+  "固定字号（像素）": [
+    "Fixed font size (pixels)",
+    "固定文字サイズ（px）"
+  ],
+  "自动字号下限（像素）": [
+    "Minimum automatic size (pixels)",
+    "自動サイズ下限（px）"
+  ],
+  "自动字号上限（像素）": [
+    "Maximum automatic size (pixels)",
+    "自動サイズ上限（px）"
+  ],
+  "自动字号下限不能大于上限。": [
+    "The minimum font size cannot exceed the maximum.",
+    "文字サイズの下限は上限以下にしてください。"
+  ],
+  "选择系统已安装的字体，也可输入字体名称。缺少字体或字形时由 Windows 回退。": [
+    "Select an installed font or enter its family name. Windows supplies fallback fonts for missing glyphs.",
+    "インストール済みの Font を選択するか名前を入力します。不足する文字は Windows が代替します。"
+  ],
+  "自动字号参考原文高度，在指定范围内缩小；固定字号不缩放。放不下时保留原文，不覆盖相邻文字。": [
+    "Automatic sizing follows source height and shrinks within your range. Fixed size does not shrink. Text that cannot fit leaves the original visible.",
+    "自動サイズは原文の高さを基準に指定範囲で縮小します。固定サイズは縮小しません。収まらない場合は原文を残します。"
+  ],
+  "包含译文适用于桌面截图和录屏；游戏内截图可能只含游戏画面。开启时使用独立窗口采集，Windows 可能显示采集边框。": [
+    "Applies to desktop screenshots and recording. In-game captures may contain only game content. When enabled, separate window capture may show a Windows capture border.",
+    "Desktop の撮影・録画に適用します。ゲーム内の撮影には訳文が含まれない場合があります。有効時は個別 Window を取得し、Windows の枠が表示される場合があります。"
+  ],
+  "未配置 API · 仅浏览资料": [
+    "API not configured · Browse archives",
+    "API 未設定・履歴の閲覧のみ"
+  ],
+  "AI 翻译 · 自动保存语境": [
+    "AI translation · Context saved automatically",
+    "AI 翻訳・文脈を自動保存"
+  ],
+  "OCR 区域细化线程": [
+    "OCR region refinement workers",
+    "OCR 領域を精査する Thread 数"
+  ],
+  "AI 历史语境字符预算": [
+    "AI history context character budget",
+    "AI 履歴文脈の文字数上限"
+  ],
+  "AI 历史语境记录上限": [
+    "AI history context record limit",
+    "AI 履歴文脈の件数上限"
+  ],
+  "保存 AI 译文中的短术语供语境参考": [
+    "Save short AI terms as context references",
+    "AI 訳文の短い用語を文脈参考として保存"
+  ],
+  "未配置 API 时保留原文，可浏览历史资料。": [
+    "Without an API key, keep the original text and browse saved records.",
+    "API 未設定時は原文を保持し、保存履歴を閲覧できます。"
+  ],
+  "新翻译由 AI 完成；译文和语境按游戏保存，自动压缩，历史资料仅作为提示参考。": [
+    "New translations use AI. Translations and context are compressed and saved per game; history is prompt reference only.",
+    "新しい翻訳は AI が行います。訳文と文脈はゲームごとに圧縮保存し、履歴は Prompt の参考にのみ使用します。"
+  ],
+  "请选择或输入游戏档案": [
+    "Select or enter a game profile",
+    "ゲームの Profile を選択または入力"
+  ],
+  "选择或输入游戏档案，分别保存译文和语境；留空时按游戏程序区分。历史词条作为 AI 参考。": [
+    "Select or enter a game profile to keep translations and context separate. A blank profile uses game identity. Historical terms are AI references.",
+    "ゲームの Profile ごとに訳文と文脈を保存します。未入力時はゲームの識別情報を使用し、履歴用語は AI の参考にします。"
+  ],
+  "请填写 API 密钥；稍后配置可先浏览历史资料。": [
+    "Enter an API key, or configure it later and browse saved records.",
+    "API Key を入力してください。後で設定して履歴を先に閲覧することもできます。"
+  ],
+  "稍后配置，仅浏览资料": [
+    "Set up later · Browse records",
+    "後で設定・履歴のみ閲覧"
+  ],
+  "此槽位尚无密钥。请填写密钥，或稍后配置并浏览历史资料。": [
+    "This slot has no key. Enter a key or set it up later and browse records.",
+    "この Slot に API Key がありません。API Key を入力するか、後で設定して履歴を閲覧してください。"
+  ],
+  "全部新译文由 AI 生成。历史译文和语境自动压缩保存，下一次请求按预算选取参考；不再使用本地专家翻译规则。": [
+    "All new translations use AI. History and context are compressed automatically; bounded excerpts inform future requests. Local expert translation rules are removed.",
+    "新しい訳文はすべて AI が生成します。履歴と文脈は自動圧縮保存され、次の Request に上限内で参照されます。ローカル翻訳ルールは廃止しました。"
+  ],
+  "AI 不可用，已保留原文": [
+    "AI unavailable; original text preserved",
+    "AI を利用できないため原文を保持しました"
+  ],
+  "{mode} · 翻译完成 · 语境已保存": [
+    "{mode} · Translation complete · Context saved",
+    "{mode}・翻訳完了・文脈を保存しました"
+  ],
+  "译文与语境档案": [
+    "Translation and context archive",
+    "訳文と文脈の履歴"
+  ],
+  "最近 24 条 · 自动压缩保存 · 无额外 API 请求": [
+    "Latest 24 records · Compressed storage · No extra API requests",
+    "最新24件・圧縮保存・追加 API Request なし"
+  ],
+  "更新时间：": [
+    "Updated: ",
+    "更新日時："
+  ],
+  "资料目录：": [
+    "Archive directory: ",
+    "履歴 Folder："
+  ],
+  "原文：": [
+    "Source: ",
+    "原文："
+  ],
+  "译文：": [
+    "Translation: ",
+    "訳文："
+  ],
+  "语境：": [
+    "Context: ",
+    "文脈："
+  ],
+  "当前档案暂无新版本译文；旧词条仍可在词典页浏览。": [
+    "No new-version translations in this profile yet. Older terms remain on the dictionary page.",
+    "この Profile に新版の訳文はまだありません。以前の用語は辞書ページで閲覧できます。"
+  ],
+  "使用屏幕翻译页的游戏档案与语言对。原有词条保留供浏览与 AI 参考；完整译文和语境在档案中查看。": [
+    "Use the game and language pair from Screen Translation. Older terms remain as AI references; open the archive for full translations and context.",
+    "画面翻訳のゲームと言語ペアを使用します。以前の用語は AI の参考として保持し、訳文と文脈は履歴で閲覧できます。"
+  ],
+  "先整幅识别，再由多个工作线程细化文字区域；自动模式会为适合的像素文字启用精读。AI 图像精读会发送所选游戏区域图片，等待稳定画面后调用，速度取决于网络；失败或离线时保留本地识别。": [
+    "Recognize the whole frame, then refine measured regions with multiple workers. Auto mode enables pixel-text refinement where suitable. Optional AI image recognition sends the selected game region after it stabilizes; latency depends on the network. Local OCR remains on failure or when offline.",
+    "画面全体を認識してから、複数 Thread で文字領域を精密化します。自動モードは適切な画面で Pixel Font を精読します。任意の AI 画像認識は安定後のゲーム選択領域を送信します。速度は Network に依存し、失敗時やオフライン時は Local OCR を保持します。"
+  ],
+  "开启“API 请求无上限”仅取消本次运行的请求次数限制，并发、超时和重试次数仍按设置执行。关闭后恢复填写的请求额度；额度为 0 表示不允许请求，不代表无上限。未配置 API 时仅浏览历史资料。": [
+    "Unlimited API requests removes only the session request-count limit. Concurrency, timeouts and retry limits still apply. When disabled, the entered quota applies; 0 means no requests. Without an API key, only saved records can be browsed.",
+    "API 無制限設定は今回の Request 回数制限だけを解除します。同時実行数、Timeout、再試行制限は有効です。オフ時は入力した上限が適用され、0 は Request 禁止を意味します。API 未設定時は保存履歴の閲覧のみです。"
+  ],
+  "纯 AI 翻译需要 API 密钥和联网；已有译文与语境可在档案中浏览。": [
+    "AI translation requires an API key and a connection. Saved translations and context remain available in the archive.",
+    "AI 翻訳には API Key と接続が必要です。保存済みの訳文と文脈は履歴で閲覧できます。"
+  ],
+  "翻译上下文长度（字符）": [
+    "Translation context length (characters)",
+    "翻訳の文脈の長さ（文字数）"
+  ],
+  "首次摘要前参考译文条数": [
+    "Translations to keep before summarizing",
+    "初回の要約までに保持する訳文数"
+  ],
+  "界面主题": [
+    "Interface theme",
+    "テーマ"
+  ],
+  "窗口背景": [
+    "Window background",
+    "Window 背景"
+  ],
+  "内容背景": [
+    "Content background",
+    "コンテンツ背景"
+  ],
+  "文字颜色": [
+    "Text color",
+    "文字色"
+  ],
+  "强调色": [
+    "Accent color",
+    "アクセント色"
+  ],
+  "调色盘": [
+    "Color picker",
+    "Color Picker"
+  ],
+  "汉化组工具（Beta）": [
+    "Localization Toolkit (Beta)",
+    "翻訳チームツール（Beta）"
+  ],
+  "启用汉化组工具": [
+    "Enable the localization toolkit",
+    "翻訳チーム用ツールを有効にする"
+  ],
+  "启用后将保存本机截图和译文，可能影响性能。遴选默认等待 15 秒，建议保留足够的等待时间。": [
+    "Saves screenshots and translations locally and may affect performance. The selection delay defaults to 15 seconds.",
+    "Screenshot と訳文をローカルに保存します。性能に影響することがあります。選別の待ち時間は既定で15秒です。"
+  ],
+  "查看汉化目录": [
+    "Open export folder",
+    "書き出し先を開く"
+  ],
+  "保存目录": [
+    "Save folder",
+    "保存先"
+  ],
+  "选择目录": [
+    "Choose folder",
+    "Folder を選択"
+  ],
+  "目录留空时保存至软件根目录。": [
+    "Leave blank to use the application folder.",
+    "空欄の場合はアプリの Folder に保存されます。"
+  ],
+  "导出格式": [
+    "Export format",
+    "書き出し形式"
+  ],
+  "遴选等待（秒）": [
+    "Wait before exporting (s)",
+    "書き出すまでの待ち時間（秒）"
+  ],
+  "选择汉化文本保存目录": [
+    "Choose the localization export folder",
+    "翻訳テキストの保存先を選択"
+  ],
+  "已开启翻译": [
+    "Translation started",
+    "翻訳を開始しました"
+  ],
+  "默认接口格式：OpenAI 兼容（Chat Completions）": [
+    "Default API format: OpenAI-compatible (Chat Completions)",
+    "既定の API 形式：OpenAI 互換（Chat Completions）"
+  ],
+  "API 服务商": [
+    "API provider",
+    "API Provider"
+  ],
+  "使用 OpenAI API 密钥。": [
+    "Use an OpenAI API key.",
+    "OpenAI API Key を使用します。"
+  ],
+  "填写服务商提供的 API 地址和模型名称。": [
+    "Enter the provider’s API URL and model name.",
+    "サービスの API URL と Model 名を入力してください。"
+  ],
+  "DeepSeek（推荐）": [
+    "DeepSeek (recommended)",
+    "DeepSeek（推奨）"
+  ],
+  "ChatGPT": [
+    "ChatGPT",
+    "ChatGPT"
+  ],
+  "其他（自定义）": [
+    "Other (custom)",
+    "その他（カスタム）"
+  ],
+  "本地": [
+    "Local",
+    "ローカル"
+  ],
+  "填写 Ollama 已安装的模型名。": [
+    "Enter an installed Ollama model name.",
+    "Ollama にインストールした Model 名を入力してください。"
+  ],
+  "填写本机服务已加载的模型名。": [
+    "Enter the model name loaded by your local server.",
+    "Local Server で読み込んだ Model 名を入力してください。"
+  ],
+  "本机服务无需密钥时可留空。": [
+    "Leave the key blank if your local server uses no authentication.",
+    "Local Server が認証不要の場合、API Key は空欄にできます。"
+  ],
+  "API 地址须为公开 HTTPS 地址或带端口的本机回环地址。": [
+    "Use a public HTTPS address or a loopback address with an explicit port.",
+    "公開 HTTPS アドレス、またはポートを指定した Loopback Address を使用してください。"
+  ],
+  "LLM后端识别图片": [
+    "Image recognition via the LLM backend",
+    "LLM Backend による画像認識"
+  ],
+  "截图识别自动": [
+    "Automatic screenshot OCR",
+    "Screenshot 自動認識"
+  ],
+  "检测到 CUDA OCR，LLM后端识别图片默认关闭。": [
+    "CUDA OCR detected. LLM backend image recognition defaults to Off.",
+    "CUDA OCR を検出しました。LLM Backend 画像認識の初期値はオフです。"
+  ],
+  "未检测到可用的 CUDA OCR，LLM后端识别图片默认强制开启。": [
+    "CUDA OCR unavailable. LLM backend image recognition defaults to Force.",
+    "CUDA OCR が利用できないため、LLM Backend 画像認識の初期値は強制です。"
+  ],
+  "强制模式将变化的游戏选区发送至当前 API 槽位。自定义服务需支持图片输入。关闭时使用本地 OCR。": [
+    "Force sends changed game selections to the active API slot. Custom services must accept images. Off uses local OCR.",
+    "強制は変化した選択範囲を使用中の API Slot に送信します。カスタムサービスは画像入力に対応している必要があります。オフでは Local OCR を使用します。"
+  ],
+  "截图识别强制": [
+    "Forced screenshot OCR",
+    "Screenshot 強制認識"
+  ],
+  "截图识别关": [
+    "Screenshot OCR off",
+    "Screenshot 認識オフ"
+  ],
+  "自动在本地未读到文字、文字可疑或置信度较低时发送游戏选区。强制按识别间隔发送变化的游戏选区。关只使用本地识别。离线或调用失败时会使用本地结果。": [
+    "Auto sends the selected game area when local OCR returns no text, doubtful text, or low confidence. Force sends changed selections at the configured interval. Off uses local OCR only. Local results remain available offline or after an API failure.",
+    "自動は文字が見つからない場合や認識結果の信頼度が低い場合にゲームの選択範囲を送信します。強制は変化した選択範囲を設定間隔で送信します。オフは Local OCR のみです。オフライン時や API エラー時はローカル結果を使います。"
+  ],
+  "LLM后端识别图片失败，继续使用本地识别。": [
+    "LLM backend image recognition failed. Local OCR remains active.",
+    "LLM Backend 画像認識に失敗しました。Local OCR を続けます。"
+  ],
+  "首选译文": [
+    "Preferred translation",
+    "優先する訳語"
+  ],
+  "保存术语参考": [
+    "Save terminology reference",
+    "用語参考を保存"
+  ],
+  "保存首选译文作为 AI 术语参考；模型会结合语境生成译文，不进行本地替换，也不保证逐字锁定。": [
+    "Save preferred wording as AI terminology reference. The model translates in context; there is no local substitution or guaranteed exact wording.",
+    "優先する訳語を AI の参考として保存します。文脈に応じて翻訳し、ローカル置換や完全な訳語固定は行いません。"
+  ],
+  "通用词典最多显示前 200 项；当前游戏词条优先。修改对后续 AI 请求生效；完整译文在档案中查看。": [
+    "Shows up to 200 shared terms. Game terms take priority. Changes apply to later AI requests; complete translations are in the profile history.",
+    "共通辞書は先頭200件を表示します。ゲーム用語を優先し、変更は以降の AIRequest に反映します。全文は履歴で確認できます。"
+  ],
+  "请先选择游戏档案，或勾选通用词典；未归属旧词条仅供浏览。": [
+    "Select a game profile or the shared dictionary. Unassigned legacy terms are for browsing only.",
+    "ゲームの Profile または共通辞書を選択してください。未所属の旧用語は閲覧用です。"
+  ],
+  "未归属旧词条（仅浏览）": [
+    "Unassigned legacy terms (browse only)",
+    "未所属の旧用語（閲覧用）"
+  ],
+  "{scope} · {source} → {target} · 显示 {count} 项": [
+    "{scope} · {source} → {target} · {count} entries shown",
+    "{scope} · {source} → {target} · {count}件表示"
+  ],
+  "此范围暂无术语参考；已生成译文请查看档案。": [
+    "No terminology reference in this scope; generated translations are in the profile history.",
+    "この範囲に用語参考はありません。生成済みの訳文は履歴をご覧ください。"
+  ],
+  "词典范围已改变，请重新选择要删除的词条。": [
+    "The dictionary scope changed. Select the entries to delete again.",
+    "辞書の範囲が変更されました。削除する用語を選択し直してください。"
+  ],
+  "词典范围已改变，请重新预览。": [
+    "The dictionary scope changed. Preview the file again.",
+    "辞書の範囲が変更されました。再度プレビューしてください。"
+  ],
+  "仅在同一文字块出现多种外文时标注": [
+    "Label only when one text block contains multiple foreign languages",
+    "同じテキストブロックに複数の外国語がある場合のみ表示"
+  ],
+  "请先关闭档案管理窗口。": [
+    "Close profile management first.",
+    "先に Profile 管理画面を閉じてください。"
+  ],
+  "重新翻译快捷键": [
+    "Retranslation shortcut",
+    "再翻訳 Shortcut"
+  ],
+  "启用全局重新翻译快捷键": [
+    "Enable global retranslation shortcut",
+    "グローバル再翻訳 Shortcut を有効化"
+  ],
+  "组合键": [
+    "Key combination",
+    "キーの組合せ"
+  ],
+  "快捷键：等待注册": [
+    "Shortcut: not registered yet",
+    "Shortcut：未登録"
+  ],
+  "例如 Ctrl+Alt+R。须包含 Ctrl 或 Alt，可加 Shift；主键支持字母、数字及 F1–F24（不含 F12）。保存后生效。": [
+    "Example: Ctrl+Alt+R. Include Ctrl or Alt; Shift is optional. Use a letter, digit or F1–F24 (except F12). Save to apply.",
+    "例：Ctrl+Alt+R。Ctrl または Alt が必須、Shift は任意です。英字・数字・F1–F24（F12以外）に対応し、保存後に適用されます。"
+  ],
+  "仅重新翻译当前选定游戏的区域，不会清空档案或历史。冲突时保留原快捷键，请修改组合后重新保存。": [
+    "Retranslates only the selected game area and keeps profiles and history. If a combination conflicts, the previous shortcut remains active.",
+    "選択中のゲーム領域のみ再翻訳し、Profile や履歴は保持します。競合した場合は元の組合せを維持します。"
+  ],
+  "快捷键格式无效，请填写 Ctrl+Alt+R 这样的组合。": [
+    "Invalid shortcut. Enter a combination such as Ctrl+Alt+R.",
+    "形式が無効です。Ctrl+Alt+R のように入力してください。"
+  ],
+  "快捷键至少包含 Ctrl 或 Alt；可加 Shift，不能使用 Win 键或重复修饰键。": [
+    "Include Ctrl or Alt; Shift is optional. Win and duplicate modifiers are not supported.",
+    "Ctrl または Alt が必要です。Shift は任意です。Win キーと修飾キーの重複は使用できません。"
+  ],
+  "快捷键主键须为 A–Z、0–9 或 F1–F24。": [
+    "Use A–Z, 0–9 or F1–F24 as the main key.",
+    "主キーには A–Z、0–9、F1–F24を使用してください。"
+  ],
+  "该组合保留给系统，请选择其他快捷键。": [
+    "This combination is reserved by the system. Choose another.",
+    "システム予約の組合せです。別のキーを選択してください。"
+  ],
+  "快捷键开关须为开或关。": [
+    "The shortcut switch must be on or off.",
+    "Shortcut の設定は有効または無効で指定してください。"
+  ],
+  "快捷键服务已关闭。": [
+    "The shortcut service is closed.",
+    "Shortcut サービスは終了しています。"
+  ],
+  "全局快捷键暂不可用，请修改组合后重新保存。": [
+    "Global shortcuts are unavailable. Change the combination and save again.",
+    "Global Shortcut を利用できません。組合せを変更し保存し直してください。"
+  ],
+  "无法更新快捷键，原快捷键保持不变。": [
+    "Cannot update the shortcut. The previous one is unchanged.",
+    "Shortcut を更新できません。元の設定を維持します。"
+  ],
+  "快捷键服务响应超时，原快捷键保持不变。": [
+    "The shortcut service timed out. The previous one is unchanged.",
+    "Shortcut サービスが Timeout しました。元の設定を維持します。"
+  ],
+  "无法注销原快捷键，请稍后重试。": [
+    "Cannot unregister the shortcut. Try again later.",
+    "Shortcut の登録を解除できません。後で再試行してください。"
+  ],
+  "快捷键已被占用或无法注册，原快捷键保持不变；请修改组合后重新保存。": [
+    "The shortcut is occupied or cannot be registered. The previous one remains active; choose another combination.",
+    "使用中または登録不可の組合せです。元の設定を維持します。別の組合せを選んでください。"
+  ],
+  "无法替换原快捷键，原快捷键保持不变。": [
+    "Cannot replace the shortcut. The previous one remains active.",
+    "Shortcut を変更できません。元の設定を維持します。"
+  ],
+  "{key} · 重新翻译当前界面": [
+    "{key} · Retranslate current screen",
+    "{key} · 現在の画面を再翻訳"
+  ],
+  "快捷键未启用，请在设置中检查": [
+    "Shortcut inactive; check Settings",
+    "Shortcut 無効・設定を確認してください"
+  ],
+  "重新翻译当前界面": [
+    "Retranslate current screen",
+    "現在の画面を再翻訳"
+  ],
+  "快捷键未保存，请修改组合或关闭快捷键。": [
+    "Shortcut not saved. Change the combination or disable it.",
+    "保存できませんでした。キーの組合せを変更するか無効にしてください。"
+  ],
+  "快捷键不可用：{error}": [
+    "Shortcut unavailable: {error}",
+    "Shortcut を利用できません：{error}"
+  ],
+  "重新翻译快捷键：{key}": [
+    "Retranslation shortcut: {key}",
+    "再翻訳 Shortcut：{key}"
+  ],
+  "重新翻译快捷键已关闭": [
+    "Retranslation shortcut disabled",
+    "再翻訳 Shortcut は無効です"
+  ],
+  "快捷键注册失败，请修改组合后重新保存。": [
+    "Shortcut registration failed. Change the combination and save again.",
+    "Shortcut 登録に失敗しました。組合せを変更して保存し直してください。"
+  ],
+  "请等待当前操作完成后重新翻译。": [
+    "Wait for the current operation before retranslating.",
+    "現在の処理が完了してから再翻訳してください。"
+  ],
+  "正在重新识别并翻译当前游戏区域…": [
+    "Recognizing and translating the current game area again…",
+    "現在のゲーム領域を再認識・再翻訳しています…"
+  ],
+  "上下文档案": [
+    "Game profiles",
+    "ゲームの Profile"
+  ],
+  "管理 / 删除": [
+    "Manage profiles",
+    "Profile 管理"
+  ],
+  "档案保存语境、译文与翻译进度；下次打开自动恢复，历史自动压缩后供 AI 参考。": [
+    "Your profile keeps your notes and translations between sessions. The model can refer to a summary of earlier dialogue.",
+    "メモと訳文はゲームごとに保存されます。次回も続きから翻訳でき、過去の会話の要約は訳語選びに使われます。"
+  ],
+  "译文跟随游戏窗口": [
+    "Translation follows the game window",
+    "訳文はゲームの Window に追従"
+  ],
+  "已授权": [
+    "Accepted",
+    "同意済み"
+  ],
+  "使用协议 · 已授权": [
+    "Agreement · accepted",
+    "利用規約 · 同意済み"
+  ],
+  "已授权 · 当前协议已接受。": [
+    "Accepted · the current agreement is already accepted.",
+    "同意済み · 現在の利用規約を承諾しています。"
+  ],
+  "请阅读协议；同意后进入程序，不同意则退出。": [
+    "Read the agreement. Accept to use the application, or decline and exit.",
+    "利用規約をご確認ください。同意して利用するか、同意せず終了してください。"
+  ],
+  "不同意并退出": [
+    "Decline and exit",
+    "同意せず終了"
+  ],
+  "语境备注最多 16384 个字符。": [
+    "Context notes may contain up to 16,384 characters.",
+    "文脈メモは16,384文字以内で入力してください。"
+  ],
+  "已恢复档案；选择游戏窗口后开始翻译。": [
+    "Profile restored. Select the game window and start translation.",
+    "Profile を復元しました。ゲームの Window を選んで翻訳を開始してください。"
+  ],
+  "未命名窗口": [
+    "Untitled window",
+    "無題の Window"
+  ],
+  "进程未知": [
+    "Unknown process",
+    "不明な Process"
+  ],
+  "所选窗口是文件夹或系统辅助窗口，请选择游戏程序窗口。": [
+    "The selected window is a folder or system helper. Select the actual game application window.",
+    "選択した Window は Folder またはシステム補助画面です。ゲーム本体の Window を選択してください。"
+  ],
+  "所选窗口已关闭或进程已变化，请刷新并重新选择。": [
+    "The selected window has closed or its process has changed. Refresh the list and select it again.",
+    "選択した Window は閉じられたか、Process が変更されました。一覧を更新して選択し直してください。"
+  ],
+  "目标窗口已关闭：{window}。请刷新并重新选择。": [
+    "Target window closed: {window}. Refresh and select again.",
+    "対象 Window は閉じられました：{window}。更新して選択し直してください。"
+  ],
+  "游戏程序已退出，翻译已停止。{window}": [
+    "The game exited and translation stopped. {window}",
+    "ゲームが終了したため、翻訳を停止しました。{window}"
+  ],
+  "目标窗口的进程已变化：{window}。请刷新并重新选择。": [
+    "Target process changed: {window}. Refresh and select again.",
+    "対象の Process が変更されました：{window}。更新して選択し直してください。"
+  ],
+  "目标窗口已最小化：{window}。还原后继续识别。": [
+    "Target minimized: {window}. Restore it to resume recognition.",
+    "対象は最小化されています：{window}。元に戻すと認識を再開します。"
+  ],
+  "目标窗口当前不可见：{window}。显示该窗口后继续识别。": [
+    "Target is not visible: {window}. Show it to resume recognition.",
+    "対象は表示されていません：{window}。表示すると認識を再開します。"
+  ],
+  "正在等待目标窗口：{window}。切换到该窗口后开始识别。": [
+    "Waiting for target: {window}. Switch to this window to start recognition.",
+    "対象を待機中：{window}。この Window に切り替えると認識を開始します。"
+  ],
+  "所选区域不在可见客户区：{window}。请移动窗口或重新划定区域。": [
+    "Selected area is outside the visible client area: {window}. Move the window or select regions again.",
+    "選択領域が表示範囲外です：{window}。Window を移動するか領域を選択し直してください。"
+  ],
+  "正在等待 AI 识别或翻译：{window}。": [
+    "Waiting for AI recognition or translation: {window}.",
+    "AI の認識または翻訳を待機中：{window}。"
+  ],
+  "正在识别：{window}。尚未找到可翻译文字。": [
+    "Recognizing: {window}. No translatable text found yet.",
+    "認識中：{window}。翻訳対象の文字はまだ見つかりません。"
+  ],
+  "译文已显示，正在跟踪新文字：{window}。": [
+    "Translation shown; tracking new text: {window}.",
+    "訳文を表示中、新しい文字を追跡しています：{window}。"
+  ],
+  "正在识别目标窗口：{window}。": [
+    "Recognizing target: {window}.",
+    "対象を認識中：{window}。"
+  ],
+  "联网理解游戏背景（DeepSeek Flash）": [
+    "Research game background online (DeepSeek Flash)",
+    "ゲーム背景をオンラインで調べる（DeepSeek Flash）"
+  ],
+  "上下文层与显示层": [
+    "Translation context and on-screen text",
+    "翻訳の参考情報と画面表示"
+  ],
+  "上下文层：联网查阅游戏背景，结合压缩历史辅助理解；显示层：仅输出当前原文的译文，字号、位置由本地排版决定。": [
+    "Context layer: researches game background and uses compressed history. Display layer: shows only the current translation; local layout controls font size and position.",
+    "Context 層：ゲーム背景を検索し、圧縮した履歴を参照します。表示層：現在の原文の訳文のみを表示し、文字サイズと位置はローカルの組版で決定します。"
+  ],
+  "联网理解会发送游戏档案、填写的语境和首段原文摘录，额外占用 API 请求及等待时间；同档案缓存 15 分钟。仅支持 DeepSeek 官方 deepseek-flash。未搜索或失败会显示状态，仍可直接翻译。": [
+    "Online context sends the game profile, supplied context and an excerpt of the first source text. It adds an API request and waiting time; results are cached for 15 minutes per profile. Requires official DeepSeek deepseek-flash. Search status is shown; direct translation remains available when search is unused or fails.",
+    "ゲーム別設定、入力した文脈、最初の原文の抜粋を送信します。API Request と待ち時間が増え、同じ設定では結果を15分 Cache します。DeepSeek 公式の deepseek-flash に対応。検索の未使用や失敗は状態で示し、直接翻訳を続行できます。"
+  ],
+  "联网理解：尚未启动": [
+    "Online context: not started",
+    "オンライン文脈：未開始"
+  ],
+  "联网理解：已关闭": [
+    "Online context: off",
+    "オンライン文脈：オフ"
+  ],
+  "联网理解：等待首段文字": [
+    "Online context: waiting for source text",
+    "オンライン文脈：原文を待機中"
+  ],
+  "联网理解：正在整理背景": [
+    "Online context: researching background",
+    "オンライン文脈：背景を調査中"
+  ],
+  "联网理解：已取得搜索来源": [
+    "Online context: search sources received",
+    "オンライン文脈：検索元を取得"
+  ],
+  "联网理解：本次模型未使用搜索": [
+    "Online context: model did not use search",
+    "オンライン文脈：Model は今回検索を使用しませんでした"
+  ],
+  "联网理解：搜索未返回来源": [
+    "Online context: search returned no sources",
+    "オンライン文脈：検索元なし"
+  ],
+  "联网理解：搜索不可用，使用已有语境": [
+    "Online context: search unavailable; using existing context",
+    "オンライン文脈：検索不可、既存の文脈を使用"
+  ],
+  "联网理解：当前接口或模型不支持，直接翻译": [
+    "Online context: unsupported endpoint or model; translating directly",
+    "オンライン文脈：未対応の接続先または Model、直接翻訳"
+  ],
+  "联网理解：剩余额度优先用于译文": [
+    "Online context: remaining request budget reserved for translation",
+    "オンライン文脈：残りの Request 枠は翻訳を優先"
+  ],
+  "联网理解：暂不可用，直接翻译": [
+    "Online context: temporarily unavailable; translating directly",
+    "オンライン文脈：一時的に利用不可、直接翻訳"
+  ],
+  "联网理解须为开或关。": [
+    "Online context must be on or off.",
+    "オンライン文脈はオンまたはオフにしてください。"
+  ],
+  "响应优先": [
+    "Faster response",
+    "応答速度優先"
+  ],
+  "均衡占用": [
+    "Balanced resources",
+    "リソースバランス"
+  ],
+  "参数已填入，点击保存设置后生效。": [
+    "Values filled in. Click Save settings to apply.",
+    "設定値を入力しました。保存すると適用されます。"
+  ],
+  "响应优先：50 ms 截图、80 ms 稳定等待、8 路翻译、4 路区域细化。增加 CPU、内存和瞬时 API 并发；逐字出现的对话可调高稳定等待。选择后点击保存设置。": [
+    "Faster response: 50 ms capture, 80 ms settling, 8 translation workers and 4 refinement workers. Uses more CPU, memory and concurrent API requests. Increase settling for typewriter dialogue. Click Save settings to apply.",
+    "応答速度優先：Capture50 ms、安定待ち80 ms、翻訳8並列、領域精読4並列。CPU・RAM・API 同時接続数が増加します。一文字ずつ表示される会話は安定待ちを長くしてください。選択後に設定を保存します。"
+  ],
+  "语言设置保存失败，请检查目录写入权限。": [
+    "Could not save the language. Check folder write access.",
+    "言語設定を保存できません。Folder の書き込み権限を確認してください。"
+  ],
+  "选择界面主题": [
+    "Choose an interface theme",
+    "表示テーマを選ぶ"
+  ],
+  "可以稍后在设置中更改主题。": [
+    "You can change the theme later in Settings.",
+    "テーマは設定でいつでも変更できます。"
+  ],
+  "产品介绍": [
+    "Welcome tour",
+    "使い方ガイド"
+  ],
+  "未找到产品介绍页。": [
+    "The product introduction is missing.",
+    "製品紹介ページが見つかりません。"
+  ],
+  "霓虹波": [
+    "Neon Wave",
+    "ネオンウェーブ"
+  ],
+  "系统配色（跟随 Windows）": [
+    "Use Windows colors",
+    "システム配色（Windows に従う）"
+  ],
+  "随心配": [
+    "Custom colors",
+    "カスタム配色"
+  ],
+  "首次设置": [
+    "First-time setup",
+    "初期設定"
+  ],
+  "第 {current} 步，共 {total} 步": [
+    "Step {current} of {total}",
+    "手順 {current} / {total}"
+  ],
+  "继续": [
+    "Continue setup",
+    "次へ"
+  ],
+  "完成设置": [
+    "Finish setup",
+    "設定を完了"
+  ],
+  "已根据 Windows 显示语言预选，可在设置中修改。": [
+    "The Windows display language is preselected. You can change it later in Settings.",
+    "Windows の表示言語を選択済みです。後で設定から変更できます。"
+  ],
+  "开发工具（Beta）": [
+    "Developer tools (Beta)",
+    "開発ツール（Beta）"
+  ],
+  "保持关闭（推荐）": [
+    "Keep developer tools off (recommended)",
+    "無効のままにする（推奨）"
+  ],
+  "启用开发工具": [
+    "Enable developer tools",
+    "開発ツールを有効にする"
+  ],
+  "保存目录（默认软件根目录）": [
+    "Save folder (default: app folder)",
+    "保存先（既定はアプリの Folder）"
+  ],
+  "稍后可在设置中启用或关闭这些工具。": [
+    "You can enable or disable these tools later in Settings.",
+    "後で設定からツールの有効・無効を切り替えられます。"
+  ],
+  "选择游戏与语言": [
+    "Game and languages",
+    "ゲームと言語"
+  ],
+  "选择文字区域，开始翻译": [
+    "Translation area",
+    "翻訳する範囲"
+  ],
+  "用户条款与 MIT 许可证": [
+    "User terms and MIT license",
+    "利用規約と MIT License"
+  ],
+  "游戏实时翻译": [
+    "Game translation",
+    "ゲーム翻訳"
+  ],
+  "档案语境备注": [
+    "Translation notes",
+    "翻訳用メモ"
+  ],
+  "本程序 CPU": [
+    "App CPU",
+    "CPU 使用率"
+  ],
+  "本程序内存": [
+    "App memory",
+    "RAM 使用量"
+  ],
+  "最新档案摘要": [
+    "Latest profile summary",
+    "最新の Profile 要約"
+  ],
+  "保存": [
+    "Save",
+    "保存"
+  ],
+  "NKC_Galgame_Translator": [
+    "NKC_Galgame_Translator",
+    "NKC_Galgame_Translator"
+  ],
+  "API 配置 · 三个槽位 · NKC_Galgame_Translator": [
+    "API settings · NKC_Galgame_Translator",
+    "API 設定 · NKC_Galgame_Translator"
+  ],
+  "导入通用词典 · NKC_Galgame_Translator": [
+    "Import glossary · NKC_Galgame_Translator",
+    "用語集の読み込み · NKC_Galgame_Translator"
+  ],
+  "二色蝶": [
+    "Two-color Butterfly",
+    "二色の蝶"
+  ],
+  "现代 Windows": [
+    "Windows style",
+    "Windows スタイル"
+  ],
+  "中文": [
+    "Chinese",
+    "中国語"
+  ]
+}

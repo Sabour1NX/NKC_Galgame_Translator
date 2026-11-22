@@ -1,0 +1,192 @@
+{
+  "version": "0.01.30",
+  "platform": "Windows-11-10.0.26320-SP0",
+  "gpu": "NVIDIA GeForce RTX 3070, 617.42, 8192 MiB",
+  "cpu": "Genuine Intel(R) 0000",
+  "warm_rounds": 7,
+  "cuda_budget_mib": 1024,
+  "cuda_quality": 75,
+  "scope": "Uncached local OCR including caller/IPC/refinement; no capture, translation, network, or overlay.",
+  "scenes": [
+    {
+      "scene": "spacerogue-game.png",
+      "language": "en",
+      "sha256": "2fb6010e5dd2421f7508a505f84d6a525664b98a18d080e1838f1261be974c26",
+      "size": [
+        1021,
+        767
+      ],
+      "cuda_off": {
+        "engine": "portable-tesseract-pixel",
+        "cuda_status": "disabled",
+        "first_ms": 1881.4969999984896,
+        "warm_ms": [
+          351.3173999999708,
+          357.87120000168215,
+          350.4218000016408,
+          367.3601000009512,
+          353.54759999972885,
+          344.0485000028275,
+          356.4446999989741
+        ],
+        "median_ms": 353.54759999972885,
+        "characters": 242,
+        "edits": 4,
+        "accuracy_percent": 98.347
+      },
+      "cuda_on": {
+        "engine": "portable-tesseract-pixel",
+        "cuda_status": "pixel_priority",
+        "first_ms": 723.570899997867,
+        "warm_ms": [
+          334.2712000012398,
+          414.5771000003151,
+          340.45640000113053,
+          343.29409999918425,
+          340.6496999996307,
+          340.5050000001211,
+          335.46339999884367
+        ],
+        "median_ms": 340.5050000001211,
+        "characters": 242,
+        "edits": 4,
+        "accuracy_percent": 98.347
+      }
+    },
+    {
+      "scene": "status.png",
+      "language": "en",
+      "sha256": "96eaa4b5e204f7c377e23cf91b8b3315ef4277617583227285f2b3c9d1185582",
+      "size": [
+        1008,
+        765
+      ],
+      "cuda_off": {
+        "engine": "portable-tesseract-pixel",
+        "cuda_status": "disabled",
+        "first_ms": 559.8752000005334,
+        "warm_ms": [
+          220.7526999991387,
+          220.38810000231024,
+          223.68980000101146,
+          225.3290000007837,
+          223.79540000110865,
+          230.8274999995774,
+          221.09410000120988
+        ],
+        "median_ms": 223.68980000101146,
+        "characters": 32,
+        "edits": 0,
+        "accuracy_percent": 100.0
+      },
+      "cuda_on": {
+        "engine": "portable-tesseract-pixel",
+        "cuda_status": "pixel_priority",
+        "first_ms": 571.7427000017778,
+        "warm_ms": [
+          216.4983000002394,
+          221.1366999981692,
+          220.78110000074957,
+          220.78509999846574,
+          218.89869999722578,
+          223.99659999791766,
+          220.60780000174418
+        ],
+        "median_ms": 220.78110000074957,
+        "characters": 32,
+        "edits": 0,
+        "accuracy_percent": 100.0
+      }
+    },
+    {
+      "scene": "cargo.png",
+      "language": "en",
+      "sha256": "6655c3a4dc4158aa10f69c752a313f586a6581e40361ee4997fb90a8f07196ad",
+      "size": [
+        684,
+        378
+      ],
+      "cuda_off": {
+        "engine": "portable-tesseract-pixel",
+        "cuda_status": "disabled",
+        "first_ms": 469.2899000001489,
+        "warm_ms": [
+          129.84940000023926,
+          127.59139999980107,
+          130.7742999997572,
+          140.1146999996854,
+          142.92950000162818,
+          140.89330000206246,
+          136.79449999835924
+        ],
+        "median_ms": 136.79449999835924,
+        "characters": 82,
+        "edits": 12,
+        "accuracy_percent": 85.366
+      },
+      "cuda_on": {
+        "engine": "portable-tesseract-pixel",
+        "cuda_status": "pixel_priority",
+        "first_ms": 485.64380000243546,
+        "warm_ms": [
+          145.6170999990718,
+          134.24419999864767,
+          131.5355999977328,
+          139.32399999976042,
+          131.31419999990612,
+          130.02770000093733,
+          130.69650000034017
+        ],
+        "median_ms": 131.5355999977328,
+        "characters": 82,
+        "edits": 12,
+        "accuracy_percent": 85.366
+      }
+    },
+    {
+      "scene": "needy-caution-full.png",
+      "language": "ja",
+      "sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+      "size": [
+        1920,
+        1080
+      ],
+      "cuda_off": {
+        "engine": "portable-tesseract",
+        "cuda_status": "disabled",
+        "first_ms": 2827.573800001119,
+        "warm_ms": [
+          530.6375000000116,
+          541.2498000005144,
+          534.6547999979521,
+          611.3427000018419,
+          552.5527999998303,
+          540.9103999991203,
+          599.2769000004046
+        ],
+        "median_ms": 541.2498000005144,
+        "characters": 248,
+        "edits": 105,
+        "accuracy_percent": 57.661
+      },
+      "cuda_on": {
+        "engine": "rapidocr-cuda",
+        "cuda_status": "active",
+        "first_ms": 26027.878000000783,
+        "warm_ms": [
+          282.7397999972163,
+          251.1726999982784,
+          259.06680000116467,
+          257.46929999877466,
+          248.4656000015093,
+          252.77730000016163,
+          256.85710000107065
+        ],
+        "median_ms": 256.85710000107065,
+        "characters": 248,
+        "edits": 4,
+        "accuracy_percent": 98.387
+      }
+    }
+  ]
+}

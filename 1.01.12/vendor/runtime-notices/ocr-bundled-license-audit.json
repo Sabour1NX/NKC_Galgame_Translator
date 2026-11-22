@@ -1,0 +1,339 @@
+{
+  "wheel": "tesserocr 2.13.0 cp314 win_amd64",
+  "dlls": [
+    {
+      "dll": "archive-782c335418d810cd250b6e68f091f78c.dll",
+      "sha256": "1e8da35478ae8c2f90ec0c679e0884aeabe222af4cc2367fc935caba59be0e01",
+      "component": "libarchive",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libarchive/COPYING",
+          "sha256": "30e556b3959e3985d66efefec5eaac51d4995053caa1d3cffe6eb916f146f229"
+        }
+      ]
+    },
+    {
+      "dll": "charset-4983c202d0424ad6e271741fb9453b7a.dll",
+      "sha256": "4983c202d0424ad6e271741fb9453b7a833bb1697854bc37046db39618234f14",
+      "component": "libiconv",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libiconv/COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        }
+      ]
+    },
+    {
+      "dll": "deflate-6e3ddf8a9c567e31580aa381f058987c.dll",
+      "sha256": "6e3ddf8a9c567e31580aa381f058987c70848d2aead885e6d93edcf577aa68d4",
+      "component": "libdeflate",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libdeflate/COPYING",
+          "sha256": "4ad69099cb4374836fd27583d9991e2838cd86b6e4666ab26b2d32582c91e73a"
+        }
+      ]
+    },
+    {
+      "dll": "gif-7-7c52dccd314fed907cdbb7b0e7f8ab61.dll",
+      "sha256": "7c52dccd314fed907cdbb7b0e7f8ab611c5feb973b1bc8f706ef682dd0810908",
+      "component": "giflib",
+      "notices": [
+        {
+          "path": ".wheel-licenses/giflib/COPYING",
+          "sha256": "ed5d90cb4a041bddad679470a071302ab05ae5d0ec2cf8f9c97ad7b2708751e6"
+        },
+        {
+          "path": ".wheel-licenses/giflib/getopt_LICENSE.txt",
+          "sha256": "fe73146296e90e2079d2cba94192ffe44887d92821bd2e59267503720cfee68f"
+        }
+      ]
+    },
+    {
+      "dll": "iconv-c2d775a215adb752cf5ad8784a130aa6.dll",
+      "sha256": "2005b066f9281f1be2914faf44fac2d1c96ed6946cc4a42f3bcca00b23c5be06",
+      "component": "libiconv",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libiconv/COPYING.LIB",
+          "sha256": "20e50fe7aae3e56378ebf0417d9de904f55a0e61e4df315333e632a4d3555d95"
+        }
+      ]
+    },
+    {
+      "dll": "icudt78-18dd8e1881c5d378de868f8f2c2309d9.dll",
+      "sha256": "18dd8e1881c5d378de868f8f2c2309d95d3f6757ef40868b76657e7a1f061a51",
+      "component": "icu",
+      "notices": [
+        {
+          "path": ".wheel-licenses/icu/LICENSE",
+          "sha256": "e55522d81edc687a341a4411e0776e54ca654e90147f354a90458aaced4116af"
+        }
+      ]
+    },
+    {
+      "dll": "icuuc78-2213e2e9892056109adf9f0c530d8036.dll",
+      "sha256": "0b20f29eaeab8f736b7c954399560fc4c21696ccc33455860003dba84cb11c51",
+      "component": "icu",
+      "notices": [
+        {
+          "path": ".wheel-licenses/icu/LICENSE",
+          "sha256": "e55522d81edc687a341a4411e0776e54ca654e90147f354a90458aaced4116af"
+        }
+      ]
+    },
+    {
+      "dll": "jpeg8-0a5c1178b599856420b9afe3d9eb53e4.dll",
+      "sha256": "0a5c1178b599856420b9afe3d9eb53e43ba83031123f3b72700d925023a752d5",
+      "component": "libjpeg-turbo",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libjpeg-turbo/LICENSE.md",
+          "sha256": "ba6bceebcba0fdd35488477c2cca8c4632ce82c74dbfbc87d886ce6fc4433579"
+        }
+      ]
+    },
+    {
+      "dll": "leptonica-1.87.0-b3175453698a8126c7d1916fbde69ada.dll",
+      "sha256": "572686152a905b887b48584fe7056f747f9ec7801392c04da412bbc11f9b241c",
+      "component": "leptonica",
+      "notices": [
+        {
+          "path": ".wheel-licenses/leptonica/leptonica-license.txt",
+          "sha256": "87829abb5bbb00b55a107365da89e9a33f86c4250169e5a1e5588505be7d5806"
+        }
+      ]
+    },
+    {
+      "dll": "Lerc-6327da11690eb9d3a15269759221b0b7.dll",
+      "sha256": "ec58419b0969396ac398836e14d9fc78440b640befac9d1480afa077f6d7ba74",
+      "component": "lerc",
+      "notices": [
+        {
+          "path": ".wheel-licenses/lerc/LICENSE",
+          "sha256": "77a8b761727c75e2167b15bfdf61b2c0bcf8792271228bebe80779106ad00671"
+        }
+      ]
+    },
+    {
+      "dll": "libbz2-7f3ddbb88b670d79ada028480067ccdf.dll",
+      "sha256": "7f3ddbb88b670d79ada028480067ccdf240601319128e40eec8dce1daf4a9238",
+      "component": "bzip2",
+      "notices": [
+        {
+          "path": ".wheel-licenses/bzip2/LICENSE",
+          "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3"
+        }
+      ]
+    },
+    {
+      "dll": "libcrypto-3-x64-7ff26fb03c914b87e22f55c6abed6eda.dll",
+      "sha256": "7ff26fb03c914b87e22f55c6abed6eda0bfbfc628f9c1f1fde67993ddf1f8d47",
+      "component": "openssl",
+      "notices": [
+        {
+          "path": ".wheel-licenses/openssl/LICENSE.txt",
+          "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+        }
+      ]
+    },
+    {
+      "dll": "libcurl-e0fdbb063f598a8667e1c1cab385f36f.dll",
+      "sha256": "7e8b18666e5ffe67b1434b293ffb096658e92e66526e310b6e54b2ed77323750",
+      "component": "libcurl",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libcurl/COPYING",
+          "sha256": "82f2f4427d6545ee5aaac4f0b80428da6cc8ba41c2cf5da3a03680ec327b9681"
+        }
+      ]
+    },
+    {
+      "dll": "liblzma-8439ed3564a8dbbf6355e29c92e88fdf.dll",
+      "sha256": "8439ed3564a8dbbf6355e29c92e88fdf1f6dee096504149fc051104155c868a9",
+      "component": "liblzma",
+      "notices": [
+        {
+          "path": ".wheel-licenses/liblzma/COPYING",
+          "sha256": "616a3ad264ce29b8f1cb97e53037b139d406899ca8d1f799651e17bfa09830b8"
+        },
+        {
+          "path": ".wheel-licenses/liblzma/COPYING.0BSD",
+          "sha256": "0b01625d853911cd0e2e088dcfb743261034a091bb379246cb25a14cc4c74bf1"
+        }
+      ]
+    },
+    {
+      "dll": "libpng16-0bb95036074bc1e2acf41fe8590e18d3.dll",
+      "sha256": "8c9e2d87978385030f310c48b81f5cd46608172263f570e06c1dca8b44e8b43c",
+      "component": "libpng",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libpng/LICENSE",
+          "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526"
+        }
+      ]
+    },
+    {
+      "dll": "libsharpyuv-09e089c9ad5da983f04e98ccc8f41de1.dll",
+      "sha256": "09e089c9ad5da983f04e98ccc8f41de1750b0a351370a4d42b9080c3e68eac50",
+      "component": "libwebp-base",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libwebp-base/COPYING",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        }
+      ]
+    },
+    {
+      "dll": "libssh2-8cd554a07fc36f18dfba4f0a358e9a54.dll",
+      "sha256": "c7bba7a075c796ae0f91dd8be8d180e8e1746a30194c304cf3216f1e87b3163d",
+      "component": "libssh2",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libssh2/COPYING",
+          "sha256": "f7f9633cf9ff2f1333f3d7ce46973a8716a4d2a2815ad56f30d437d5fea7bafe"
+        }
+      ]
+    },
+    {
+      "dll": "libwebp-d3840055b4660e579d94d60722c712b7.dll",
+      "sha256": "c8e3097cc849cc7f65139c309c783986c274fcce6b390f9ec7d00e0a3dadaf06",
+      "component": "libwebp-base",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libwebp-base/COPYING",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        }
+      ]
+    },
+    {
+      "dll": "libwebpmux-e5dee9448ea8f8f080bb950f4004014d.dll",
+      "sha256": "a3900210c40c3b3fc486639e5cf001ccac0dceb678e2b81fae788786329362fd",
+      "component": "libwebp-base",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libwebp-base/COPYING",
+          "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+        }
+      ]
+    },
+    {
+      "dll": "libxml2-65bbbd4e4c08dcb99590375fdca3ba17.dll",
+      "sha256": "5dbb17f9ecbe45523f3686df4d82c4fd4ab775ec16b04dd2387fd010eb47a776",
+      "component": "libxml2",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libxml2/Copyright",
+          "sha256": "5d4873884a890122a4b9b20ad56ac6f7da1d796a5bfcf04a427970ac96217626"
+        }
+      ]
+    },
+    {
+      "dll": "lz4-fa9b72d31492ee37c803a04100c79408.dll",
+      "sha256": "fa9b72d31492ee37c803a04100c7940895f3a39c5540492c003827349731b2cc",
+      "component": "lz4-c",
+      "notices": [
+        {
+          "path": ".wheel-licenses/lz4-c/lib/LICENSE",
+          "sha256": "8b58c446121a109ccf32edc094bba3010a3d85e4ee3702950db55e4d3e87736c"
+        }
+      ]
+    },
+    {
+      "dll": "msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "sha256": "7c26614e1d733892c2deac7e245ce115504b1d80592dd0a01b08e3e5a55f89ca",
+      "component": "vc14_runtime",
+      "notices": [
+        {
+          "path": ".wheel-licenses/vc14_runtime/LICENSE.DOCX",
+          "sha256": "08651651a7602fc7c0e2763de0fde1ff9f868df2780597cd1775ee9d6441c783"
+        },
+        {
+          "path": ".wheel-licenses/vc14_runtime/LICENSE.RTF",
+          "sha256": "9020a331682370e8359e02c5e51762d375896d62f42e33aef331be83255036bc"
+        },
+        {
+          "path": ".wheel-licenses/vc14_runtime/LICENSE.TXT",
+          "sha256": "cf89b37107c22cf8ce21043da1da143087b86ce7fd4556f91c25bc429533807e"
+        }
+      ]
+    },
+    {
+      "dll": "openjp2-5d11a0abfa2b679c22f0d91df66bd2ab.dll",
+      "sha256": "5d11a0abfa2b679c22f0d91df66bd2abc83acb6988b050ad9e75ea0b0025e2b0",
+      "component": "openjpeg",
+      "notices": [
+        {
+          "path": ".wheel-licenses/openjpeg/LICENSE",
+          "sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6"
+        }
+      ]
+    },
+    {
+      "dll": "psl-5-425501677e4dfd6bb21ed49337032ba8.dll",
+      "sha256": "9cbcf0dedd7b37cf2ba79e1522782eb2a5697cae8307a0cc7a0c6a83c9bcd11f",
+      "component": "libpsl",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libpsl/LICENSE",
+          "sha256": "e7c9f0d8498d28a360a7e8293ea70fd7bd952955b636938322c13d60a03b5a45"
+        }
+      ]
+    },
+    {
+      "dll": "tesseract55-a353c6df28c139558755a8cce82db953.dll",
+      "sha256": "a55863277f34a0e062b438b1db10b6a9148e3ee9ccabdb8ca55be2210c9a2f73",
+      "component": "tesseract",
+      "notices": [
+        {
+          "path": ".wheel-licenses/tesseract/tesseract/LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "dll": "tiff-a5f715a8d24c753abfed1b4282447ee3.dll",
+      "sha256": "e997e652bd0e714823b5d4868b5508e86191b9ece1a63fbb681b6c0eacbe4bea",
+      "component": "libtiff",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libtiff/LICENSE.md",
+          "sha256": "0e27c2382d7b8147972bbb746e04059a1152c8d0fda9d03ef1399d1a433c4ade"
+        }
+      ]
+    },
+    {
+      "dll": "zlib-f4f26ea6300c8449daad4650915e01ac.dll",
+      "sha256": "f4f26ea6300c8449daad4650915e01ac80aafc6ca8b73a50be450f1fb66cdd63",
+      "component": "libzlib",
+      "notices": [
+        {
+          "path": ".wheel-licenses/libzlib/LICENSE",
+          "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2"
+        }
+      ]
+    },
+    {
+      "dll": "zstd-fcc1dc71b7df5489e37a78abab9c31d7.dll",
+      "sha256": "fcc1dc71b7df5489e37a78abab9c31d763570d55e93c67f388058c41c0d7b8df",
+      "component": "zstd",
+      "notices": [
+        {
+          "path": ".wheel-licenses/zstd/LICENSE",
+          "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8"
+        }
+      ]
+    }
+  ],
+  "all_bundled_dlls_have_notice_mapping": true,
+  "lgpl_runtime_components": [
+    "libiconv/iconv.dll",
+    "libiconv/charset.dll"
+  ],
+  "notes": [
+    "The liblzma COPYING file mentions GPL/LGPL build tools; bundled library COPYING.0BSD is separately present. No extra GPL DLL identified from this DLL-to-notice inventory.",
+    "This audit maps supplied notices, not a legal determination of all combined-distribution obligations.",
+    "Third-party libiconv source, exact Windows recipe and binary code-section comparison are in third_party_sources/libiconv-1.18."
+  ]
+}

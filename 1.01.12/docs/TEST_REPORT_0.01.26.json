@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "version": "0.01.26",
+  "date": "2026-11-18",
+  "validation_status": "passed_affected_checks",
+  "scope": "Header, target-window identity and runtime-state changes; not a full-project rerun.",
+  "automated_batches": [
+    {
+      "passed": 152,
+      "failed": 0,
+      "duration_seconds": 85.8,
+      "log": "reports/window-target26-tests.log",
+      "scope": "Affected existing UI and window checks before final three GameBar cases"
+    },
+    {
+      "passed": 74,
+      "failed": 0,
+      "duration_seconds": 0.53,
+      "log": "reports/window-target26-final.log",
+      "scope": "55 new window cases plus 19 existing visible-client cases on final source"
+    }
+  ],
+  "counts_note": "The two batches overlap and are not summed. Final batch contains all 55 newly added window-selection/status cases.",
+  "source_selfcheck": true,
+  "source_selfcheck_report": "reports/source-selftest26.json",
+  "packaged_selfcheck": true,
+  "renamed_path_selfcheck": true,
+  "selfcheck_dialogs": 0,
+  "selfcheck_network_requests": 0,
+  "inherited_evidence": "TEST_REPORT_0.01.25.json",
+  "inherited_evidence_version": "0.01.25",
+  "inherited_full_suite_reexecuted": false,
+  "performance_measurement_version": "0.01.25",
+  "performance_rebenchmarked": false,
+  "window_enumeration": {
+    "report": "reports/window-target26-live-enumeration.json",
+    "ordinary_windows": 7,
+    "explorer_excluded": true,
+    "network_requests": 0,
+    "captures": 0
+  },
+  "live_ui_visual": {
+    "method": "Direct CUA desktop observation of the real 0.01.26 source GUI; no local screenshot file",
+    "passed": true,
+    "checks": [
+      "Large content-area icon/title/slogan removed",
+      "Compact API entry and configured indicator visible",
+      "Japanese to Chinese and NEEDY GIRL OVERDOSE profile retained",
+      "Window entries show executable and PID",
+      "Explorer folder excluded",
+      "No automatic unrelated-window selection; empty choice has explicit prompt"
+    ],
+    "live_game_overlay_verified": false,
+    "limit": "Windose was not running in the observed window list; this UI check does not verify live game translation. PrintWindow diagnostic was white and is not visual evidence."
+  },
+  "documentation": {
+    "manual_chapters_each_language": 18,
+    "static_check": "reports/manual-html-check.json",
+    "browser_check": "reports/manual26-browser.json"
+  },
+  "native_and_dependencies": "Native DLL and all six dependency lockfiles are byte-identical to 0.01.25; inherited audit provenance retained.",
+  "trial_selfcheck": true,
+  "private_demo_selfcheck": true
+}

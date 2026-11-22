@@ -1,0 +1,47 @@
+{
+  "wheel_file": "vendor\\ocr\\tesserocr.libs\\iconv-c2d775a215adb752cf5ad8784a130aa6.dll",
+  "comparison_sections": {
+    ".text": "c52108b1ea647d43800870528f9893a2626485f801a460e1adee470161a6d78b",
+    ".pdata": "f14d023b4c95cbb2ee807d973b06f7b65251aaa6313729f7cedff157064b4bee",
+    ".reloc": "eeb922edad86e39a930580976f60e84cac26b49e6f0b1e092f143a9d129e3d00"
+  },
+  "packages": [
+    {
+      "package": "win-64/libiconv-1.18-h135ad9c_0.conda",
+      "url": "https://api.anaconda.org/download/conda-forge/libiconv/1.18/win-64/libiconv-1.18-h135ad9c_0.conda",
+      "sha256": "bdb2d266a2244187b74b14f095a5728d3f692fc1b802fe45a4923ba05d0f1ff2",
+      "dlls": [
+        "Library/bin/charset.dll",
+        "Library/bin/iconv.dll"
+      ]
+    },
+    {
+      "package": "win-64/libiconv-1.18-h135ad9c_1.conda",
+      "url": "https://api.anaconda.org/download/conda-forge/libiconv/1.18/win-64/libiconv-1.18-h135ad9c_1.conda",
+      "sha256": "ea5ed2b362b6dbc4ba7188eb4eaf576146e3dfc6f4395e9f0db76ad77465f786",
+      "dlls": [
+        "Library/bin/iconv.dll",
+        "Library/bin/charset.dll"
+      ]
+    },
+    {
+      "package": "win-64/libiconv-1.18-hc1393d2_2.conda",
+      "url": "https://api.anaconda.org/download/conda-forge/libiconv/1.18/win-64/libiconv-1.18-hc1393d2_2.conda",
+      "sha256": "0dcdb1a5f01863ac4e8ba006a8b0dc1a02d2221ec3319b5915a1863254d7efa7",
+      "dlls": [
+        "Library/bin/iconv.dll",
+        "Library/bin/charset.dll"
+      ]
+    },
+    {
+      "package": "win-64/libiconv-1.18-hc1393d2_3.conda",
+      "url": "https://api.anaconda.org/download/conda-forge/libiconv/1.18/win-64/libiconv-1.18-hc1393d2_3.conda",
+      "sha256": "35e04e3ddac7720fc7c550a1c9f998604299d6a7bd1f3ec9b2825d825061daa2",
+      "dlls": [
+        "Library/bin/iconv.dll",
+        "Library/bin/charset.dll"
+      ],
+      "match": "Library/bin/iconv.dll"
+    }
+  ]
+}

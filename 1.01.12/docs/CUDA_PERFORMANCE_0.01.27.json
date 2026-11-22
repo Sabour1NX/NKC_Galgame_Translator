@@ -1,0 +1,92 @@
+{
+  "version": "0.01.27",
+  "scope": "Fixed original screenshots to raw CUDA OCR output. No capture, AI, translation or overlay. Accuracy uses manual truth zones and NFKC whitespace-normalized Levenshtein distance.",
+  "scene": "needy-caution-full.png",
+  "characters": 248,
+  "rounds": 5,
+  "gpu": "NVIDIA GeForce RTX 3070, 617.42, 8192 MiB",
+  "api_calls": 0,
+  "cache_used": false,
+  "measurements": [
+    {
+      "quality": 0,
+      "warm_client_ms": 135.433,
+      "warm_ocr_ms": 113.767,
+      "character_accuracy_percent": 97.581,
+      "edits": 6,
+      "image_sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+      "cuda": {
+        "provider": "CUDAExecutionProvider",
+        "kernels_verified": true,
+        "kernel_counts": {
+          "det": 190,
+          "rec": 181
+        },
+        "ort_version": "1.32.0",
+        "model": "PP-OCRv6-small",
+        "arena_budget_only": true,
+        "quality": 0,
+        "det_limit_side": 768,
+        "limit_type": "max",
+        "rec_batch_size": 4,
+        "det_arena_bytes": 644245094,
+        "rec_arena_bytes": 429496730,
+        "memory_mb": 1024
+      }
+    },
+    {
+      "quality": 75,
+      "warm_client_ms": 210.82,
+      "warm_ocr_ms": 189.26,
+      "character_accuracy_percent": 98.387,
+      "edits": 4,
+      "image_sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+      "cuda": {
+        "provider": "CUDAExecutionProvider",
+        "kernels_verified": true,
+        "kernel_counts": {
+          "det": 190,
+          "rec": 181
+        },
+        "ort_version": "1.32.0",
+        "model": "PP-OCRv6-small",
+        "arena_budget_only": true,
+        "quality": 75,
+        "det_limit_side": 1632,
+        "limit_type": "max",
+        "rec_batch_size": 4,
+        "det_arena_bytes": 644245094,
+        "rec_arena_bytes": 429496730,
+        "memory_mb": 1024
+      }
+    },
+    {
+      "quality": 100,
+      "warm_client_ms": 242.65,
+      "warm_ocr_ms": 220.524,
+      "character_accuracy_percent": 96.774,
+      "edits": 8,
+      "image_sha256": "271881b687546aff3edea8abc84c0139cbcc15699405ea0e0cda43c3aff4e00b",
+      "cuda": {
+        "provider": "CUDAExecutionProvider",
+        "kernels_verified": true,
+        "kernel_counts": {
+          "det": 190,
+          "rec": 181
+        },
+        "ort_version": "1.32.0",
+        "model": "PP-OCRv6-small",
+        "arena_budget_only": true,
+        "quality": 100,
+        "det_limit_side": 1920,
+        "limit_type": "max",
+        "rec_batch_size": 4,
+        "det_arena_bytes": 644245094,
+        "rec_arena_bytes": 429496730,
+        "memory_mb": 1024
+      }
+    }
+  ],
+  "source": "reports/cuda-benchmark27.json",
+  "limits": "Client timing includes BMP/IPC/helper OCR; excludes capture, translation, overlay and monitor. No monotonic quality or all-game claim."
+}

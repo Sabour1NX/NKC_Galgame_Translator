@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>0.01.30 任务报告 · 0.01.30</title>
+<style>:root{color-scheme:light;--ink:#26242d;--muted:#605c68;--paper:#f7f3ef;--card:#fffcfb;--line:#ddd5d4;--red:#a8203b;--slate:#625c75}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.68 system-ui,'Microsoft YaHei UI',sans-serif}main{width:min(1100px,92vw);margin:auto;padding:56px 0 84px}header{border-top:4px solid var(--red);padding:28px 0;border-bottom:1px solid var(--line);margin-bottom:35px}nav{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:1rem}a{color:var(--red)}h1,h2,h3{line-height:1.2}h1{font-size:clamp(2.1rem,5vw,3.8rem);letter-spacing:-.035em;margin:.2em 0}h2{margin:1.8em 0 .7em}p{margin:.65em 0}.eyebrow{font-weight:700;letter-spacing:.09em;color:var(--red)}.muted{color:var(--muted)}.card,.chart,details{padding:20px 24px;border:1px solid var(--line);border-radius:15px;background:var(--card);margin:12px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.metric{display:block;font-size:2.05rem;font-weight:750;color:var(--red)}.bar{height:14px;margin:4px 0 12px;border-radius:5px;background:#eae4e6;overflow:hidden}.bar span{height:100%;display:block;background:var(--slate)}.bar.on span{background:var(--red)}.pair{display:grid;grid-template-columns:1fr 1fr;gap:15px}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.scroll{overflow:auto}code{overflow-wrap:anywhere}img{display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:7px}figure{margin:0}summary{cursor:pointer;font-weight:650}li{margin:.3em 0}.flow{display:flex;gap:8px;flex-wrap:wrap}.flow span{border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:8px}.flow b{align-self:center;color:var(--red)}@media(max-width:640px){main{padding-top:18px}.pair{grid-template-columns:1fr}.card,.chart,details{padding:14px}}
+</style><main><header><div class="eyebrow">NISHOKUCHOU · 0.01.30 / RELEASE REVIEW</div>
+<h1>0.01.30 任务报告</h1></header>
+<div class="grid"><div class="card"><h3>焦点不打断翻译</h3>
+<p>短按钮文本确认后，采集画面的按钮内侧像素相同时继续使用原识别结果和已有译文。移动焦点产生的描边不会让 OK 重新进入翻译队列。</p></div>
+<div class="card"><h3>按源字形高度排版</h3>
+<p>按钮译文只使用经检查的留白，并按原中心绘制。短标签等完整译文后一次显示。字号仍受设置与实际空间约束。</p></div>
+<div class="card"><h3>安装和迁移</h3>
+<p>发行程序面向 Windows x64。配置、加密密钥与档案由本机迁移。公开包用于分发。</p></div></div>
+<h2>验证覆盖</h2>
+<ul><li>焦点描边和 OCR 误读的回归测试确保保留已有译文，并验证真实字形变化仍更新。</li>
+<li>Windows 原生绘制回归检查字号、居中以及边界。</li>
+<li>历史游戏原始截图的 CUDA 实测确认 OK 和 Cancel 都可使用经确认的留白。游戏内连续交互的表现仍需实机观察。</li>
+<li>中文、英文、日文五个主页面及配置对话框使用隔离配置截图。结果随交付包提供。</li></ul>
+<h2>阅读材料</h2><nav><a href="PROJECT_MANUAL.html">中文手册</a><a href="PROJECT_MANUAL.en.html">English manual</a>
+<a href="PERFORMANCE_REPORT.html">CUDA 模式对照</a></nav></main></html>

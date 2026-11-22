@@ -1,0 +1,6 @@
+SPDX-License-Identifier: MIT
+
+The small dictionary examples in this directory are original project examples
+distributed under the MIT License, like the main
+application. See the full LICENSE supplied with this version. They do not include
+entries copied from a third-party dictionary or game.

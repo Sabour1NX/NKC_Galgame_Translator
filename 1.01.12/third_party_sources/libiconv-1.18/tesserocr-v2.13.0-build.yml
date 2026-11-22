@@ -1,0 +1,102 @@
+name: Build
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+    branches:
+      - "*"
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  build_wheels:
+    name: Build wheel for ${{ matrix.config.build }}-${{ matrix.config.platform }}
+
+    runs-on: ${{ matrix.config.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - { os: ubuntu-24.04, arch: x86_64, platform: manylinux_x86_64, build: cp*, tag: cpall }
+          - { os: ubuntu-24.04-arm, arch: aarch64, platform: manylinux_aarch64, build: cp*, tag: cpall }
+          - { os: ubuntu-24.04, arch: x86_64, platform: musllinux_x86_64, build: cp*, tag: cpall }
+          - { os: macos-15-intel, arch: x86_64, platform: macosx_x86_64, build: cp*, tag: cpall }
+          - { os: macos-15, arch: arm64,  platform: macosx_arm64, build: cp*, tag: cpall }
+          - { os: windows-2022, arch: AMD64, platform: win_amd64, build: cp*, tag: cpall }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download test language data
+        shell: bash
+        run: |
+          mkdir -p .test-tessdata
+          for lang in eng osd; do
+            curl --fail --location --retry 3 \
+              "https://raw.githubusercontent.com/tesseract-ocr/tessdata/4.1.0/$lang.traineddata" \
+              -o ".test-tessdata/$lang.traineddata"
+          done
+
+      - name: Set macOS deployment target
+        if: runner.os == 'macOS'
+        run: echo "MACOSX_DEPLOYMENT_TARGET=$(sw_vers -productVersion | cut -d '.' -f 1-2)" | tee -a $GITHUB_ENV
+
+      - name: Install Windows dependencies
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: .github/build-scripts/windows-install-tesseract.ps1
+
+      - name: Build wheel
+        uses: pypa/cibuildwheel@v4.3.3
+        env:
+          CIBW_ARCHS: "${{ matrix.config.arch }}"
+          CIBW_BUILD: "${{ matrix.config.build }}-${{ matrix.config.platform }}"
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: "wheels-${{ matrix.config.platform }}-${{ matrix.config.tag }}"
+          path: ./wheelhouse/*.whl
+
+  build_sdist:
+    name: Build sdist
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libtesseract-dev libleptonica-dev pkg-config
+          python -m pip install build -r requirements-dev.txt
+
+      - name: Test version-dependent source generation
+        run: python -m unittest tests.test_build -v
+
+      - name: Build sdist
+        run: python -m build --sdist
+
+      - name: Test wheel build from sdist
+        run: |
+          mkdir sdist-check
+          tar -xzf dist/*.tar.gz --strip-components=1 -C sdist-check
+          test -f sdist-check/tesserocr/tesserocr.templ.pyx
+          test -f sdist-check/tesserocr/tesseract.templ.pxd
+          test ! -e sdist-check/tesserocr/tesserocr.pyx
+          test ! -e sdist-check/tesserocr/tesseract.pxd
+          python -m build --wheel --outdir wheelhouse sdist-check
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: source
+          path: ./dist/*

@@ -1,0 +1,3 @@
+# Runtime dependencies for the tested Windows x64 / Python 3.14 build.
+# Hashes are mandatory; use: python -m pip install --require-hashes -r requirements.txt
+-r requirements-runtime.lock

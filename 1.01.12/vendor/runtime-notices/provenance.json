@@ -1,0 +1,154 @@
+{
+  "audit_date": "2026-11-14",
+  "records": [
+    {
+      "file": "CPython-3.14.10-installed-LICENSE.txt",
+      "component": "CPython installer aggregated notices",
+      "version": "3.14.10",
+      "source_file": "vendor/python/LICENSE.txt",
+      "source_url": "https://www.python.org/ftp/python/3.14.10/python-3.14.10-amd64.exe",
+      "sha256": "935cf13e19f8c31b497d20b05d73623431a226b230c3599bc30fa3348979bc68",
+      "bytes": 35407,
+      "status": "copied_from_official_installation"
+    },
+    {
+      "file": "tcl-9.0.4-license.terms",
+      "component": "Tcl",
+      "version": "9.0.4",
+      "source_url": "https://raw.githubusercontent.com/python/cpython-source-deps/tcl-9.0.4.0/license.terms",
+      "resolved_url": "https://raw.githubusercontent.com/python/cpython-source-deps/tcl-9.0.4.0/license.terms",
+      "sha256": "c0a69a2bfd757361ec7e6143973b103c90409316b49e9c88db26ad6388e79f16",
+      "bytes": 2255,
+      "status": "downloaded"
+    },
+    {
+      "file": "tk-9.0.4-license.terms",
+      "component": "Tk",
+      "version": "9.0.4",
+      "source_url": "https://raw.githubusercontent.com/python/cpython-source-deps/tk-9.0.4.1/license.terms",
+      "resolved_url": "https://raw.githubusercontent.com/python/cpython-source-deps/tk-9.0.4.1/license.terms",
+      "sha256": "2cde822b93ca16ae535c954b7dfe658b4ad10df2a193628d1b358f1765e8b198",
+      "bytes": 2267,
+      "status": "downloaded"
+    },
+    {
+      "file": "openssl-3.5.9-LICENSE.txt",
+      "component": "OpenSSL",
+      "version": "3.5.9",
+      "source_url": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.5.9/LICENSE.txt",
+      "resolved_url": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.5.9/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "bytes": 10175,
+      "status": "downloaded"
+    },
+    {
+      "file": "expat-2.9.0-COPYING.txt",
+      "component": "Expat",
+      "version": "2.9.0",
+      "source_url": "https://raw.githubusercontent.com/libexpat/libexpat/R_2_9_0/expat/COPYING",
+      "resolved_url": "https://raw.githubusercontent.com/libexpat/libexpat/R_2_9_0/expat/COPYING",
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "bytes": 1144,
+      "status": "downloaded"
+    },
+    {
+      "file": "libffi-3.4.4-LICENSE.txt",
+      "component": "libffi",
+      "version": "3.4.4",
+      "source_url": "https://raw.githubusercontent.com/python/cpython-source-deps/libffi-3.4.4/LICENSE",
+      "resolved_url": "https://raw.githubusercontent.com/python/cpython-source-deps/libffi-3.4.4/LICENSE",
+      "sha256": "2c9c2acb9743e6b007b91350475308aee44691d96aa20eacef8e199988c8c388",
+      "bytes": 1132,
+      "status": "downloaded"
+    },
+    {
+      "file": "zlib-ng-2.2.4-LICENSE.md",
+      "component": "zlib-ng",
+      "version": "2.2.4",
+      "source_url": "https://raw.githubusercontent.com/zlib-ng/zlib-ng/2.2.4/LICENSE.md",
+      "resolved_url": "https://raw.githubusercontent.com/zlib-ng/zlib-ng/2.2.4/LICENSE.md",
+      "sha256": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee",
+      "bytes": 867,
+      "status": "downloaded"
+    },
+    {
+      "file": "zlib-1.3.2-LICENSE.txt",
+      "component": "zlib DLL (Tcl)",
+      "version": "1.3.2",
+      "source_url": "https://raw.githubusercontent.com/madler/zlib/v1.3.2/LICENSE",
+      "resolved_url": "https://raw.githubusercontent.com/madler/zlib/v1.3.2/LICENSE",
+      "sha256": "e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2",
+      "bytes": 1002,
+      "status": "downloaded"
+    },
+    {
+      "file": "bzip2-1.0.8-LICENSE.txt",
+      "component": "bzip2",
+      "version": "1.0.8",
+      "source_url": "https://raw.githubusercontent.com/python/cpython-source-deps/bzip2-1.0.8/LICENSE",
+      "resolved_url": "https://raw.githubusercontent.com/python/cpython-source-deps/bzip2-1.0.8/LICENSE",
+      "sha256": "c6dbbf828498be844a89eaa3b84adbab3199e342eb5cb2ed2f0d4ba7ec0f38a3",
+      "bytes": 1896,
+      "status": "downloaded"
+    },
+    {
+      "file": "xz-5.2.5-COPYING.txt",
+      "component": "liblzma (xz)",
+      "version": "5.2.5",
+      "source_url": "https://raw.githubusercontent.com/python/cpython-source-deps/xz-5.2.5/COPYING",
+      "resolved_url": "https://raw.githubusercontent.com/python/cpython-source-deps/xz-5.2.5/COPYING",
+      "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c",
+      "bytes": 2775,
+      "status": "downloaded"
+    },
+    {
+      "file": "zstd-1.5.7-LICENSE.txt",
+      "component": "Zstandard",
+      "version": "1.5.7",
+      "source_url": "https://raw.githubusercontent.com/facebook/zstd/v1.5.7/LICENSE",
+      "resolved_url": "https://raw.githubusercontent.com/facebook/zstd/v1.5.7/LICENSE",
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "bytes": 1549,
+      "status": "downloaded"
+    },
+    {
+      "file": "sqlite-3.50.4-copyright.html",
+      "component": "SQLite",
+      "version": "3.50.4",
+      "source_url": "https://www.sqlite.org/copyright.html",
+      "resolved_url": "https://www.sqlite.org/copyright.html",
+      "sha256": "44ca9f793055c8e32fc65f65a4f5bcf813a33f5bdaaa084067dd617a4ed3cc70",
+      "bytes": 8351,
+      "status": "downloaded"
+    },
+    {
+      "file": "cpython-v3.14.10-get_externals.bat.txt",
+      "component": "Build dependency version evidence",
+      "version": "3.14.10",
+      "source_url": "https://raw.githubusercontent.com/python/cpython/v3.14.10/PCbuild/get_externals.bat",
+      "resolved_url": "https://raw.githubusercontent.com/python/cpython/v3.14.10/PCbuild/get_externals.bat",
+      "sha256": "4e2a2946a943de2c26825901c4f7aad60f59cce82b400b9baf4f78ef758b6313",
+      "bytes": 4626,
+      "status": "downloaded"
+    },
+    {
+      "file": "libtommath-license.terms",
+      "component": "LibTomMath bundled with Tcl",
+      "version": "Tcl 9.0.4 vendored source",
+      "source_url": "https://raw.githubusercontent.com/tcltk/tcl/core-9-0-4/libtommath/LICENSE",
+      "resolved_url": "https://raw.githubusercontent.com/tcltk/tcl/core-9-0-4/libtommath/LICENSE",
+      "sha256": "2fa64b163659f41965c9815882a8296d3d03ff546b76153e11445f9bdecf955a",
+      "bytes": 1257,
+      "status": "downloaded"
+    },
+    {
+      "file": "mpdecimal-4.0.0-COPYRIGHT.txt",
+      "component": "mpdecimal",
+      "version": "4.0.0",
+      "source_url": "https://raw.githubusercontent.com/python/cpython-source-deps/mpdecimal-4.0.0/COPYRIGHT.txt",
+      "sha256": "2713324211652ce4a60e6e21e54f9dc3004299e591b0933a352f1a89c5fb53c2",
+      "bytes": 1285,
+      "status": "downloaded"
+    }
+  ]
+}

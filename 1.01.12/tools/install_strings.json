@@ -1,0 +1,44 @@
+{
+  "zh-CN": {
+    "name": "简体中文",
+    "title": "安装 NKC_Galgame_Translator",
+    "language": "安装语言",
+    "intro": "将为当前 Windows 用户安装 NKC_Galgame_Translator。",
+    "install": "安装",
+    "launch": "启动 NKC_Galgame_Translator",
+    "close": "关闭",
+    "progress": "正在安装…",
+    "success": "安装完成。欢迎页已在浏览器打开。",
+    "no_browser": "安装完成。可以从安装目录打开欢迎页。",
+    "failed": "安装失败：",
+    "bad_arch": "此安装包需要 Windows x64。"
+  },
+  "en": {
+    "name": "English",
+    "title": "Set up NKC_Galgame_Translator",
+    "language": "Installation language",
+    "intro": "Install the app for your Windows account. No administrator access is needed.",
+    "install": "Install",
+    "launch": "Launch NKC_Galgame_Translator",
+    "close": "Close",
+    "progress": "Installing…",
+    "success": "Installation complete. The welcome tour is open in your browser.",
+    "no_browser": "Installation complete. Open docs/Greeting.en.html in the installation folder to see the tour.",
+    "failed": "Installation failed: ",
+    "bad_arch": "This installer requires Windows x64."
+  },
+  "ja": {
+    "name": "日本語 (beta)",
+    "title": "NKC_Galgame_Translator セットアップ",
+    "language": "インストール言語",
+    "intro": "お使いの Windows Account にインストールします。管理者権限は不要です。",
+    "install": "インストール",
+    "launch": "NKC_Galgame_Translator を起動",
+    "close": "閉じる",
+    "progress": "インストール中…",
+    "success": "インストールが完了しました。Browser で使い方ガイドをご覧ください。",
+    "no_browser": "インストールが完了しました。インストール先の docs/Greeting.ja.html から使い方ガイドを開けます。",
+    "failed": "インストールに失敗しました：",
+    "bad_arch": "この Installer には Windows x64 が必要です。"
+  }
+}

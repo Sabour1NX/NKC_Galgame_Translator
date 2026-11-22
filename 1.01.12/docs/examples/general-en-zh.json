@@ -1,0 +1,5 @@
+[
+  {"source": "Start", "target": "开始"},
+  {"source": "Open the door", "target": "打开门"},
+  {"source": "HP {n}", "target": "生命值 {n}"}
+]

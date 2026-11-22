@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 100 100" role="img" aria-label="二色蝶红白太极图标">
+  <!-- SPDX-License-Identifier: MIT -->
+  <circle cx="50" cy="50" r="47" fill="#FFFEFC"/>
+  <path d="M50 3 A47 47 0 0 0 50 97 A23.5 23.5 0 0 1 50 50 A23.5 23.5 0 0 0 50 3Z" fill="#B6332D"/>
+  <circle cx="50" cy="26.5" r="6.5" fill="#FFFEFC"/>
+  <circle cx="50" cy="73.5" r="6.5" fill="#B6332D"/>
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#B6332D" stroke-width="1.5"/>
+</svg>
