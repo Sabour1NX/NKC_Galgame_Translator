@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 170" width="960" height="170" role="img" aria-labelledby="title desc">
+  <title id="title">NKC Galgame Translator</title>
+  <desc id="desc">A constructivist paper butterfly with angular cyan and magenta wings flies across a striped neon sunset.</desc>
+  <defs>
+    <linearGradient id="sky" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop stop-color="#171429"/><stop offset=".55" stop-color="#302047"/><stop offset="1" stop-color="#583662"/>
+    </linearGradient>
+    <linearGradient id="sun" x2="0" y2="1">
+      <stop stop-color="#ffdbad"/><stop offset=".54" stop-color="#ff94bd"/><stop offset="1" stop-color="#c75dd8"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="170" rx="14" fill="url(#sky)"/>
+  <g fill="#d0c0ec" opacity=".68"><circle cx="441" cy="29" r="1.4"/><circle cx="510" cy="50" r="1"/><circle cx="585" cy="18" r="1"/><circle cx="873" cy="29" r="1.5"/><circle cx="923" cy="54" r="1"/></g>
+  <path fill="url(#sun)" d="M 644.000 27 H 644.000 A 49 49 0 0 1 691.508 64 H 596.492 A 49 49 0 0 1 644.000 27 Z M 595.657 68 H 692.343 A 49 49 0 0 1 693.000 76 H 595.000 A 49 49 0 0 1 595.657 68 Z M 595.164 80 H 692.836 A 49 49 0 0 1 690.957 90 H 597.043 A 49 49 0 0 1 595.164 80 Z M 598.426 94 H 689.574 A 49 49 0 0 1 682.743 106 H 605.257 A 49 49 0 0 1 598.426 94 Z M 608.715 110 H 679.285 A 49 49 0 0 1 660.882 122 H 627.118 A 49 49 0 0 1 608.715 110 Z"/>
+  <path d="m341 143 89-44 51 24 75-51 45 35 63-25 68 37 67-54 67 32 47-25 47 21v64H341Z" fill="#3d3056"/>
+  <g fill="none" stroke="#be90ce" stroke-linejoin="round">
+    <path d="m341 143 89-44 51 24 75-51 45 35 63-25 68 37 67-54 67 32 47-25 47 21" stroke-width="1.5"/>
+    <path d="m430 99 13 32 38-8m75-51 15 54 30-19m198-42 11 49 56-17" opacity=".45"/>
+  </g>
+  <path d="m310 157 82-20 75 10 73-22 65 13 68-27 84 34 69-28 60 18 74-25v46H310Z" fill="#28253f"/>
+  <path d="m310 157 82-20 75 10 73-22 65 13 68-27 84 34 69-28 60 18 74-25" fill="none" stroke="#66b8c8" stroke-width="1.6"/>
+  <g transform="translate(690 22) scale(.88)">
+    <g fill="none" stroke="#b4a1c9" opacity=".6">
+      <path d="m-65 118 122-73m-108 85 87-52m95-62 46-27" stroke-width="1"/>
+      <path d="m-13 125 97-58" stroke-width="3"/>
+    </g>
+    <g transform="rotate(-14 76 73)" stroke="#251c38" stroke-width="2.2" stroke-linejoin="miter">
+      <path d="M76 72 2 8l15 62 38 17Z" fill="#78e3e5"/>
+      <path d="M2 8 62 40l14 32Z" fill="#ddfff4"/>
+      <path d="m17 70 59 2-21 15Z" fill="#458aa6"/>
+      <path d="m70 79-54 11 29 36 23-18Z" fill="#61a5d9"/>
+      <path d="m70 79-25 47 23-18Z" fill="#9cd5f3"/>
+      <path d="M78 72 100 23l66-19-35 55-33 22Z" fill="#ff81bd"/>
+      <path d="M78 72 166 4l-35 55Z" fill="#bf4a9c"/>
+      <path d="m81 77 53-3-13 41-33-15Z" fill="#e7a1ef"/>
+      <path d="m81 77 40 38-33-15Z" fill="#9674be"/>
+    </g>
+    <path d="m61 100 21-44" stroke="#20192e" stroke-width="6"/>
+    <path d="m62.5 97 17-36" stroke="#f7eafb" stroke-width="1.2"/>
+    <g fill="#88dbe7"><path d="m155 47 21-12-2 5-21 12Z"/><path d="m165 49 21-12-2 5-21 12Z"/></g>
+  </g>
+  <path d="M38 43h32" stroke="#8ae5e4" stroke-width="3"/>
+  <g fill="#faf5ff" transform="translate(37 102) scale(0.0680 -0.0680)">
+    <path transform="translate(0.00)" d="M97 0H207V346C207 427 198 512 193 588H197C221 536 247 483 274 433L518 0H637V737H526V393C526 313 536 224 542 149H537C513 200 487 254 460 304L216 737H97Z"/>
+    <path transform="translate(748.71)" d="M97 0H213V222L327 360L534 0H663L397 452L626 737H495L216 388H213V737H97Z"/>
+    <path transform="translate(1427.41)" d="M387 -14C481 -14 551 24 613 92L552 161C510 115 459 88 394 88C261 88 176 196 176 370C176 541 265 649 392 649C450 649 497 626 536 587L598 657C553 709 480 750 390 750C203 750 56 606 56 367C56 125 201 -14 387 -14Z"/>
+  </g>
+  <g fill="#c9d9ef" transform="translate(40 131) scale(0.0150 -0.0150)">
+    <path transform="translate(0.00)" d="M398 -14C498 -14 581 24 630 73V392H379V296H524V124C499 102 455 88 410 88C257 88 176 196 176 370C176 543 267 649 404 649C475 649 520 624 557 586L619 657C575 705 505 750 401 750C205 750 56 606 56 367C56 125 201 -14 398 -14Z"/>
+    <path transform="translate(934.33)" d="M0 0H119L181 209H437L499 0H622L378 737H244ZM209 301 238 400C262 480 285 561 307 645H311C334 562 356 480 380 400L409 301Z"/>
+    <path transform="translate(1789.67)" d="M97 0H525V99H213V737H97Z"/>
+    <path transform="translate(2581.00)" d="M398 -14C498 -14 581 24 630 73V392H379V296H524V124C499 102 455 88 410 88C257 88 176 196 176 370C176 543 267 649 404 649C475 649 520 624 557 586L619 657C575 705 505 750 401 750C205 750 56 606 56 367C56 125 201 -14 398 -14Z"/>
+    <path transform="translate(3515.33)" d="M0 0H119L181 209H437L499 0H622L378 737H244ZM209 301 238 400C262 480 285 561 307 645H311C334 562 356 480 380 400L409 301Z"/>
+    <path transform="translate(4370.67)" d="M97 0H202V364C202 430 193 536 186 603H190L249 422L378 71H450L578 422L637 603H642C635 536 626 430 626 364V0H734V737H599L467 364C451 316 436 265 419 216H414C398 265 382 316 365 364L231 737H97Z"/>
+    <path transform="translate(5434.00)" d="M97 0H543V99H213V336H483V434H213V639H532V737H97Z"/>
+    <path transform="translate(6725.67)" d="M246 0H364V639H580V737H31V639H246Z"/>
+    <path transform="translate(7570.00)" d="M213 390V643H324C430 643 489 612 489 523C489 434 430 390 324 390ZM499 0H630L450 312C543 341 604 409 604 523C604 683 490 737 338 737H97V0H213V297H333Z"/>
+    <path transform="translate(8459.33)" d="M0 0H119L181 209H437L499 0H622L378 737H244ZM209 301 238 400C262 480 285 561 307 645H311C334 562 356 480 380 400L409 301Z"/>
+    <path transform="translate(9314.67)" d="M97 0H207V346C207 427 198 512 193 588H197C221 536 247 483 274 433L518 0H637V737H526V393C526 313 536 224 542 149H537C513 200 487 254 460 304L216 737H97Z"/>
+    <path transform="translate(10282.00)" d="M307 -14C469 -14 566 83 566 201C566 309 505 363 416 400L315 443C256 468 197 491 197 555C197 612 245 649 320 649C379 649 434 624 481 585L542 660C488 714 408 750 320 750C179 750 78 663 78 547C78 441 155 385 228 354L330 310C398 280 447 259 447 192C447 130 398 88 310 88C236 88 161 118 108 171L45 95C112 26 204 -14 307 -14Z"/>
+    <path transform="translate(11123.33)" d="M97 0H525V99H213V737H97Z"/>
+    <path transform="translate(11914.67)" d="M0 0H119L181 209H437L499 0H622L378 737H244ZM209 301 238 400C262 480 285 561 307 645H311C334 562 356 480 380 400L409 301Z"/>
+    <path transform="translate(12770.00)" d="M246 0H364V639H580V737H31V639H246Z"/>
+    <path transform="translate(13614.33)" d="M377 -14C567 -14 698 134 698 371C698 608 567 750 377 750C188 750 56 609 56 371C56 134 188 -14 377 -14ZM377 88C255 88 176 199 176 371C176 543 255 649 377 649C499 649 579 543 579 371C579 199 499 88 377 88Z"/>
+    <path transform="translate(14601.67)" d="M213 390V643H324C430 643 489 612 489 523C489 434 430 390 324 390ZM499 0H630L450 312C543 341 604 409 604 523C604 683 490 737 338 737H97V0H213V297H333Z"/>
+  </g>
+</svg>

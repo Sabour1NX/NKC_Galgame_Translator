@@ -2,6 +2,12 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
 
+![Constructivist cyan and magenta paper butterfly over neon mountains](1.01.12/assets/repository-banner.svg)
+
+## Your automated visual novel localization toolkit
+
+A “roasting machine” in fan-translation slang: read dialogue in place, then use the optional localization toolkit to capture a page and export its source text and translation for editing.
+
 Read visual novels in translation without looking away from the dialogue box. NKC_Galgame_Translator captures a selected Windows game window, recognizes dialogue and menu text, samples the background around the letters, and draws the translation in place. Choices stay clickable.
 
 The name **NKC** comes from the initials of the Japanese kana reading of **二色蝶**.

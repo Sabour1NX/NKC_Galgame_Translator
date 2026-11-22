@@ -6,6 +6,8 @@ Read a visual novel in your language without looking away from the dialogue box.
 
 The name **NKC** comes from the initials of the Japanese kana reading of **二色蝶**.
 
+**Your automated visual novel localization toolkit** · A “roasting machine” in fan-translation slang: read dialogue in place, then use the optional localization toolkit to capture a page and export its source text and translation for editing.
+
 **Windows x64 · Version 1.01.12 · MIT**
 
 ## Try it
