@@ -14,9 +14,13 @@
 
 **Windows x64 · 1.01.12 · MIT**
 
-[Windows Installer をダウンロード](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-setup.exe) · [Portable 版と WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.4) · [画像付きの導入ガイド](1.01.12/README.ja.md)
+[Windows Installer をダウンロード](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.5/NKC_Galgame_Translator-1.01.12-setup.exe) · [Portable 版と WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.5) · [画像付きの導入ガイド](1.01.12/README.ja.md)
 
 ![英語 UI でゲームの Window、言語、読み取り範囲を選んだ画面](1.01.12/docs/screenshots/game-en.png)
+
+初期設定では、1 回の起動中に送信できる Request 数は無制限です。上限は設定で変更できます。利用料金と利用制限は接続先の Provider に従います。
+
+[オプションの CUDA Add-on](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-cuda-addon.zip)
 
 ## 翻訳を始める
 

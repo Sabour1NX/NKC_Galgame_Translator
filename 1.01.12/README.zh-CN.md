@@ -14,9 +14,13 @@
 
 下载发行附件中的 `NKC_Galgame_Translator-1.01.12-setup.exe`。如果选用免安装版，请先解压 Windows x64 ZIP，再双击 `NKC_Galgame_Translator.exe`。CPU 可运行本地 OCR，使用兼容 NVIDIA 显卡时也可安装独立的 CUDA OCR 扩展。以下截图采用英文界面。
 
+首次使用时，每次启动的翻译请求次数默认不限。可在设置中指定上限；实际用量和费用按所选服务商的规则计算。
+
+[可选 CUDA 扩展包](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-cuda-addon.zip)
+
 ### WinGet
 
-下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
+下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.5/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
 
 ```powershell
 winget install --manifest .\winget

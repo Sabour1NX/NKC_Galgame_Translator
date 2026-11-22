@@ -155,6 +155,9 @@ class ConfigStore:
         for field in ('api_slots', 'active_api_slot', 'credential_id'):
             example.pop(field, None)
         settings = {**example, **local}
+        # Older profiles stored only a numeric session limit.
+        if "max_requests" in local and "unlimited_requests" not in local:
+            settings["unlimited_requests"] = False
         if 'vision_ocr_mode' not in local and type(local.get('vision_ocr')) is bool:
             settings['vision_ocr_mode'] = 'force' if local['vision_ocr'] else 'off'
         elif settings.get('vision_ocr_mode')=='auto':

@@ -14,9 +14,13 @@
 
 **Windows x64 · 1.01.12 · MIT**
 
-[下载 Windows 安装程序](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-setup.exe) · [便携版和 WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.4) · [图文入门指南](1.01.12/README.zh-CN.md)
+[下载 Windows 安装程序](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.5/NKC_Galgame_Translator-1.01.12-setup.exe) · [便携版和 WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.5) · [图文入门指南](1.01.12/README.zh-CN.md)
 
 ![英文界面下选择游戏窗口、语言和对白区域](1.01.12/docs/screenshots/game-en.png)
+
+首次使用时，每次启动的翻译请求次数默认不限。可在设置中指定上限；实际用量和费用按所选服务商的规则计算。
+
+[可选 CUDA 扩展包](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-cuda-addon.zip)
 
 ## 开始翻译
 

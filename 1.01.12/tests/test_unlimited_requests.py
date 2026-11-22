@@ -2,6 +2,8 @@
 """Unlimited request policy, using synthetic HTTP and small real workloads."""
 from concurrent.futures import ThreadPoolExecutor
 import json
+from pathlib import Path
+import shutil
 import threading
 
 import httpx
@@ -11,6 +13,7 @@ import pytest
 from nkc_galgame_translator.translation import (BudgetExceeded, LocalTranslationMiss,
                                    TranslationEngine, TranslationError)
 from nkc_galgame_translator.vision import VisionRecognizer
+from nkc_galgame_translator.config_store import ConfigStore
 
 
 def sse(text='\u6a21\u578b\u8bd1\u6587'):
@@ -40,6 +43,29 @@ def translate(engine,text='Welcome',**kwargs):
 
 def progress(engine):
     return engine.get_warmup_status('Game','en','zh-Hans',warmup_scope='profile:Game')
+
+
+@pytest.mark.parametrize(("local", "remaining"), [
+    ({}, None),
+    ({"app_language": "en", "app_language_selected": True}, None),
+    ({"max_requests": 3}, 3),
+    ({"unlimited_requests": False, "max_requests": 7}, 7),
+])
+def test_public_defaults_and_existing_limits(tmp_path, factory, local, remaining):
+    directory = tmp_path / "config"
+    directory.mkdir()
+    shutil.copyfile(Path(__file__).resolve().parents[1] / "config/example.json",
+                    directory / "example.json")
+    if local:
+        (directory / "local.json").write_text(json.dumps(local), encoding="utf-8")
+    settings = ConfigStore(tmp_path).load()
+    assert not settings.get("api_key")
+    engine = factory(**{k: settings[k] for k in ("unlimited_requests", "max_requests")})
+    assert engine.get_stats()["requests_remaining"] == remaining
+    if remaining is None:
+        engine._stats["session_requests"] = 80
+        assert translate(engine)
+        assert engine.get_stats()["session_requests"] == 81
 
 
 def test_default_is_finite_and_zero_still_forbids_requests(factory):

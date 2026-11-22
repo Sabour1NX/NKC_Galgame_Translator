@@ -14,9 +14,13 @@
 
 リリースの添付ファイルから `NKC_Galgame_Translator-1.01.12-setup.exe` を入手してください。Portable 版を使う場合は Windows x64 の ZIP を展開し、`NKC_Galgame_Translator.exe` を起動します。CPU で Local OCR を利用できます。対応する NVIDIA GPU があれば、別配布の CUDA OCR も利用できます。手順の画像は英語表示です。
 
+初期設定では、1 回の起動中に送信できる Request 数は無制限です。上限は設定で変更できます。利用料金と利用制限は接続先の Provider に従います。
+
+[オプションの CUDA Add-on](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-cuda-addon.zip)
+
 ### WinGet
 
-[WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/winget-manifest.zip) を展開します。WinGet の Local manifest を有効にし、展開先の親 Directory で次の Command を実行します。
+[WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.5/winget-manifest.zip) を展開します。WinGet の Local manifest を有効にし、展開先の親 Directory で次の Command を実行します。
 
 ```powershell
 winget install --manifest .\winget

@@ -14,9 +14,13 @@ The name **NKC** comes from the initials of the Japanese kana reading of **二�
 
 Download `NKC_Galgame_Translator-1.01.12-setup.exe` from the release assets. For a portable copy, extract the Windows x64 ZIP and open `NKC_Galgame_Translator.exe`. Local OCR works on the CPU. CUDA OCR is an optional download for compatible NVIDIA systems.
 
+New installations have no per-session request limit. You can set a limit in Settings. Your provider’s usage limits and billing still apply.
+
+[Optional CUDA add-on](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-cuda-addon.zip)
+
 ### WinGet
 
-On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
+On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.5/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
 
 ```powershell
 winget install --manifest .\winget

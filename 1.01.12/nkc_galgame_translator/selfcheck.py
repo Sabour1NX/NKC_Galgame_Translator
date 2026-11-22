@@ -35,7 +35,8 @@ def run():
         temporary = Path(folder)
         shutil.copytree(ROOT/'assets', temporary/'assets')
         (temporary/'config').mkdir()
-        (temporary/'config/example.json').write_text('{"api_key":"","offline_only":true}',encoding='utf-8')
+        shutil.copyfile(ROOT/'config/example.json', temporary/'config/example.json')
+        (temporary/'config/local.json').write_text('{"offline_only":true}', encoding='utf-8')
         app_module.ROOT = temporary
         app = None
         original_tk = app_module.tk.Tk
@@ -146,12 +147,12 @@ def _check(app):
     assert not app.agreement_accepted
     assert app.api_dialog is None
     assert app.setup_dialog is None
-    assert app.settings_panel.vars['overlay_font_family'].get() == 'Microsoft YaHei UI'
+    assert app.settings_panel.vars['overlay_font_family'].get() == 'SimSun'
     assert app.settings_panel.vars['show_source_label'].get()
     assert app.settings_panel.vars['source_label_mixed_only'].get()
-    assert app.settings_panel.vars['show_translation_brackets'].get()
+    assert not app.settings_panel.vars['show_translation_brackets'].get()
     assert app.settings_panel.vars['ocr_refine_workers'].get() in (4,'4')
-    assert app.settings_panel.vars['capture_interval_ms'].get() in (50,'50')
+    assert app.settings_panel.vars['capture_interval_ms'].get() in (200,'200')
     before_settle=app.settings_panel.vars['settle_ms'].get()
     app.settings_panel.apply_performance_preset('balanced')
     assert app.settings_panel.vars['settle_ms'].get()==before_settle  # Consent gate remains closed.
@@ -160,7 +161,7 @@ def _check(app):
     assert app.settings_panel.vars['translation_workers'].get() in (8,'8')
     assert app.settings_panel.vars['context_max_chars'].get() in (16384,'16384')
     assert app.settings_panel.values()['vision_ocr_mode'] in ('off','force')
-    assert not app.settings_panel.vars['unlimited_requests'].get()
+    assert app.settings_panel.vars['unlimited_requests'].get()
     assert app.settings_panel.vars['capture_translations'].get()
     assert app.settings_panel.vars['auto_font_size'].get()
     assert validate_tuning({'overlay_font_min':12,'overlay_font_max':48})['overlay_font_max']==48
@@ -226,7 +227,7 @@ def _check(app):
             'mixed_language_label_option':True,'optional_translation_brackets':True,
             'interface_languages':['zh-CN','en','ja'],'language_switch_preserves_engine':True,
             'ai_only_default':True,'ocr_refine_workers':4,'response_presets':True,'vision_default_off':True,'vision_anchor_geometry_preserved':True,
-            'unlimited_requests_default':False,'unlimited_requests_persists':True,
+            'unlimited_requests_default':True,'unlimited_requests_persists':True,
             'suspect_ocr_preserves_game_pixels':True,'suspect_ocr_late_overlay_rejected':True,
             'narrative_reflow_preserves_dictionary_key':True,'explicit_paragraph_breaks_preserved':True,
             'nonmeaningful_hud_keeps_original':True,'glyph_noise_keeps_original':True,
