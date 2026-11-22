@@ -14,7 +14,7 @@
 
 **Windows x64 · 1.01.12 · MIT**
 
-[下载 Windows 安装程序](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/NKC_Galgame_Translator-1.01.12-setup.exe) · [便携版和 WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.2) · [图文入门指南](1.01.12/README.zh-CN.md)
+[下载 Windows 安装程序](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.3/NKC_Galgame_Translator-1.01.12-setup.exe) · [便携版和 WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.2) · [图文入门指南](1.01.12/README.zh-CN.md)
 
 ![英文界面下选择游戏窗口、语言和对白区域](1.01.12/docs/screenshots/game-en.png)
 

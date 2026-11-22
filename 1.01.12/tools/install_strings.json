@@ -12,7 +12,11 @@
     "no_browser": "安装完成。可以从安装目录打开欢迎页。",
     "failed": "安装失败：",
     "bad_arch": "此安装包需要 Windows x64。",
-    "shortcut_name": "二色蝶Galgame翻译"
+    "shortcut_name": "二色蝶Galgame翻译",
+    "directory": "安装目录",
+    "browse": "浏览…",
+    "invalid_path": "请输入完整的安装目录路径。",
+    "occupied": "此文件夹已有其他文件。请选择空文件夹或本程序的安装目录。"
   },
   "en": {
     "name": "English",
@@ -27,7 +31,11 @@
     "no_browser": "Installation complete. Open docs/Greeting.en.html in the installation folder to see the tour.",
     "failed": "Installation failed: ",
     "bad_arch": "This installer requires Windows x64.",
-    "shortcut_name": "NKC_Galgame_Translator"
+    "shortcut_name": "NKC_Galgame_Translator",
+    "directory": "Install folder",
+    "browse": "Browse…",
+    "invalid_path": "Enter a full installation path.",
+    "occupied": "Choose an empty folder or an existing installation of this application."
   },
   "ja": {
     "name": "日本語 (beta)",
@@ -42,6 +50,10 @@
     "no_browser": "インストールが完了しました。インストール先の docs/Greeting.ja.html から使い方ガイドを開けます。",
     "failed": "インストールに失敗しました：",
     "bad_arch": "この Installer には Windows x64 が必要です。",
-    "shortcut_name": "NKC_Galgame_Translator"
+    "shortcut_name": "NKC_Galgame_Translator",
+    "directory": "インストール先",
+    "browse": "参照…",
+    "invalid_path": "インストール先をフルパスで入力してください。",
+    "occupied": "空のフォルダーか、このアプリのインストール先を選んでください。"
   }
 }

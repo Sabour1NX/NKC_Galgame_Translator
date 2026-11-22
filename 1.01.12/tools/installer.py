@@ -18,7 +18,7 @@ import sys
 from tempfile import TemporaryDirectory
 from threading import Thread
 import tkinter as tk
-from tkinter import ttk
+from tkinter import filedialog, ttk
 import zipfile
 
 VERSION = "1.01.12"
@@ -66,10 +66,21 @@ def verify_layout(target: Path) -> None:
         raise ValueError("The release is incomplete.")
 
 
+def default_directory(local_app_data: Path) -> Path:
+    return local_app_data / "Programs" / ARCHIVE_ROOT / VERSION
+
+
 def install(payload: Path, target: Path, language: str) -> Path:
     greeting = GREETINGS[language]
+    if not target.is_absolute() or target == Path(target.anchor):
+        raise ValueError(STRINGS[language]["invalid_path"])
+    if target.is_symlink() or target.is_junction():
+        raise ValueError("The installation directory cannot be redirected.")
     target.parent.mkdir(parents=True, exist_ok=True)
-    if target.exists():
+    empty_folder = target.is_dir() and not any(target.iterdir())
+    if target.exists() and not empty_folder:
+        if not (target / EXE).is_file():
+            raise ValueError(STRINGS[language]["occupied"])
         verify_layout(target)
         script = target / TOUR_SCRIPT
         for directory in (target, script.parent):
@@ -90,7 +101,14 @@ def install(payload: Path, target: Path, language: str) -> Path:
             local = stage / "config" / "local.json"
             with local.open("x", encoding="utf-8") as settings:
                 json.dump({"app_language": language, "app_language_selected": True}, settings)
-            stage.rename(target)
+            if empty_folder:
+                target.rmdir()
+            try:
+                stage.rename(target)
+            except OSError:
+                if empty_folder:
+                    target.mkdir(exist_ok=True)
+                raise
     return target / "docs" / greeting
 
 
@@ -124,7 +142,9 @@ def self_test(result: Path) -> None:
     with TemporaryDirectory(prefix="nishokuchou-setup-test-") as directory:
         root = Path(directory)
         for language, name in GREETINGS.items():
-            installed = root / language / VERSION
+            installed = default_directory(root) if language == "en" else root / ("Custom Path " + language)
+            if language == "zh-CN":
+                installed.mkdir()
             opened = []
             greeting = install(PAYLOAD, installed, language)
             license_digest = hashlib.sha256((installed / "LICENSE").read_bytes()).hexdigest()
@@ -155,6 +175,16 @@ def self_test(result: Path) -> None:
                 if not (shortcut_root / folder / (STRINGS[language]["shortcut_name"] + ".lnk")).is_file():
                     raise RuntimeError("Localized shortcut missing.")
             checks[language] = name
+        occupied = root / "occupied"
+        occupied.mkdir()
+        marker = occupied / "user.txt"
+        marker.write_text("keep", encoding="utf-8")
+        try:
+            install(PAYLOAD, occupied, "en")
+        except ValueError:
+            assert marker.read_text(encoding="utf-8") == "keep"
+        else:
+            raise RuntimeError("An unrelated installation folder was accepted.")
         bad_payload = root / "unsafe.zip"
         with zipfile.ZipFile(bad_payload, "w") as archive:
             archive.writestr(ARCHIVE_ROOT + "/../../outside.txt", "unexpected")
@@ -167,7 +197,7 @@ def self_test(result: Path) -> None:
             raise RuntimeError("The installer accepted an invalid file path.")
     result.write_text(json.dumps({"passed": True, "version": VERSION,
                                   "installed_mit_sha256": license_digest,
-                                  "greetings": checks, "greeting_protocol": GREETING_PROTOCOL,
+                                  "custom_directory_verified": True, "greetings": checks, "greeting_protocol": GREETING_PROTOCOL,
                                   "existing_tour_updated": True, "existing_config_preserved": True,
                                   "unsafe_archive_rejected": True}, indent=2), encoding="utf-8")
 
@@ -184,7 +214,8 @@ def show_installer() -> None:
     labels = {row["name"]: code for code, row in STRINGS.items()}
     current = tk.StringVar(value=STRINGS[default_language()]["name"])
     settings_root = Path(os.environ["LOCALAPPDATA"])
-    target = settings_root / "Programs" / "NKC_Galgame_Translator" / VERSION
+    target = default_directory(settings_root)
+    destination = tk.StringVar(value=str(target))
     frame = ttk.Frame(root, padding=22)
     frame.pack(fill="both", expand=True)
     heading = ttk.Label(frame, font=("Segoe UI", 16, "bold"))
@@ -196,7 +227,21 @@ def show_installer() -> None:
     language_box.grid(row=1, column=1, columnspan=2, sticky="w", padx=(16, 0))
     intro = ttk.Label(frame, wraplength=460)
     intro.grid(row=2, columnspan=3, sticky="w", pady=(4, 0))
-    ttk.Label(frame, text=str(target), wraplength=460).grid(row=3, columnspan=3, sticky="w")
+    path_label = ttk.Label(frame)
+    path_label.grid(row=3, column=0, sticky="w", padx=(0, 8))
+    path_entry = ttk.Entry(frame, textvariable=destination, width=46)
+    path_entry.grid(row=3, column=1, sticky="ew")
+
+    def browse():
+        initial = Path(destination.get()) if destination.get() else settings_root
+        initial = next((p for p in (initial, *initial.parents) if p.is_dir()), settings_root)
+        selected = filedialog.askdirectory(parent=root, title=STRINGS[labels[current.get()]]["directory"],
+                                           initialdir=str(initial), mustexist=False)
+        if selected:
+            destination.set(selected)
+
+    browse_button = ttk.Button(frame, command=browse)
+    browse_button.grid(row=3, column=2, padx=(8, 0))
     status = ttk.Label(frame, wraplength=460)
     status.grid(row=4, columnspan=3, sticky="w", pady=(12, 0))
 
@@ -212,6 +257,8 @@ def show_installer() -> None:
     def sync(_=None):
         strings = STRINGS[labels[current.get()]]
         root.title(strings["title"])
+        path_label.configure(text=strings["directory"])
+        browse_button.configure(text=strings["browse"])
         heading.configure(text=strings["title"])
         language_label.configure(text=strings["language"])
         intro.configure(text=strings["intro"])
@@ -219,13 +266,19 @@ def show_installer() -> None:
         close.configure(text=strings["close"])
 
     def begin():
+        nonlocal target
         code = labels[current.get()]
         strings = STRINGS[code]
         if sys.platform != "win32" or struct.calcsize("P") != 8:
             status.configure(text=strings["bad_arch"])
             return
+        chosen = Path(destination.get().strip())
+        if not chosen.is_absolute():
+            status.configure(text=strings["invalid_path"])
+            return
+        target = Path(os.path.abspath(chosen))
         status.configure(text=strings["progress"])
-        for widget in (action, close, language_box):
+        for widget in (action, close, language_box, path_entry, browse_button):
             widget.configure(state="disabled")
         root.protocol("WM_DELETE_WINDOW", lambda: None)
         results = SimpleQueue()
@@ -249,6 +302,8 @@ def show_installer() -> None:
             close.configure(state="normal")
             if error is not None:
                 status.configure(text=strings["failed"] + error)
+                path_entry.configure(state="normal")
+                browse_button.configure(state="normal")
                 language_box.configure(state="readonly")
                 return
             try:
