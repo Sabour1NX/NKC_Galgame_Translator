@@ -1,0 +1,10 @@
+{
+  "version": "1.01.13",
+  "date": "2026-11-22",
+  "platform": "windows-x64",
+  "license": "MIT",
+  "release_folder": "1.01.13",
+  "private_demo": "demo/Private",
+  "notes": "修复了部分游戏选项不翻译的问题",
+  "name": "NKC_Galgame_Translator"
+}
