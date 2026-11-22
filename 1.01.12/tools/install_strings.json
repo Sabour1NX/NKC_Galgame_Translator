@@ -11,7 +11,8 @@
     "success": "安装完成。欢迎页已在浏览器打开。",
     "no_browser": "安装完成。可以从安装目录打开欢迎页。",
     "failed": "安装失败：",
-    "bad_arch": "此安装包需要 Windows x64。"
+    "bad_arch": "此安装包需要 Windows x64。",
+    "shortcut_name": "二色蝶Galgame翻译"
   },
   "en": {
     "name": "English",
@@ -25,7 +26,8 @@
     "success": "Installation complete. The welcome tour is open in your browser.",
     "no_browser": "Installation complete. Open docs/Greeting.en.html in the installation folder to see the tour.",
     "failed": "Installation failed: ",
-    "bad_arch": "This installer requires Windows x64."
+    "bad_arch": "This installer requires Windows x64.",
+    "shortcut_name": "NKC_Galgame_Translator"
   },
   "ja": {
     "name": "日本語 (beta)",
@@ -39,6 +41,7 @@
     "success": "インストールが完了しました。Browser で使い方ガイドをご覧ください。",
     "no_browser": "インストールが完了しました。インストール先の docs/Greeting.ja.html から使い方ガイドを開けます。",
     "failed": "インストールに失敗しました：",
-    "bad_arch": "この Installer には Windows x64 が必要です。"
+    "bad_arch": "この Installer には Windows x64 が必要です。",
+    "shortcut_name": "NKC_Galgame_Translator"
   }
 }

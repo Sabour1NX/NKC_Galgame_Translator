@@ -12,7 +12,7 @@
 
 ### WinGet
 
-下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
+下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
 
 ```powershell
 winget install --manifest .\winget

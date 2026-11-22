@@ -6,8 +6,25 @@ Scope: user
 UpgradeBehavior: install
 Installers:
 - Architecture: x64
-  InstallerUrl: https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12/NKC_Galgame_Translator-1.01.12-winget-x64.exe
-  InstallerSha256: E83394321138AA7B75830CBD8D5ED6AEFA986A977DA123B384037F435C77EB2A
+  InstallerLocale: en-US
+  InstallerSwitches:
+    Custom: /NKCLang=en-US
+  InstallerUrl: https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/NKC_Galgame_Translator-1.01.12-winget-x64.exe
+  InstallerSha256: 5D7C625BA674DAF5BBB5809F1ED686632E7292714326170967E720091FF3EF34
+  ProductCode: Sabour1NX.NKCGalgameTranslator_is1
+- Architecture: x64
+  InstallerLocale: zh-CN
+  InstallerSwitches:
+    Custom: /NKCLang=zh-CN
+  InstallerUrl: https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/NKC_Galgame_Translator-1.01.12-winget-x64.exe
+  InstallerSha256: 5D7C625BA674DAF5BBB5809F1ED686632E7292714326170967E720091FF3EF34
+  ProductCode: Sabour1NX.NKCGalgameTranslator_is1
+- Architecture: x64
+  InstallerLocale: ja-JP
+  InstallerSwitches:
+    Custom: /NKCLang=ja-JP
+  InstallerUrl: https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/NKC_Galgame_Translator-1.01.12-winget-x64.exe
+  InstallerSha256: 5D7C625BA674DAF5BBB5809F1ED686632E7292714326170967E720091FF3EF34
   ProductCode: Sabour1NX.NKCGalgameTranslator_is1
 ManifestType: installer
 ManifestVersion: 1.10.0

@@ -12,7 +12,7 @@ Download `NKC_Galgame_Translator-1.01.12-setup.exe` from the release assets. For
 
 ### WinGet
 
-On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
+On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
 
 ```powershell
 winget install --manifest .\winget

@@ -94,6 +94,18 @@ def install(payload: Path, target: Path, language: str) -> Path:
     return target / "docs" / greeting
 
 
+def create_shortcuts(target: Path, language: str, test_root: Path | None = None) -> None:
+    label = STRINGS[language]["shortcut_name"]
+    other = STRINGS["en" if language == "zh-CN" else "zh-CN"]["shortcut_name"]
+    powershell = Path(os.environ["SystemRoot"]) / "System32/WindowsPowerShell/v1.0/powershell.exe"
+    args = [str(powershell), "-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass",
+            "-File", str(ASSETS / "install_shortcuts.ps1"), "-Executable", str(target / EXE),
+            "-Label", label, "-AlternateLabel", other]
+    if test_root is not None:
+        args.extend(["-TestRoot", str(test_root)])
+    subprocess.run(args, check=True, timeout=30, creationflags=subprocess.CREATE_NO_WINDOW)
+
+
 def register_greeting_link(target: Path):
     base = rf"Software\Classes\{GREETING_PROTOCOL}"
     with winreg.CreateKey(winreg.HKEY_CURRENT_USER, base) as key:
@@ -137,6 +149,11 @@ def self_test(result: Path) -> None:
             install(PAYLOAD, installed, language)
             if local.read_bytes() != before or script.read_bytes() != updated:
                 raise RuntimeError("Reinstall did not update the tour and preserve configuration.")
+            shortcut_root = root / "shortcuts"
+            create_shortcuts(installed, language, shortcut_root)
+            for folder in ("Desktop", "Programs"):
+                if not (shortcut_root / folder / (STRINGS[language]["shortcut_name"] + ".lnk")).is_file():
+                    raise RuntimeError("Localized shortcut missing.")
             checks[language] = name
         bad_payload = root / "unsafe.zip"
         with zipfile.ZipFile(bad_payload, "w") as archive:
@@ -215,8 +232,10 @@ def show_installer() -> None:
 
         def prepare():
             try:
-                results.put((install(PAYLOAD, target, code), None))
-            except (OSError, ValueError, zipfile.BadZipFile) as error:
+                greeting = install(PAYLOAD, target, code)
+                create_shortcuts(target, code)
+                results.put((greeting, None))
+            except (OSError, ValueError, subprocess.SubprocessError, zipfile.BadZipFile) as error:
                 results.put((None, str(error)))
 
         def finish():

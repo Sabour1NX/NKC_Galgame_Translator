@@ -19,6 +19,7 @@ $arguments = @('-m','PyInstaller','--noconfirm','--noupx','--windowed','--onefil
     '--distpath',$dist,'--workpath',(Join-Path $tmp 'pyinstaller'),'--specpath',$tmp,
     '--icon',(Join-Path $projectRoot 'assets\taiji.ico'),
     '--add-data',($package + ';.'),
+    '--add-data',((Join-Path $PSScriptRoot 'install_shortcuts.ps1') + ';.'),
     '--add-data',((Join-Path $PSScriptRoot 'install_strings.json') + ';.'),
     (Join-Path $PSScriptRoot 'installer.py'))
 & $python @arguments

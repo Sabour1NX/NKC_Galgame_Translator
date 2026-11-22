@@ -12,7 +12,7 @@
 
 ### WinGet
 
-[WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12/winget-manifest.zip) を展開します。WinGet の Local manifest を有効にし、展開先の親 Directory で次の Command を実行します。
+[WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/winget-manifest.zip) を展開します。WinGet の Local manifest を有効にし、展開先の親 Directory で次の Command を実行します。
 
 ```powershell
 winget install --manifest .\winget
