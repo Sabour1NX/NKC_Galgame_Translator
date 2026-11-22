@@ -16,7 +16,7 @@
 
 ### WinGet
 
-下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
+下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
 
 ```powershell
 winget install --manifest .\winget
@@ -24,7 +24,7 @@ winget install --manifest .\winget
 
 ### 1. 选择界面语言和图表
 
-安装版先按所选语言打开五页导览，翻到末页即可启动主程序。免安装版首次启动时先选择界面语言。阅读并同意条款后，依次设置主题、OCR 和是否启用汉化组工具。
+选择安装目录后，向导会显示进度。安装成功时，可以直接启动二色蝶，也可以打开浏览器欢迎页，从导览末页启动。卸载入口在 Windows「设置 → 应用 → 已安装的应用」。免安装版首次启动时先选择界面语言。阅读并同意条款后，依次设置主题、OCR 和是否启用汉化组工具。
 
 ![英文首次设置窗口中的语言选择](docs/screenshots/setup-en.png)
 

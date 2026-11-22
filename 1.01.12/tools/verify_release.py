@@ -41,10 +41,10 @@ TEXT_SUFFIXES = {'.iss', '.py', '.ps1', '.cpp', '.h', '.md', '.html', '.svg', '.
 LOCK_GROUPS = ('runtime', 'build', 'ocr', 'test', 'audit', 'docs')
 SOURCE_SUFFIXES = {
     'nkc_galgame_translator': {'.py'}, 'nkc_galgame_translator/resources': {'.json', '.txt'}, 'native': {'.cpp', '.h', '.ps1', '.cmake'},
-    'tools': {'.py', '.ps1', '.cjs', '.json', '.iss'}, 'tests': {'.py'},
+    'tools': {'.py', '.ps1', '.cjs', '.json', '.iss', '.isl'}, 'tests': {'.py'},
     'docs': {'.md', '.html', '.svg', '.json', '.css', '.js'},
     'docs/examples': {'.csv', '.tsv', '.json', '.tmx', '.txt'},
-    'assets': {'.ico', '.png', '.svg'}, 'assets/fonts': {'.otf', '.txt'},
+    'assets': {'.ico', '.png', '.svg', '.bmp'}, 'assets/fonts': {'.otf', '.txt'},
 }
 SOURCE_FILES = {
     'main.py', 'requirements.txt', 'pytest.ini', 'Start.ps1', 'README.md', 'README.zh-CN.md', 'README.ja.md', 'Preview-Setup.cmd', 'Preview-Setup.ps1',

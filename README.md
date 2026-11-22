@@ -14,7 +14,7 @@ The name **NKC** comes from the initials of the Japanese kana reading of **二�
 
 **Windows x64 · 1.01.12 · MIT**
 
-[Download the Windows installer](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.3/NKC_Galgame_Translator-1.01.12-setup.exe) · [Portable build and WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.2) · [Illustrated setup guide](1.01.12/README.md)
+[Download the Windows installer](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/NKC_Galgame_Translator-1.01.12-setup.exe) · [Portable build and WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.4) · [Illustrated setup guide](1.01.12/README.md)
 
 ![Game window, language and capture-area selection in the English interface](1.01.12/docs/screenshots/game-en.png)
 

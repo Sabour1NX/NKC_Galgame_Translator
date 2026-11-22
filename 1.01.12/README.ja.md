@@ -16,7 +16,7 @@
 
 ### WinGet
 
-[WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/winget-manifest.zip) を展開します。WinGet の Local manifest を有効にし、展開先の親 Directory で次の Command を実行します。
+[WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/winget-manifest.zip) を展開します。WinGet の Local manifest を有効にし、展開先の親 Directory で次の Command を実行します。
 
 ```powershell
 winget install --manifest .\winget
@@ -24,7 +24,7 @@ winget install --manifest .\winget
 
 ### 1. 表示言語と Chart を選ぶ
 
-Installer で選んだ言語で 5 ページのガイドが開きます。最後のページからアプリを起動してください。Portable 版の初回起動時には、まず表示言語を選びます。利用規約を確認して同意したら、テーマ、OCR、翻訳チーム用ツールの設定に進みます。
+インストール先を選ぶと進捗が表示されます。完了画面から直接起動するか、Browser でガイドを開き、最後のページから起動できます。削除は Windows の「設定 → アプリ → インストールされているアプリ」から行えます。Portable 版の初回起動時には、まず表示言語を選びます。利用規約を確認して同意したら、テーマ、OCR、翻訳チーム用ツールの設定に進みます。
 
 ![初回設定で English を選んだ画面](docs/screenshots/setup-en.png)
 

@@ -16,7 +16,7 @@ Download `NKC_Galgame_Translator-1.01.12-setup.exe` from the release assets. For
 
 ### WinGet
 
-On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
+On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.4/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
 
 ```powershell
 winget install --manifest .\winget
@@ -24,7 +24,7 @@ winget install --manifest .\winget
 
 ### 1. Choose your interface and chart
 
-The installer opens a five-page welcome tour in the selected language. Finish the tour to open the app. In the portable version, first-time setup starts with the language selector. Read the terms, then choose your theme, OCR settings and whether to enable the localization toolkit.
+Choose an install folder and follow the progress bar. On the success screen, launch the translator directly or open the five-page browser tour and launch from its last page. To uninstall, open **Settings → Apps → Installed apps** in Windows. In the portable version, first-time setup starts with the language selector. Read the terms, then choose your theme, OCR settings and whether to enable the localization toolkit.
 
 ![First-time setup with the English interface selected](docs/screenshots/setup-en.png)
 

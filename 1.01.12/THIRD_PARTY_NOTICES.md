@@ -62,3 +62,7 @@ Microsoft CRT/Windows SDK 按各自条款提供；`nkc_galgame_translator_core.d
 ## Source Han Sans SC
 
 Adobe Source Han Sans SC Regular and Medium (2.005R) are distributed under the SIL Open Font License 1.1. The original license accompanies the fonts in assets/fonts/OFL.txt. Upstream source: https://github.com/adobe-fonts/source-han-sans/tree/2.005R
+
+## Windows installer
+
+Inno Setup supplies the setup wizard, installation progress and native uninstaller. The Simplified Chinese messages come from the upstream Inno Setup project and retain the translator’s attribution. [Inno Setup](https://jrsoftware.org/isinfo.php) · [Inno Setup license](third_party_sources/inno-setup/LICENSE.txt)
