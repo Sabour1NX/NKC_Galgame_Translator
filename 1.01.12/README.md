@@ -4,6 +4,8 @@
 
 Read a visual novel in your language without looking away from the dialogue box. NKC_Galgame_Translator reads the selected game window with OCR, samples the background around the lettering and displays the translation where the original text appeared. You can still click choices and advance the dialogue.
 
+The name **NKC** comes from the initials of the Japanese kana reading of **二色蝶**.
+
 **Windows x64 · Version 1.01.12 · MIT**
 
 ## Try it

@@ -1,0 +1,41 @@
+# NKC_Galgame_Translator
+
+[English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
+
+Read visual novels in translation without looking away from the dialogue box. NKC_Galgame_Translator captures a selected Windows game window, recognizes dialogue and menu text, samples the background around the letters, and draws the translation in place. Choices stay clickable.
+
+The name **NKC** comes from the initials of the Japanese kana reading of **二色蝶**.
+
+**Windows x64 · 1.01.12 · MIT**
+
+[Download the Windows installer](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.12-install.2/NKC_Galgame_Translator-1.01.12-setup.exe) · [Portable build and WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.12-install.2) · [Illustrated setup guide](1.01.12/README.md)
+
+![Game window, language and capture-area selection in the English interface](1.01.12/docs/screenshots/game-en.png)
+
+## Start translating
+
+1. Open a game in windowed or borderless mode. In the translator, open **Settings → API connections** and enter the endpoint, model ID and credentials for an OpenAI-compatible backend. Ollama and other compatible local servers are supported.
+2. In **Game translation**, select the game window, source language and target language. Select individual dialogue areas or the entire window.
+3. Select **Start translation** and return to the game. For a missed line, move the pointer near it. **Lightweight mode** translates only nearby text.
+
+OCR runs locally on the CPU, with an optional CUDA add-on for compatible NVIDIA GPUs. Recognized text and relevant game context go to your selected translation backend. Turning on backend image recognition also sends the selected image region. A game profile keeps terminology and context between sessions.
+
+## Inside the source
+
+| Component | What it does |
+| --- | --- |
+| [Native Windows layer](1.01.12/native) | C++ window capture, background reconstruction, text layout and overlay rendering |
+| [Translation application](1.01.12/nkc_galgame_translator) | Python UI, OCR scheduling, scroll tracking, pointer attention, streaming translation and game profiles |
+| [Build and verification tools](1.01.12/tools) | OCR helpers, packaging, installer localization, subtitle-mask replay and native DLL checks |
+| [Tests](1.01.12/tests) | Regression tests for text tracking, rendering, translation and installation |
+| [WinGet manifests](1.01.12/winget) | Package metadata, installer hashes and language-specific installation switches |
+
+To build the native layer and run two focused test suites, use Windows x64 with the MSVC C++ build tools and the project’s Python runtime and test dependencies. The release build uses CPython 3.14.10 x64. Packaging also requires the OCR wheels and language models listed in the build script.
+
+```powershell
+cd 1.01.12
+.\native\build.ps1
+python -m pytest -q tests/test_tracking.py tests/test_native_aero.py
+```
+
+[Build script and prerequisites](1.01.12/tools/package.ps1) · [Architecture](1.01.12/docs/ARCHITECTURE.md) · [API reference](1.01.12/docs/API.md) · [License](LICENSE) · [Third-party notices](1.01.12/THIRD_PARTY_NOTICES.md)
