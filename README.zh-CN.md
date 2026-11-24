@@ -1,6 +1,8 @@
-# 二色蝶 Galgame 翻译
+# [Real-Time AI Game Translation] 二色蝶 Galgame 翻译
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
+
+二色蝶读取游戏窗口中可见的文字，将译文绘制在独立的覆盖层上。鼠标点击仍传给游戏。这条采集与显示路径在游戏进程外运行，无需挂钩游戏函数或向游戏注入代码。
 
 ![霓虹山景前，由青蓝和洋红色几何色块拼接而成的构成主义纸蝶](1.01.13/assets/repository-banner.svg)
 

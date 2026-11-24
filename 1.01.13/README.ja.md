@@ -1,6 +1,8 @@
-# NKC_Galgame_Translator
+# [Real-Time AI Game Translation] NKC_Galgame_Translator
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
+
+ゲーム画面に表示された文字を読み取り、元の位置に独立した Overlay で訳文を表示します。クリックはゲーム側に届きます。画面の取得と表示はゲームの Process の外で行うため、ゲームへの Hook や Code Injection は不要です。
 
 辞書を引く手を休めて、物語の続きを。ゲームのセリフや選択肢を OCR で読み取り、文字の周囲から背景色を採取して、元の位置に訳文を表示します。選択肢はそのままクリックでき、会話もいつも通りに進められます。
 

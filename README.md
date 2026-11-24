@@ -1,6 +1,8 @@
-# NKC_Galgame_Translator
+# [Real-Time AI Game Translation] NKC_Galgame_Translator
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
+
+The translator reads visible text from the game window and draws the translation in a separate, click-through overlay. This capture and display path runs outside the game process and requires no game hook or code injection.
 
 ![Constructivist cyan and magenta paper butterfly over neon mountains](1.01.13/assets/repository-banner.svg)
 

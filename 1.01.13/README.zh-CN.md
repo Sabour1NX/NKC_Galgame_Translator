@@ -1,6 +1,8 @@
-# NKC_Galgame_Translator
+# [Real-Time AI Game Translation] NKC_Galgame_Translator
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
+
+二色蝶读取游戏窗口中可见的文字，将译文绘制在独立的覆盖层上。鼠标点击仍传给游戏。这条采集与显示路径在游戏进程外运行，无需挂钩游戏函数或向游戏注入代码。
 
 放下词典，回到故事里。二色蝶通过 OCR 读取所选游戏窗口的对白和选项，在文字周围取样背景，再把译文放回原位。读完一句，可以照常点击或按键继续。
 

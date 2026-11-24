@@ -1,6 +1,8 @@
-# NKC_Galgame_Translator
+# [Real-Time AI Game Translation] NKC_Galgame_Translator
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
+
+The translator reads visible text from the game window and draws the translation in a separate, click-through overlay. This capture and display path runs outside the game process and requires no game hook or code injection.
 
 Read a visual novel in your language without looking away from the dialogue box. NKC_Galgame_Translator reads the selected game window with OCR, samples the background around the lettering and displays the translation where the original text appeared. You can still click choices and advance the dialogue.
 
