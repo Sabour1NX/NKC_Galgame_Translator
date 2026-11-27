@@ -279,7 +279,7 @@ shutil.copy2(root / 'models/tessdata/LICENSE', licenses / 'tessdata-Apache-2.0.t
 source_root = release / 'source' / ('NKC_Galgame_Translator-' + version)
 source_root.mkdir(parents=True, exist_ok=True)
 allowed = []
-for directory, suffixes in [('nkc_galgame_translator',{'.py'}), ('nkc_galgame_translator/resources',{'.json','.txt'}), ('native',{'.cpp','.h','.ps1','.cmake'}),
+for directory, suffixes in [('nkc_galgame_translator',{'.py'}), ('nkc_galgame_translator/resources',{'.json','.txt','.png'}), ('native',{'.cpp','.h','.ps1','.cmake'}),
                             ('tools',{'.py','.ps1','.cjs','.json','.iss','.isl'}), ('tests',{'.py'}), ('docs',{'.md','.html','.svg','.json','.css','.js'}),
                             ('docs/examples',{'.csv','.tsv','.json','.tmx','.txt'}),
                             ('assets',{'.ico','.png','.svg','.bmp'}), ('assets/fonts',{'.otf','.txt'})]:

@@ -4,7 +4,7 @@
 
 The translator reads visible text from the game window and draws the translation in a separate, click-through overlay. This capture and display path runs outside the game process and requires no game hook or code injection.
 
-![Constructivist cyan and magenta paper butterfly over neon mountains](1.01.13/assets/repository-banner.svg)
+![Constructivist cyan and magenta paper butterfly over neon mountains](1.02.14/assets/repository-banner.svg)
 
 ## Your automated visual novel localization toolkit
 
@@ -14,11 +14,13 @@ Read visual novels in translation without looking away from the dialogue box. NK
 
 The name **NKC** comes from the initials of the Japanese kana reading of **二色蝶**.
 
-**Windows x64 · 1.01.13 · MIT**
+**Windows x64 · 1.02.14 · MIT**
 
-[Download the Windows installer](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.13/NKC_Galgame_Translator-1.01.13-setup.exe) · [Portable build and WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.13) · [Illustrated setup guide](1.01.13/README.md)
+The redesigned main window uses eight icons for its tabs and capture modes. Start and stop stay below the scrollable controls.
 
-![Game window, language and capture-area selection in the English interface](1.01.13/docs/screenshots/game-en.png)
+[Download the Windows installer](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.02.14/NKC_Galgame_Translator-1.02.14-setup.exe) · [Portable build and WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.02.14) · [Illustrated setup guide](1.02.14/README.md)
+
+![Game window, language and capture-area selection in the English interface](1.02.14/docs/screenshots/game-en.png)
 
 New installations have no per-session request limit. You can set a limit in Settings. Your provider’s usage limits and billing still apply.
 
@@ -36,18 +38,18 @@ OCR runs locally on the CPU, with an optional CUDA add-on for compatible NVIDIA 
 
 | Component | What it does |
 | --- | --- |
-| [Native Windows layer](1.01.13/native) | C++ window capture, background reconstruction, text layout and overlay rendering |
-| [Translation application](1.01.13/nkc_galgame_translator) | Python UI, OCR scheduling, scroll tracking, pointer attention, streaming translation and game profiles |
-| [Build and verification tools](1.01.13/tools) | OCR helpers, packaging, installer localization, subtitle-mask replay and native DLL checks |
-| [Tests](1.01.13/tests) | Regression tests for text tracking, rendering, translation and installation |
-| [WinGet manifests](1.01.13/winget) | Package metadata, installer hashes and language-specific installation switches |
+| [Native Windows layer](1.02.14/native) | C++ window capture, background reconstruction, text layout and overlay rendering |
+| [Translation application](1.02.14/nkc_galgame_translator) | Python UI, OCR scheduling, scroll tracking, pointer attention, streaming translation and game profiles |
+| [Build and verification tools](1.02.14/tools) | OCR helpers, packaging, installer localization, subtitle-mask replay and native DLL checks |
+| [Tests](1.02.14/tests) | Regression tests for text tracking, rendering, translation and installation |
+| [WinGet manifests](1.02.14/winget) | Package metadata, installer hashes and language-specific installation switches |
 
 To build the native layer and run two focused test suites, use Windows x64 with the MSVC C++ build tools and the project’s Python runtime and test dependencies. The release build uses CPython 3.14.10 x64. Packaging also requires the OCR wheels and language models listed in the build script.
 
 ```powershell
-cd 1.01.13
+cd 1.02.14
 .\native\build.ps1
 python -m pytest -q tests/test_tracking.py tests/test_native_aero.py
 ```
 
-[Build script and prerequisites](1.01.13/tools/package.ps1) · [Architecture](1.01.13/docs/ARCHITECTURE.md) · [API reference](1.01.13/docs/API.md) · [License](LICENSE) · [Third-party notices](1.01.13/THIRD_PARTY_NOTICES.md)
+[Build script and prerequisites](1.02.14/tools/package.ps1) · [Architecture](1.02.14/docs/ARCHITECTURE.md) · [API reference](1.02.14/docs/API.md) · [License](LICENSE) · [Third-party notices](1.02.14/THIRD_PARTY_NOTICES.md)

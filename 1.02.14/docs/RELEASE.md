@@ -1,3 +1,9 @@
+# 1.02.14
+
+The main window now uses eight two-state icons across its five tabs and three capture modes. Window and language selectors share a row, profiles sit alongside context notes, and start and stop stay below the scrolling content.
+
+五个功能页和三种翻译范围采用双态图标。游戏窗口与语言并排选择，档案与备注并排编辑，开始与停止按钮固定在操作区底部。
+
 # 1.01.13
 
 修复了部分游戏选项不翻译的问题

@@ -1,5 +1,10 @@
 # [Real-Time AI Game Translation] NKC_Galgame_Translator
 
+## 1.02.14
+
+The main window uses eight two-state icons across its five pages and three capture scopes. The game, languages, profile, and notes share a compact form. Start and stop remain available below the scrolling content.
+
+
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
 
 The translator reads visible text from the game window and draws the translation in a separate, click-through overlay. This capture and display path runs outside the game process and requires no game hook or code injection.
@@ -10,11 +15,11 @@ The name **NKC** comes from the initials of the Japanese kana reading of **二�
 
 **Your automated visual novel localization toolkit** · A “roasting machine” in fan-translation slang: read dialogue in place, then use the optional localization toolkit to capture a page and export its source text and translation for editing.
 
-**Windows x64 · Version 1.01.13 · MIT**
+**Windows x64 · Version 1.02.14 · MIT**
 
 ## Try it
 
-Download `NKC_Galgame_Translator-1.01.13-setup.exe` from the release assets. For a portable copy, extract the Windows x64 ZIP and open `NKC_Galgame_Translator.exe`. Local OCR works on the CPU. CUDA OCR is an optional download for compatible NVIDIA systems.
+Download `NKC_Galgame_Translator-1.02.14-setup.exe` from the release assets. For a portable copy, extract the Windows x64 ZIP and open `NKC_Galgame_Translator.exe`. Local OCR works on the CPU. CUDA OCR is an optional download for compatible NVIDIA systems.
 
 New installations have no per-session request limit. You can set a limit in Settings. Your provider’s usage limits and billing still apply.
 
@@ -22,7 +27,7 @@ New installations have no per-session request limit. You can set a limit in Sett
 
 ### WinGet
 
-On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.13/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
+On Windows x64, download the [WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.02.14/winget-manifest.zip), extract it, then run the following from its parent directory. This requires local manifest support in WinGet.
 
 ```powershell
 winget install --manifest .\winget

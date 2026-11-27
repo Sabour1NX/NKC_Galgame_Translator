@@ -4,7 +4,7 @@
 
 二色蝶读取游戏窗口中可见的文字，将译文绘制在独立的覆盖层上。鼠标点击仍传给游戏。这条采集与显示路径在游戏进程外运行，无需挂钩游戏函数或向游戏注入代码。
 
-![霓虹山景前，由青蓝和洋红色几何色块拼接而成的构成主义纸蝶](1.01.13/assets/repository-banner.svg)
+![霓虹山景前，由青蓝和洋红色几何色块拼接而成的构成主义纸蝶](1.02.14/assets/repository-banner.svg)
 
 ## 自动化烤肉机
 
@@ -14,11 +14,13 @@
 
 **NKC** 取自「二色蝶」日语假名读音的首字母。
 
-**Windows x64 · 1.01.13 · MIT**
+**Windows x64 · 1.02.14 · MIT**
 
-[下载 Windows 安装程序](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.13/NKC_Galgame_Translator-1.01.13-setup.exe) · [便携版和 WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.13) · [图文入门指南](1.01.13/README.zh-CN.md)
+新版主窗口采用八枚双态图标。开始与停止按钮固定在可滚动内容下方。
 
-![英文界面下选择游戏窗口、语言和对白区域](1.01.13/docs/screenshots/game-en.png)
+[下载 Windows 安装程序](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.02.14/NKC_Galgame_Translator-1.02.14-setup.exe) · [便携版和 WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.02.14) · [图文入门指南](1.02.14/README.zh-CN.md)
+
+![英文界面下选择游戏窗口、语言和对白区域](1.02.14/docs/screenshots/game-en.png)
 
 首次使用时，每次启动的翻译请求次数默认不限。可在设置中指定上限；实际用量和费用按所选服务商的规则计算。
 
@@ -36,18 +38,18 @@ OCR 默认可在本机 CPU 上运行，兼容的 NVIDIA 显卡可另装 CUDA 扩
 
 | 模块 | 用途 |
 | --- | --- |
-| [Windows 原生层](1.01.13/native) | 用 C++ 捕获窗口、还原文字背景、计算排版并绘制覆盖层 |
-| [翻译主程序](1.01.13/nkc_galgame_translator) | 用 Python 实现界面、OCR 调度、滚动跟踪、鼠标补译、流式翻译和游戏档案 |
-| [构建与验证工具](1.01.13/tools) | OCR 辅助进程、打包、安装语言适配、字幕遮罩回放和 DLL 检查 |
-| [测试](1.01.13/tests) | 覆盖文本跟踪、渲染、翻译流程和安装行为 |
-| [WinGet 清单](1.01.13/winget) | 包信息、安装包哈希和按语言选择的安装参数 |
+| [Windows 原生层](1.02.14/native) | 用 C++ 捕获窗口、还原文字背景、计算排版并绘制覆盖层 |
+| [翻译主程序](1.02.14/nkc_galgame_translator) | 用 Python 实现界面、OCR 调度、滚动跟踪、鼠标补译、流式翻译和游戏档案 |
+| [构建与验证工具](1.02.14/tools) | OCR 辅助进程、打包、安装语言适配、字幕遮罩回放和 DLL 检查 |
+| [测试](1.02.14/tests) | 覆盖文本跟踪、渲染、翻译流程和安装行为 |
+| [WinGet 清单](1.02.14/winget) | 包信息、安装包哈希和按语言选择的安装参数 |
 
 以下示例编译原生层并运行两组回归测试。需要 Windows x64、MSVC C++ 构建工具，以及项目的 Python 运行和测试依赖。发行包采用 CPython 3.14.10 x64，完整打包还需要构建脚本列出的 OCR 依赖和语言模型。
 
 ```powershell
-cd 1.01.13
+cd 1.02.14
 .\native\build.ps1
 python -m pytest -q tests/test_tracking.py tests/test_native_aero.py
 ```
 
-[构建脚本与前置条件](1.01.13/tools/package.ps1) · [项目架构](1.01.13/docs/ARCHITECTURE.md) · [接口规范](1.01.13/docs/API.md) · [MIT 许可](LICENSE) · [第三方组件说明](1.01.13/THIRD_PARTY_NOTICES.md)
+[构建脚本与前置条件](1.02.14/tools/package.ps1) · [项目架构](1.02.14/docs/ARCHITECTURE.md) · [接口规范](1.02.14/docs/API.md) · [MIT 许可](LICENSE) · [第三方组件说明](1.02.14/THIRD_PARTY_NOTICES.md)

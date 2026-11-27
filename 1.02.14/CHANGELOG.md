@@ -1,3 +1,7 @@
+# 1.02.14
+
+Apply the dual-state navigation and scope icons and compact workbench layout.
+
 # 1.01.13
 
 修复了部分游戏选项不翻译的问题

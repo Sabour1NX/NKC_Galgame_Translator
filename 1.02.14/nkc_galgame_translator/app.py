@@ -12,6 +12,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from . import __version__
 from .event_queue import DisplayEvents
+from .workbench_icons import load_icons
 from .branding import configure_process_identity, install_window_icon
 from .config_store import ConfigStore, ConfigStoreError
 from .agreement import AGREEMENT_VERSION, AGREEMENT_TITLE, AGREEMENT_TEXT
@@ -246,6 +247,10 @@ class App:
                 widget.configure(bg=surface,fg=ink,insertbackground=accent,
                                  selectbackground=selection,selectforeground=ink,
                                  highlightbackground=border,highlightcolor=accent)
+        primary, secondary = ((accent, '#78E3E5') if self.config.get('interface_theme', DEFAULT_THEME) == 'neon'
+                              else (surface, mix(surface, accent, .3)))
+        self.workbench_icons = load_icons(self.root, ink, primary, secondary, self._ui_colors[3])
+        self._refresh_workbench()
         for canvas in (self.run_canvas,self.settings_canvas):
             canvas.configure(bg=surface)
 
@@ -421,9 +426,14 @@ class App:
         s.map('TCombobox', fieldbackground=[('readonly',WHITE)], foreground=[('readonly',INK)],
               bordercolor=[('focus',RED)], selectbackground=[('readonly',WHITE)], selectforeground=[('readonly',INK)])
         s.configure('TNotebook', background=PAPER, borderwidth=0, tabmargins=(0,0,0,0))
-        s.configure('TNotebook.Tab', padding=(22,12), background=PAPER, foreground=shell_text, borderwidth=0)
-        s.map('TNotebook.Tab', background=[('selected',WHITE),('active',PALE)],
-              foreground=[('selected',INK),('active',INK),('disabled',mix(shell_text,PAPER,.35))])
+        selected_bg = PAPER if self.config.get('interface_theme', DEFAULT_THEME) == 'neon' else INK
+        selected_fg = shell_text if self.config.get('interface_theme', DEFAULT_THEME) == 'neon' else WHITE
+        s.configure('Chosen.Region.TButton', background=selected_bg, foreground=selected_fg)
+        s.map('Chosen.Region.TButton', background=[('active', selected_bg), ('!disabled', selected_bg)],
+              foreground=[('!disabled', selected_fg)])
+        s.configure('TNotebook.Tab', padding=(9,9), background=WHITE, foreground=INK, borderwidth=0)
+        s.map('TNotebook.Tab', background=[('selected',selected_bg),('active',PALE)],
+              foreground=[('selected',selected_fg),('active',INK),('disabled',mix(shell_text,PAPER,.35))])
         s.configure('Treeview', background=WHITE, fieldbackground=WHITE, foreground=INK,
                     rowheight=32, borderwidth=0)
         s.configure('Treeview.Heading', background=PALE, foreground=INK, padding=(8,8), relief='flat')
@@ -529,6 +539,7 @@ class App:
         self._scroll_bindings(self.run_canvas,self.run_canvas)
         self.popup_guard.register_tree(self.root)
         def tab_changed(_):
+            self._refresh_workbench()
             self.popup_guard.close_popups()
             if self.tabs.select() == str(self.settings_tab):
                 settings_actions.pack(side='right', anchor='s', padx=(16, 0), before=footer_status)
@@ -540,39 +551,47 @@ class App:
 
     def _run_ui(self,f):
         ttk.Label(f,text=self.tr(ui_source('Game and languages')),style='GameSection.TLabel').pack(anchor='w')
-        row=ttk.Frame(f);row.pack(fill='x',pady=(12,10))
-        self.windows_box=ttk.Combobox(row,state='readonly');self.windows_box.pack(side='left',fill='x',expand=True)
-        ttk.Button(row,text=self.tr(ui_source('Refresh windows')),command=self.refresh_windows).pack(side='left',padx=(10,0))
-        row=ttk.Frame(f);row.pack(fill='x',pady=4)
-        for label,var,values in [(ui_source('Source language'),self.source,list(LANGUAGES)),(ui_source('Translate to'),self.target,list(LANGUAGES))]:
-            ttk.Label(row,text=self.tr(label)).pack(side='left')
-            control=ttk.Combobox(row,textvariable=var,values=values,state='readonly',width=20)
-            control.pack(side='left',padx=(8,18))
-            self.scope_controls.append((control,'readonly'))
-            control.bind('<<ComboboxSelected>>',self.translation_language_changed)
-        row=ttk.Frame(f);row.pack(fill='x',pady=(8,0))
-        ttk.Label(row,text=self.tr(ui_source('Game profiles'))).pack(side='left')
-        self.profile_box=ttk.Combobox(row,textvariable=self.game,state='normal',width=26,
-                                      postcommand=self.refresh_profiles)
-        self.profile_box.pack(side='left',fill='x',expand=True,padx=(8,8))
-        self.scope_controls.append((self.profile_box,'normal'))
-        self.profile_box.bind('<<ComboboxSelected>>',lambda _: self.profile_changed(reopen=True))
-        self.profile_box.bind('<FocusOut>',self.profile_changed)
-        self.profile_box.bind('<Return>',lambda _: self.profile_changed(reopen=True))
-        self.clear_profile_button=ttk.Button(row,text=self.tr(ui_source('Manage profiles')),command=self.open_profiles)
-        self.clear_profile_button.pack(side='left')
-        self.scope_controls.append((self.clear_profile_button,'normal'))
-        self._hint(f,ui_source('Your profile keeps your notes and translations between sessions. The model can refer to a summary of earlier dialogue.')).pack(anchor='w',pady=(6,6))
+        form = ttk.Frame(f)
+        form.pack(fill='x', pady=(8, 12))
+        form.columnconfigure(0, weight=2)
+        for col in (1, 2):
+            form.columnconfigure(col, weight=1)
+        def field(parent, col, label, widget):
+            ttk.Label(parent, text=self.tr(ui_source(label))).grid(row=0, column=col, sticky='w', pady=(0, 4))
+            widget.grid(row=1, column=col, sticky='ew', padx=(0, 8))
+        window_field = ttk.Frame(form)
+        self.windows_box = ttk.Combobox(window_field, state='readonly', width=17)
+        self.windows_box.pack(side='left', fill='x', expand=True)
+        ttk.Button(window_field, text=self.tr(ui_source('Refresh windows')), command=self.refresh_windows).pack(side='left', padx=(4, 0))
+        field(form, 0, 'Game window', window_field)
+        for col, (label, var) in enumerate([('Source language', self.source), ('Translate to', self.target)], 1):
+            control = ttk.Combobox(form, textvariable=var, values=list(LANGUAGES), state='readonly', width=12)
+            field(form, col, label, control)
+            self.scope_controls.append((control, 'readonly'))
+            control.bind('<<ComboboxSelected>>', self.translation_language_changed)
         context = ttk.Frame(f)
-        context.pack(fill='x', pady=(4, 16))
-        ttk.Label(context,text=self.tr(ui_source('Translation notes'))).pack(anchor='w')
+        context.pack(fill='x', pady=(0, 12))
+        context.columnconfigure(0, weight=1)
+        context.columnconfigure(1, weight=2)
+        profile = ttk.Frame(context)
+        self.profile_box = ttk.Combobox(profile, textvariable=self.game, width=15, postcommand=self.refresh_profiles)
+        self.profile_box.pack(side='left', fill='x', expand=True)
+        self.profile_box.bind('<<ComboboxSelected>>', lambda _: self.profile_changed(reopen=True))
+        self.profile_box.bind('<FocusOut>', self.profile_changed)
+        self.profile_box.bind('<Return>', lambda _: self.profile_changed(reopen=True))
+        self.clear_profile_button = ttk.Button(profile, text=self.tr(ui_source('Manage profiles')), command=self.open_profiles)
+        self.clear_profile_button.pack(side='left', padx=(4, 0))
+        field(context, 0, 'Game profiles', profile)
         notes = ttk.Frame(context)
-        notes.pack(fill='x', pady=(6, 0))
-        context_entry = ttk.Entry(notes, textvariable=self.context)
+        context_entry = ttk.Entry(notes, textvariable=self.context, width=14)
         context_entry.pack(side='left', fill='x', expand=True)
         save_context = ttk.Button(notes, text=self.tr(ui_source('Save')), command=self.save_profile_context)
-        save_context.pack(side='right', padx=(8, 0))
-        self.scope_controls.extend(((context_entry,'normal'), (save_context,'normal')))
+        save_context.pack(side='right', padx=(4, 0))
+        field(context, 1, 'Translation notes', notes)
+        self.scope_controls.extend(((self.profile_box, 'normal'), (self.clear_profile_button, 'normal'),
+                                    (context_entry, 'normal'), (save_context, 'normal')))
+        context = ttk.Frame(f)
+        context.pack(fill='x')
         self.context_summary_row = ttk.Frame(context)
         ttk.Label(self.context_summary_row, text=self.tr(ui_source('Latest profile summary'))).pack(side='left', padx=(0, 10))
         ttk.Entry(self.context_summary_row, textvariable=self.profile_summary, state='readonly').pack(side='left', fill='x', expand=True)
@@ -581,16 +600,16 @@ class App:
         row=ttk.Frame(f);row.pack(fill='x',pady=(0,8))
         self.select_region_button = ttk.Button(row, text=self.tr(ui_source('Select areas')),
                                                style='Region.TButton', command=self.select_region)
-        self.select_region_button.pack(side='left')
         self.full_region_button = ttk.Button(row, text=self.tr(ui_source('Entire game window')),
-                                           style='Region.TButton', command=self.full_region)
-        self.full_region_button.pack(side='left', padx=8)
-        self.lightweight_var=tk.BooleanVar(value=False)
-        ttk.Checkbutton(row,text=self.tr(ui_source('Lightweight mode')),variable=self.lightweight_var,
-                        command=self._apply_lightweight).pack(side='left',padx=8)
-        ttk.Label(row, text=self.tr(ui_source('Translate only the text near your pointer.')),
-                  style='Hint.TLabel').pack(side='left')
-        self.region_label=ttk.Label(f,text=self.tr(ui_source('No region selected')),style='Hint.TLabel');self.region_label.pack(anchor='w')
+                                            style='Region.TButton', command=self.full_region)
+        self.lightweight_var = tk.BooleanVar(value=False)
+        self.lightweight_button = ttk.Button(row, text=self.tr(ui_source('Lightweight mode')),
+                                             command=self._toggle_lightweight)
+        for col, button in enumerate((self.select_region_button, self.full_region_button, self.lightweight_button)):
+            row.columnconfigure(col, weight=1, uniform='scope')
+            button.grid(row=0, column=col, sticky='ew', padx=(0, 6))
+        self.region_label = ttk.Label(f, style='Hint.TLabel')
+        self.region_label.pack(anchor='w')
         self.log=self._text(f,height=3);self.log.pack(fill='both',expand=True,pady=(12,0))
         self.log.insert('end',self.tr(ui_source('Ready. Translation and coverage appear progressively. AI generates new translations using saved terms and context as references.\n')))
 
@@ -1308,10 +1327,36 @@ class App:
         else:message=ui_source('Recognizing target: {window}.')
         self.status.set(self.tr(message).format(window=label))
 
+    def _refresh_workbench(self):
+        selected = self.tabs.select()
+        for index, tab in enumerate(self.tabs.tabs()):
+            state = 'active' if tab == selected else 'idle'
+            self.tabs.tab(tab, image=self.workbench_icons[index, state], compound='left')
+        light = self.lightweight_var.get()
+        current = 2 if light else (0 if self.capture_region else 1)
+        for index, button in enumerate((self.select_region_button, self.full_region_button, self.lightweight_button)):
+            active = index == current
+            state = 'active' if active else ('disabled' if light else 'idle')
+            button.configure(style='Chosen.Region.TButton' if active else 'Region.TButton',
+                             compound='left', image=self.workbench_icons[index + 5, state])
+
+        if light:
+            hint = self.tr(ui_source('Translate only the text near your pointer.'))
+        elif self.capture_region:
+            hint = self.tr(ui_source('{count} regions selected; follow the game window')).format(count=len(self.capture_region))
+        else:
+            hint = self.tr(ui_source('Entire game window'))
+        self.region_label.configure(text=hint)
+
+    def _toggle_lightweight(self):
+        self.lightweight_var.set(not self.lightweight_var.get())
+        self._apply_lightweight()
+
     def _apply_lightweight(self):
         enabled = self.lightweight_var.get()
         for button in (self.select_region_button, self.full_region_button):
             button.configure(state='disabled' if enabled else 'normal')
+        self._refresh_workbench()
         if self.pipeline:
             self.pipeline.set_lightweight(enabled)
 
@@ -1321,6 +1366,7 @@ class App:
         try:
             if not self.pipeline:self.target_window=self.chosen_window()
             self.capture_region=None
+            self._refresh_workbench()
             self.region_label.config(text=self.tr(ui_source('Recognizing the full client area. A dialogue-only region uses fewer resources and API requests.')))
         except Exception as e:self.status.set(self.tr(self.settings_error_message(e)))
 
@@ -1368,6 +1414,7 @@ class App:
         def accept(e=None):
             if not selected:return
             self.capture_region=tuple(selected)
+            self._refresh_workbench()
             self.capture_region_target=(self.target_window['hwnd'],self.target_window['pid'])
             self.region_label.config(text=self.tr(ui_source('{count} regions selected; follow the game window')).format(count=len(selected)))
             close()
@@ -1435,6 +1482,7 @@ class App:
             pid=self.target_window['pid']
             if relative and getattr(self,'capture_region_target',(hwnd,pid))!=(hwnd,pid):
                 relative=None;self.capture_region=None
+                self._refresh_workbench()
                 self.region_label.config(text=self.tr(ui_source('Recognizing the full client area. A dialogue-only region uses fewer resources and API requests.')))
             executable=self.target_window.get('exe_name') or PureWindowsPath(self.target_window.get('process_path','')).name
             if hasattr(self.core,'set_game_executable'):self.core.set_game_executable(executable)

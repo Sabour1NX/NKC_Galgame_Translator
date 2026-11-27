@@ -40,7 +40,7 @@ TEXT_SUFFIXES = {'.iss', '.py', '.ps1', '.cpp', '.h', '.md', '.html', '.svg', '.
                  '.txt', '.csv', '.tsv', '.tmx', '.yaml', '.yml', '.toml', '.lock'}
 LOCK_GROUPS = ('runtime', 'build', 'ocr', 'test', 'audit', 'docs')
 SOURCE_SUFFIXES = {
-    'nkc_galgame_translator': {'.py'}, 'nkc_galgame_translator/resources': {'.json', '.txt'}, 'native': {'.cpp', '.h', '.ps1', '.cmake'},
+    'nkc_galgame_translator': {'.py'}, 'nkc_galgame_translator/resources': {'.json', '.txt', '.png'}, 'native': {'.cpp', '.h', '.ps1', '.cmake'},
     'tools': {'.py', '.ps1', '.cjs', '.json', '.iss', '.isl'}, 'tests': {'.py'},
     'docs': {'.md', '.html', '.svg', '.json', '.css', '.js'},
     'docs/examples': {'.csv', '.tsv', '.json', '.tmx', '.txt'},
@@ -55,6 +55,7 @@ SOURCE_FILES = {
     'models/cuda/manifest.json', 'models/cuda/LICENSE',
 }
 REQUIRED_SOURCE = {
+    'nkc_galgame_translator/workbench_icons.py', 'nkc_galgame_translator/resources/workbench.png',
     'nkc_galgame_translator/profile_ui.py', 'nkc_galgame_translator/scrolling.py', 'nkc_galgame_translator/hotkeys.py', 'nkc_galgame_translator/profile_store.py',
     'nkc_galgame_translator/cuda_ocr.py', 'tools/cuda_ocr_helper.py', 'tools/setup_cuda_ocr.py', 'tools/package_cuda.py',
     'requirements-cuda.lock', 'CUDA_DEPENDENCY_MANIFEST.json', 'models/cuda/manifest.json', 'models/cuda/LICENSE',
@@ -82,6 +83,7 @@ REQUIRED_SOURCE = {
     *(f'requirements-{group}.lock' for group in LOCK_GROUPS),
 }
 REQUIRED_RELEASE = {
+    '_internal/nkc_galgame_translator/resources/workbench.png',
     'tools/cuda_ocr_helper.py', 'tools/setup_cuda_ocr.py', 'tools/ocr_helper.py',
     'requirements-cuda.lock', 'CUDA_DEPENDENCY_MANIFEST.json', 'models/cuda/manifest.json', 'models/cuda/LICENSE',
     'docs/USER_AGREEMENT.ja.md',

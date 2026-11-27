@@ -1,0 +1,21 @@
+{
+  "schema": 2,
+  "version": "1.02.14",
+  "date": "2026-11-27",
+  "validation_status": "automated_regression_completed",
+  "automated_batches": [
+    {
+      "passed": 2113,
+      "failed": 0,
+      "skipped": 7,
+      "elapsed_s": 342.47,
+      "scope": "Complete checked-in pytest suite on Windows x64 with bundled Python 3.14.10 and an isolated pytest base directory."
+    }
+  ],
+  "same_input_comparison": {
+    "baseline": "1.01.13",
+    "input": "Synthetic English image containing two lines",
+    "observed": "Two identical OCR source strings and two identical completed simulated translations in both versions.",
+    "scope": "Static source, no API traffic. Native paint is covered by the native regression tests in the suite."
+  }
+}

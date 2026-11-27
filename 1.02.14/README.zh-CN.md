@@ -1,5 +1,10 @@
 # [Real-Time AI Game Translation] NKC_Galgame_Translator
 
+## 1.02.14
+
+新版主窗口采用八枚双态图标，对应五个功能页与三种翻译范围。游戏窗口和语言并排选择，档案和备注并排编辑，开始与停止按钮固定在操作区底部。
+
+
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語 (beta)](README.ja.md)
 
 二色蝶读取游戏窗口中可见的文字，将译文绘制在独立的覆盖层上。鼠标点击仍传给游戏。这条采集与显示路径在游戏进程外运行，无需挂钩游戏函数或向游戏注入代码。
@@ -10,11 +15,11 @@
 
 **自动化烤肉机** · 玩游戏时，译文直接出现在对白框里。做汉化时，开启汉化组工具，即可保存整页截图和逐句对应的原文、译文，方便后续校对。
 
-**Windows x64 · 1.01.13 · MIT**
+**Windows x64 · 1.02.14 · MIT**
 
 ## 第一次使用
 
-下载发行附件中的 `NKC_Galgame_Translator-1.01.13-setup.exe`。如果选用免安装版，请先解压 Windows x64 ZIP，再双击 `NKC_Galgame_Translator.exe`。CPU 可运行本地 OCR，使用兼容 NVIDIA 显卡时也可安装独立的 CUDA OCR 扩展。以下截图采用英文界面。
+下载发行附件中的 `NKC_Galgame_Translator-1.02.14-setup.exe`。如果选用免安装版，请先解压 Windows x64 ZIP，再双击 `NKC_Galgame_Translator.exe`。CPU 可运行本地 OCR，使用兼容 NVIDIA 显卡时也可安装独立的 CUDA OCR 扩展。以下截图采用英文界面。
 
 首次使用时，每次启动的翻译请求次数默认不限。可在设置中指定上限；实际用量和费用按所选服务商的规则计算。
 
@@ -22,7 +27,7 @@
 
 ### WinGet
 
-下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.13/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
+下载并解压 [WinGet 清单](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.02.14/winget-manifest.zip)。启用 WinGet 本地清单支持后，在解压目录的上一级运行以下命令。
 
 ```powershell
 winget install --manifest .\winget

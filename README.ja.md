@@ -4,7 +4,7 @@
 
 ゲーム画面に表示された文字を読み取り、元の位置に独立した Overlay で訳文を表示します。クリックはゲーム側に届きます。画面の取得と表示はゲームの Process の外で行うため、ゲームへの Hook や Code Injection は不要です。
 
-![ネオンの山並みを背景に、シアンとマゼンタの幾何学形を組み合わせた構成主義の紙の蝶](1.01.13/assets/repository-banner.svg)
+![ネオンの山並みを背景に、シアンとマゼンタの幾何学形を組み合わせた構成主義の紙の蝶](1.02.14/assets/repository-banner.svg)
 
 ## ビジュアルノベルの自動翻訳・ローカライズツール
 
@@ -14,11 +14,13 @@
 
 **NKC** は「二色蝶」の仮名読みの頭文字を取った略称です。
 
-**Windows x64 · 1.01.13 · MIT**
+**Windows x64 · 1.02.14 · MIT**
 
-[Windows Installer をダウンロード](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.01.13/NKC_Galgame_Translator-1.01.13-setup.exe) · [Portable 版と WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.01.13) · [画像付きの導入ガイド](1.01.13/README.ja.md)
+メイン画面のタブと翻訳範囲にアイコンを追加しました。開始と停止ボタンはスクロール領域の下に固定しています。
 
-![英語 UI でゲームの Window、言語、読み取り範囲を選んだ画面](1.01.13/docs/screenshots/game-en.png)
+[Windows Installer をダウンロード](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/download/v1.02.14/NKC_Galgame_Translator-1.02.14-setup.exe) · [Portable 版と WinGet manifest](https://github.com/Sabour1NX/NKC_Galgame_Translator/releases/tag/v1.02.14) · [画像付きの導入ガイド](1.02.14/README.ja.md)
+
+![英語 UI でゲームの Window、言語、読み取り範囲を選んだ画面](1.02.14/docs/screenshots/game-en.png)
 
 初期設定では、1 回の起動中に送信できる Request 数は無制限です。上限は設定で変更できます。利用料金と利用制限は接続先の Provider に従います。
 
@@ -36,18 +38,18 @@ OCR は手元の PC の CPU で動作します。対応する NVIDIA GPU では 
 
 | Component | 役割 |
 | --- | --- |
-| [Windows Native layer](1.01.13/native) | C++ による Window の取得、背景復元、文字配置、Overlay の描画 |
-| [翻訳アプリ](1.01.13/nkc_galgame_translator) | Python による UI、OCR の実行制御、Scroll の追跡、Pointer 周辺の再認識、Streaming 翻訳、ゲームの Profile 管理 |
-| [Build・検証ツール](1.01.13/tools) | OCR Helper、配布物の作成、Installer の言語切り替え、字幕マスクの再現試験、DLL の検査 |
-| [Tests](1.01.13/tests) | 文字の追跡、描画、翻訳処理、Install 動作の回帰テスト |
-| [WinGet manifests](1.01.13/winget) | Package 情報、Installer の Hash、言語別の起動引数 |
+| [Windows Native layer](1.02.14/native) | C++ による Window の取得、背景復元、文字配置、Overlay の描画 |
+| [翻訳アプリ](1.02.14/nkc_galgame_translator) | Python による UI、OCR の実行制御、Scroll の追跡、Pointer 周辺の再認識、Streaming 翻訳、ゲームの Profile 管理 |
+| [Build・検証ツール](1.02.14/tools) | OCR Helper、配布物の作成、Installer の言語切り替え、字幕マスクの再現試験、DLL の検査 |
+| [Tests](1.02.14/tests) | 文字の追跡、描画、翻訳処理、Install 動作の回帰テスト |
+| [WinGet manifests](1.02.14/winget) | Package 情報、Installer の Hash、言語別の起動引数 |
 
 次の例では Native layer を Build し、二つの回帰テストを実行します。Windows x64、MSVC C++ Build Tools、プロジェクトの Python 実行・テスト用の依存関係が必要です。配布版には CPython 3.14.10 x64 を使用します。配布物を作る場合は、Build script に記載された OCR 用の Wheel と言語 Model も用意してください。
 
 ```powershell
-cd 1.01.13
+cd 1.02.14
 .\native\build.ps1
 python -m pytest -q tests/test_tracking.py tests/test_native_aero.py
 ```
 
-[Build script と必要な環境](1.01.13/tools/package.ps1) · [Architecture](1.01.13/docs/ARCHITECTURE.md) · [API reference](1.01.13/docs/API.md) · [MIT License](LICENSE) · [Third-party notices](1.01.13/THIRD_PARTY_NOTICES.md)
+[Build script と必要な環境](1.02.14/tools/package.ps1) · [Architecture](1.02.14/docs/ARCHITECTURE.md) · [API reference](1.02.14/docs/API.md) · [MIT License](LICENSE) · [Third-party notices](1.02.14/THIRD_PARTY_NOTICES.md)
